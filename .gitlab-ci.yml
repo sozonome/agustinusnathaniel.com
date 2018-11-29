@@ -1,4 +1,4 @@
-ages:
+pages:
   stage: deploy
   script:
   - mkdir .public
