@@ -1,57 +1,34 @@
-const config = require('./config/website')
-
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
-
 module.exports = {
-  /* General Information */
   siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
+    title: `Agustinus Nathaniel`,
+    description: `This personal site project is still under construction. Please be kind with it.`,
+    author: `@nate_228`,
   },
-  /* Plugins */
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images/`,
-        name: 'images',
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        trackingId: config.googleAnalyticsID,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: config.pathPrefix,
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: 'standalone',
-        icons: [
-          {
-            src: '/favicons/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/favicons/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
-      },
-    },
-    /* Must be placed at the end */
-    'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
 }
