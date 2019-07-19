@@ -1,57 +1,96 @@
-const config = require('./config/website')
+const path = require('path')
+const config = require('./data/config')
 
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+require('dotenv').config({
+	path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
-  /* General Information */
-  siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
-  },
-  /* Plugins */
-  plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
-    {
+	siteMetadata: {
+		title: config.defaultTitle,
+		description: config.defaultDescription,
+		author: config.author,
+	},
+	plugins: [
+		'gatsby-plugin-react-helmet',
+		'gatsby-plugin-styled-components',
+		/* {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/images/`,
-        name: 'images',
+        name: 'assets',
+        path: '${__dirname}/src/assets',
       },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: config.googleAnalyticsID,
-      },
-    },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: config.pathPrefix,
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: 'standalone',
-        icons: [
-          {
-            src: '/favicons/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/favicons/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
-      },
-    },
-    /* Must be placed at the end */
-    'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
-  ],
+    }, */
+		'gatsby-transformer-sharp',
+		'gatsby-plugin-sharp',
+		{
+			resolve: 'gatsby-source-graphql',
+			options: {
+				typeName: 'GitHub',
+				fieldName: 'github',
+				url: 'https://api.github.com/graphql',
+				headers: {
+					Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+				},
+				fetchOptions: {},
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-nprogress',
+			options: {
+				color: config.themeColor,
+				showSpinner: false,
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-google-analytics',
+			options: {
+				trackingId: config.googleAnalyticsID,
+				head: true,
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-favicon',
+			options: {
+				logo: './static/favicon/favicon-512.png',
+				injectHTML: true,
+				icons: {
+					android: true,
+					appleIcon: true,
+					appleStartup: true,
+					coast: false,
+					favicons: true,
+					firefox: true,
+					twitter: false,
+					yandex: false,
+					windows: false,
+				},
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-manifest',
+			options: {
+				name: config.defaultTitle,
+				short_name: 'starter',
+				start_url: '/',
+				background_color: config.backgroundColor,
+				theme_color: config.themeColor,
+				display: 'minimal-ui',
+				icon: './static/favicon/favicon-512.png',
+			},
+		},
+		'gatsby-plugin-offline',
+		{
+			resolve: `gatsby-plugin-alias-imports`,
+			options: {
+				alias: {
+					Components: path.resolve(__dirname, 'src/components'),
+					Common: path.resolve(__dirname, 'src/components/common'),
+					Static: path.resolve(__dirname, 'static/'),
+					Theme: path.resolve(__dirname, 'src/components/theme'),
+					Data: path.resolve(__dirname, 'data/config'),
+				},
+			},
+		},
+	],
 }

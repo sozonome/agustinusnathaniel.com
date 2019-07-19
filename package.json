@@ -1,64 +1,67 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
-  "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
-  "license": "MIT",
+  "name": "portfolio",
+  "private": true,
+  "description": "A simple portfolio for developers",
+  "version": "0.1.1",
+  "author": "Smakosh <ismai23l@hotmail.com>",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.13.21",
-    "gatsby-image": "^2.2.6",
-    "gatsby-plugin-google-analytics": "^2.1.4",
-    "gatsby-plugin-manifest": "^2.2.3",
-    "gatsby-plugin-netlify": "^2.1.3",
-    "gatsby-plugin-offline": "^2.2.4",
-    "gatsby-plugin-react-helmet": "^3.1.2",
-    "gatsby-plugin-sharp": "^2.2.7",
-    "gatsby-plugin-styled-components": "^3.1.2",
-    "gatsby-source-filesystem": "^2.1.5",
-    "gatsby-transformer-sharp": "^2.2.3",
-    "prop-types": "^15.7.2",
+    "babel-plugin-styled-components": "^1.10.0",
+    "dotenv": "^6.2.0",
+    "formik": "^1.4.1",
+    "gatsby": "^2.8.6",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-canonical-urls": "^2.0.8",
+    "gatsby-plugin-favicon": "^3.1.5",
+    "gatsby-plugin-google-analytics": "^2.0.8",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-nprogress": "^2.0.7",
+    "gatsby-plugin-offline": "^2.0.20",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-sitemap": "^2.0.3",
+    "gatsby-plugin-styled-components": "^3.0.4",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-source-graphql": "^2.0.19",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "prop-types": "^15.6.2",
     "react": "^16.8.6",
+    "react-anchor-link-smooth-scroll": "^1.0.11",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-spring": "^8.0.27",
-    "styled-components": "^4.3.2",
-    "tailwind.macro": "^0.5.10",
-    "tailwindcss": "^0.7.4",
-    "typeface-cantata-one": "^0.0.72",
-    "typeface-open-sans": "^0.0.54",
-    "typeface-source-sans-pro": "0.0.75"
+    "react-google-recaptcha": "^1.0.5",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.1.3",
+    "yup": "^0.26.6"
   },
   "keywords": [
     "gatsby",
-    "starter",
-    "portfolio"
+    "portfolio",
+    "developer"
   ],
+  "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop -o",
-    "develop": "gatsby develop",
     "build": "gatsby build",
-    "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
-    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "lint:ci": "yarn lint --format junit -o results/eslint/result.xml"
+    "start": "gatsby develop -o",
+    "format": "prettier --write \"src/**/*.js\"",
+    "reset": "rm -rf .cache/ public/",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.2",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.2",
-    "prettier": "^1.18.2"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^1.3.0",
+    "prettier": "^1.15.3"
   },
   "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
-    "type": "git"
+    "type": "git",
+    "url": "git@github.com:smakosh/gatsby-portfolio-dev.git"
   },
   "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
-  },
-  "homepage": "https://cara.lekoarts.de"
+    "url": "https://github.com/smakosh/gatsby-portfolio-dev/issues"
+  }
 }

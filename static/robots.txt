@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-sitemap: https://agustinusnathaniel.com/sitemap.xml
