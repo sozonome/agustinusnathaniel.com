@@ -1,8 +1,11 @@
 .Container{
+  align: center;
+
   .Header{
     margin-top: 1rem !important;
     padding: 1rem;
-    background-color:#cdcdcd;
-    border-radius: 1rem;
+    background-color:rgb(35, 128, 151);
+    color: white;
+    border-radius: 10px;
   }
 }
