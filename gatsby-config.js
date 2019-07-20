@@ -1,16 +1,19 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+const config = require('./config/website')
+
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
 module.exports = {
   siteMetadata:{
-    name: `Nate's Personal Site`,
-    tagline: `Build with Gatsby + SASS + Typescript 💪`
+    siteUrl: config.siteUrl + pathPrefix,
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
   ],
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: config.googleAnalyticsID,
+    }
+  }
 }

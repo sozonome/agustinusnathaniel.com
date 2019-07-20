@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import {graphql} from 'gatsby';
-import * as styles from './Index.module.scss'
+import { graphql, Link } from 'gatsby';
+import { Container, Header, Image, Icon, Menu } from 'semantic-ui-react';
 
-interface IndexPageProps{
-  data:{
-    site:{
-      siteMetadata:{
+interface IndexPageProps {
+  data: {
+    site: {
+      siteMetadata: {
         name: string;
         tagline: string;
       }
@@ -32,10 +32,23 @@ export default class IndexPage extends Component<IndexPageProps, {}> {
     } = this.props.data.site.siteMetadata;
 
     return (
-      <div className={styles.Container}>
-        <h1>{name}</h1>
-        <p>{tagline}</p>
-      </div>
+      <Container className="Container">
+        <Header className="Header" as="h2">
+          <Image circular src={require("../images/avatar.jpeg")} />
+          <Header.Content>
+            @nate_228
+            <Header.Subheader>Personal Site</Header.Subheader>
+          </Header.Content>
+        </Header>
+        <Link to="/blog">Blog</Link>
+
+        <Container>
+          <a href="https://www.instagram.com/nate_228">
+            <Icon size="large" name='instagram' />
+          </a>
+        </Container>
+
+      </Container>
     )
   }
 }
