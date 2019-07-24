@@ -9,6 +9,7 @@ module.exports = {
       youtube: `AgustinusNathaniel`,
       linkedin: `agustinusnathaniel`,
       github: `sozonome`,
+      unsplash: `@nate_228`,
       email: `hello@agustinusnathaniel.com`
     },
   },
@@ -19,6 +20,13 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-89527004-1`,
+      }
+    },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://medium.com/feed/@agustinusnathaniel`,
+        name: `GatsbyBlog`,
       }
     },
   ],
