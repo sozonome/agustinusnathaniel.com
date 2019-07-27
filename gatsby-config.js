@@ -10,6 +10,9 @@ module.exports = {
       linkedin: `agustinusnathaniel`,
       github: `sozonome`,
       unsplash: `@nate_228`,
+      medium: `@nate_228`,
+      behance: `nate_228`,
+      dribbble: `nate_228`,
       email: `hello@agustinusnathaniel.com`
     },
   },

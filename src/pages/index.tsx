@@ -13,7 +13,7 @@ export default function IndexPage() {
     <div>
       <Layout>
         <Head />
-        <BlogPosts/>
+        {/* <BlogPosts/> */}
         <About />
         <Divider hidden />
         <Social />
