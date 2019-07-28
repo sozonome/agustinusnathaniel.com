@@ -59,7 +59,7 @@ export default function Links() {
                     </a>
                   </div>
                   <div className="level-item">
-                    <a href={'https://www.be.net/' + site.siteMetadata.social.behance}>
+                    <a href={'https://be.net/' + site.siteMetadata.social.behance}>
                       <FontAwesomeIcon icon={['fab', 'behance']} size="2x" />
                     </a>
                   </div>
