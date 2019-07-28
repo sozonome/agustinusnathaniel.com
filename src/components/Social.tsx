@@ -1,6 +1,10 @@
 import React from 'react'
-import { Grid, Button, List, Icon, Container } from 'semantic-ui-react';
 import { useStaticQuery, graphql } from 'gatsby';
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+library.add(fab)
 
 export default function Social() {
   const { site } = useStaticQuery(graphql`
@@ -12,50 +16,38 @@ export default function Social() {
             youtube
             linkedin
             github
-            unsplash
+            medium
             email
+            twitter
+            behance
+            dribbble
           }
         }
       }
     }
   `);
+
   return (
-    <Grid centered columns={8}>
-      <Button animated="fade">
-        <a href={"mailto:" + site.siteMetadata.social.email}>
-          <Button.Content visible>Mail Me! Let's Collaborate!</Button.Content>
-          <Button.Content hidden>{site.siteMetadata.social.email}</Button.Content>
-        </a>
-      </Button>
-      <Container className="socialButtons">
-        <List horizontal>
-          <List.Item content={
+    <div className="section">
+      <div className="container">
+        <div className="level is-mobile">
+          <div className="level-item has-text-centered">
+            <a href={"mailto:" + site.siteMetadata.social.email}>
+              <button className="button">Mail Me</button>
+            </a>
+          </div>
+          <div className="level-item has-text-centered">
             <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram}>
-              <Icon name="instagram" size="big" />
+              <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
             </a>
-          } />
-          <List.Item content={
+          </div>
+          <div className="level-item has-text-centered">
             <a href={'https://www.youtube.com/' + site.siteMetadata.social.youtube}>
-              <Icon name="youtube" size="big" />
+              <FontAwesomeIcon icon={['fab', 'youtube']} size="2x" />
             </a>
-          } />
-          <List.Item content={
-            <a href={'https://www.linkedin.com/in/' + site.siteMetadata.social.linkedin}>
-              <Icon name="linkedin" size="big" />
-            </a>
-          } />
-          <List.Item content={
-            <a href={'https://www.github.com/' + site.siteMetadata.social.github}>
-              <Icon name="github" size="big" />
-            </a>
-          } />
-          <List.Item content={
-            <a href={'https://www.unsplash.com/' + site.siteMetadata.social.unsplash}>
-              <Icon name="photo" size="big" />
-            </a>
-          } />
-        </List>
-      </Container>
-    </Grid>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }

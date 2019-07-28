@@ -1,15 +1,2 @@
-.Container{
-  align: center;
+@import "~bulma/bulma.sass";
 
-  .Header{
-    margin-top: 1rem !important;
-    padding: 1rem;
-    background-color:rgb(35, 128, 151);
-    color: white;
-    border-radius: 10px;
-  }
-}
-
-.socialButtons{
-  margin-top: 20px;
-}

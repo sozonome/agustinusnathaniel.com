@@ -13,7 +13,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@types/react-helmet": "^5.0.8",
+    "bulma": "^0.7.5",
     "eslint-plugin-react-hooks": "^1.6.1",
     "gatsby": "^2.13.31",
     "gatsby-plugin-google-analytics": "^2.1.4",
@@ -26,11 +28,12 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.87.3",
     "typescript": "^3.5.3"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "prettier": "^1.18.2"
   },
   "repository": {

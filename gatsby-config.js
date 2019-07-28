@@ -5,15 +5,20 @@ module.exports = {
     author: `sozonome`,
     siteUrl: `https://agustinusnathaniel.com`, // Domain of your site. No trailing slash!
     social:{
-      instagram: `nate_228`,
       youtube: `AgustinusNathaniel`,
       linkedin: `agustinusnathaniel`,
       github: `sozonome`,
+      devto: `sozonome`,
+      twitter: `sozonome`,
+      instagram: `nate_228`,
       unsplash: `@nate_228`,
       medium: `@nate_228`,
       behance: `nate_228`,
       dribbble: `nate_228`,
-      email: `hello@agustinusnathaniel.com`
+      email: `hello@agustinusnathaniel.com`,
+      spotify_podcast: `https://open.spotify.com/show/0ORzchlOopGccuNlQ5SAyy`,
+      apple_podcast: `https://podcasts.apple.com/id/podcast/decompiling-fruits/id1452637576`,
+      spotify_playlist: `https://open.spotify.com/user/214cjghp4c3lzsygqz73qvuxi`,
     },
   },
   plugins: [
@@ -29,7 +34,7 @@ module.exports = {
       resolve: `gatsby-source-rss-feed`,
       options: {
         url: `https://medium.com/feed/@agustinusnathaniel`,
-        name: `GatsbyBlog`,
+        name: `MyBlog`,
       }
     },
   ],

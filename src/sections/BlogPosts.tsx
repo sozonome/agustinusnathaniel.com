@@ -3,8 +3,8 @@
 
 // export default function BlogPosts() {
 //   const data = useStaticQuery(graphql`
-//     {
-//       allFeedGatsbyBlog {
+//     query FeedMyBlog {
+//       allFeedMyBlog {
 //         edges {
 //           node {
 //             title
@@ -14,19 +14,22 @@
 //         }
 //       }
 
-//       feedGatsbyBlog {
+//       feedMyBlog {
 //         title
 //         link
 //         content
 //       }
 //     }
 //   `)
+//   const { edges: posts } = data.allFeedMyBlog;
 
 //   return (
 //     <div>
 //       {
-//         data.map(({feedGatsbyBlog}) => {
-
+//         posts.map(({ node: post } : {node:any}) => {
+//           <div>
+//             {post.title}
+//           </div>
 //         })
 //       }
 //     </div>
