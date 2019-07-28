@@ -12,7 +12,7 @@ module.exports = {
       twitter: `sozonome`,
       instagram: `nate_228`,
       unsplash: `@nate_228`,
-      medium: `@nate_228`,
+      medium: `@agustinusnathaniel`,
       behance: `nate_228`,
       dribbble: `nate_228`,
       email: `hello@agustinusnathaniel.com`,
