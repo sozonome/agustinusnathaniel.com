@@ -5,8 +5,7 @@ ___
 ___
 Build with / Technology used :
 - [Typescript](https://www.typescriptlang.org/ "Well, I prefer to write in Typescript") 💪 for typing
-- [React](https://reactjs.org)
-- [Gatsby](https://gatsbyjs.org "One of the coolest React Framework") for blazing fast performance
+- [Gatsby](https://gatsbyjs.org "One of the coolest React Framework") for blazing fast performance ( [React](https://reactjs.org) and GraphQL included )
 - [SASS](https://sass-lang.com/ "Great CSS Pre-processors") 
 - [Bulma](https://bulma.io/ "Bored with Bootstrap") for Styling
 
