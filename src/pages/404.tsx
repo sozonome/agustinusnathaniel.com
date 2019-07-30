@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 import SEO from '../components/SEO';
+import { Link } from 'gatsby';
 
 export default class dev404 extends Component {
   render() {
@@ -9,7 +10,11 @@ export default class dev404 extends Component {
       <Layout>
         <Head />
         <div className="content has-text-centered">
-          404 Not Found
+          <h1 className="jumboTitle">
+            404
+          </h1>
+          <h1>Looks like you're lost.</h1>
+          <Link to="/" className="button">Let's get back</Link>
         </div>
       </Layout>
     )
