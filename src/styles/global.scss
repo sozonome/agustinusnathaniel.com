@@ -1,4 +1,12 @@
 @import "~bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css?family=Muli:800|Open+Sans&display=swap');
+
+body, button{
+  font-family: 'Open Sans', sans-serif;
+  h1, h2, h3, h4, h5, h6, b{
+    font-family: 'Muli', sans-serif;
+  }
+}
 
 .jumboTitle{
   font-size: 180px !important;
