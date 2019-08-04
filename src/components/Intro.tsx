@@ -6,10 +6,7 @@ import { Link } from 'gatsby';
 export default class Intro extends Component {
   render(){
     return (
-      <section className="hero is-fullheight">
-        <div className="hero-head">
-          <Head />
-        </div>
+      <div>
         <div className="hero-body">
           <div className="container has-text-centered">
             <h1 className="title">Hi! 👋</h1>
@@ -23,7 +20,7 @@ export default class Intro extends Component {
         <div className="hero-foot">
           <Social />
         </div>
-      </section>
+      </div>
     )
   }
 }

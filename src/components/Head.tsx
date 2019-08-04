@@ -12,8 +12,6 @@ export default class Head extends Component {
             </Link>
           </div>
         </div>
-
-
       </header>
     )
   }

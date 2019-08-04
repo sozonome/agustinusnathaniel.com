@@ -1,10 +1,10 @@
 import React from 'react'
 import Head from './Head';
 import { useStaticQuery, graphql } from 'gatsby';
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {fab} from '@fortawesome/free-brands-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faPodcast, faCamera, faHeadphones} from '@fortawesome/free-solid-svg-icons';
+import { faPodcast, faCamera, faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab, faPodcast, faCamera, faHeadphones);
 
@@ -35,11 +35,7 @@ export default function Links() {
   `);
 
   return (
-    <div className="hero is-fullheight">
-      <div className="hero-head">
-        <Head />
-      </div>
-
+    <div>
       <div className="hero-body">
         <div className="container">
           <div className="title">Find Me Here</div>
@@ -76,7 +72,7 @@ export default function Links() {
                 </div>
               </div>
             </div>
-            <br/>
+            <br />
             <div className="container">
               <h5 className="title is-5">Tech</h5>
               <div className="level is-mobile">
@@ -94,12 +90,12 @@ export default function Links() {
                 </div>
               </div>
             </div>
-            <br/>
+            <br />
             <div className="container">
               <h5 className="title is-5">Journals</h5>
               <div className="level is-mobile">
                 <div className="level-left">
-                <div className="level-item">
+                  <div className="level-item">
                     <a href={'https://linkedin.com/in/' + site.siteMetadata.social.linkedin}>
                       <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
                     </a>
@@ -116,7 +112,7 @@ export default function Links() {
                   </div>
                   <div className="level-item">
                     <a href={site.siteMetadata.social.spotify_podcast}>
-                      <FontAwesomeIcon icon={['fab','spotify']} size="2x" />
+                      <FontAwesomeIcon icon={['fab', 'spotify']} size="2x" />
                     </a>
                   </div>
                   <div className="level-item">

@@ -5,10 +5,7 @@ import { Link } from 'gatsby';
 export default class About extends Component {
   render() {
     return (
-      <div className="container hero is-fullheight">
-        <div className="hero-head">
-          <Head />
-        </div>
+      <div>
         <div className="hero-body">
           <div className="container">
             <h1 className="title">Tech and Art lover</h1>
