@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 export default class About extends Component {
   render() {
     return (
-      <div>
+      <>
         <div className="hero-body">
           <div className="container">
             <h1 className="title">Tech and Art lover</h1>
@@ -29,7 +29,7 @@ export default class About extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </>
     )
   }
 }

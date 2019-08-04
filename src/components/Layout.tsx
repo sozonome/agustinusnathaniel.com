@@ -12,10 +12,7 @@ export default class Layout extends Component<any> {
           <div className="hero-head">
             <Head/>
           </div>
-
-          <main>
-            {this.props.children}
-          </main>
+          {this.props.children}
         </div>
       </div>
     )

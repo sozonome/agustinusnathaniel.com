@@ -35,7 +35,7 @@ export default function Links() {
   `);
 
   return (
-    <div>
+    <>
       <div className="hero-body">
         <div className="container">
           <div className="title">Find Me Here</div>
@@ -138,6 +138,6 @@ export default function Links() {
           </div>
         </footer>
       </div>
-    </div>
+    </>
   )
 }
