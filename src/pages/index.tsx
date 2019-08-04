@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Intro from '../sections/Intro';
+import Intro from '../components/Intro';
 
 export default function IndexPage() {
   return (
