@@ -1,5 +1,4 @@
 import React from 'react'
-import Head from './Head';
 import { useStaticQuery, graphql } from 'gatsby';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';

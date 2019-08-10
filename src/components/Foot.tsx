@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
+import Social from './Social';
 
 export default class Foot extends Component {
   render() {
     return (
-      <footer className="footer">
-        <div className="content has-text-centered">
-          Copyright 2019 Agustinus Nathaniel
+      <section className="section has-background-black">
+        <div className="section">
+        <Social />
         </div>
-      </footer>
+      </section>
     )
   }
 }

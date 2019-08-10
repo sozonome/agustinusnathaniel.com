@@ -7,13 +7,12 @@ export default class dev404 extends Component {
   render() {
     return (
       <Layout>
-        <Head />
-        <div className="content has-text-centered">
+        <div className="section">
           <h1 className="jumboTitle">
             404
           </h1>
-          <h1>Looks like you're lost.</h1>
-          <Link to="/" className="button">Let's get back</Link>
+          <h1 className="title is-1">Looks like you're lost.</h1>
+          <Link to="/" className="button is-dark">Let's get back</Link>
         </div>
       </Layout>
     )

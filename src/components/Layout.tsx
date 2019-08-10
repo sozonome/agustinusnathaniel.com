@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SEO from './SEO';
 import Head from './Head';
+import Foot from './Foot';
 
 export default class Layout extends Component<any> {
   render() {
@@ -8,11 +9,16 @@ export default class Layout extends Component<any> {
     return (
       <div className={className}>
         <SEO />
-        <div className="hero is-fullheight">
+        <div className="hero is-fullheight is-black">
           <div className="hero-head">
-            <Head/>
+            <Head />
           </div>
-          {this.props.children}
+          <div className="hero-body">
+            {this.props.children}
+          </div>
+          <div className="hero-foot">
+            <Foot />
+          </div>
         </div>
       </div>
     )
