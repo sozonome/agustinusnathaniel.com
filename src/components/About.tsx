@@ -5,7 +5,7 @@ export default class About extends Component {
   render() {
     return (
       <>
-        <div className="section">
+        <div className="container">
           <h1 className="title">Tech and Art lover</h1>
           <article className="media">
             <div className="media-left image">
