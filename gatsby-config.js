@@ -10,7 +10,7 @@ module.exports = {
       github: `sozonome`,
       devto: `sozonome`,
       twitter: `sozonome`,
-      instagram: `nate_228`,
+      instagram: `agustinusnathaniel`,
       unsplash: `@agustinusnathaniel`,
       medium: `@agustinusnathaniel`,
       behance: `agustinusnathaniel`,
