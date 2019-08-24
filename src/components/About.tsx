@@ -7,19 +7,32 @@ export default class About extends Component {
       <>
         <div className="container">
           <h1 className="title">Tech and Art lover</h1>
-          <article className="media">
-            <div className="media-left image">
-              <img className="is-rounded" src={require("../images/avatar.jpeg")} />
+          <article className="columns">
+            <div className="column is-one-fifth-tablet is-half-mobile">
+              <figure className="image">
+                <img className="is-rounded" src={require("../images/funnyme.svg")} />
+              </figure>
             </div>
-            <div className="media-content">
-              <p>Have you ever wondered how something is built? What's the story behind of a movie? How does a product can be known and bought by customers without even interacting directly? Well, I'm that kinda of person. I love to know what's behind every creations. The stories, methods, and people behind it.</p>
+            <div className="column is-vcentered">
+              <p>I'm curious about what's behind every creations most of the time. The stories, methods, and people behind it.</p>
+              <p>Solving puzzles and riddles, design and building, web sites and mobile apps development have been my interests since high school.</p>
               <p className="has-text-weight-semibold">I love to learn, create, and connect with people.</p>
             </div>
           </article>
           <br />
+          <div className="buttons">
+            <button disabled className="button is-dark" onClick={() => alert("Coming Soon")}>
+              Curriculum Vitae
+            </button>
+            <button disabled className="button is-dark" onClick={() => alert("Coming Soon")}>
+              Portfolios
+            </button>
+          </div>
+          
           <Link className="button is-dark" to="/">
             Back to Home
           </Link>
+
         </div>
       </>
     )

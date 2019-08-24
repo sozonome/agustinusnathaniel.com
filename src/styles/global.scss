@@ -8,6 +8,21 @@ body, button{
   }
 }
 
+.hero{
+  &.has-background{
+    position: relative;
+    overflow: hidden;
+  }
+  &-background{
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+  }
+}
+
 .svg-inline--fa{
   color: darkgrey;
 }

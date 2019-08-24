@@ -4,7 +4,7 @@ import Intro from '../components/Intro';
 
 export default function IndexPage() {
   return (
-    <Layout>
+    <Layout hasBackground={true}>
       <Intro/>
     </Layout>
   )

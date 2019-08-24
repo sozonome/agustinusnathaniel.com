@@ -3,9 +3,11 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPodcast, faCamera, faHeadphones } from '@fortawesome/free-solid-svg-icons';
+// import { faPodcast, faCamera, faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faPodcast, faCamera, faHeadphones);
+library.add(fab, 
+  // faPodcast, faCamera, faHeadphones
+);
 
 export default function Social() {
   const { site } = useStaticQuery(graphql`
@@ -15,12 +17,12 @@ export default function Social() {
           social{
             instagram
             youtube
-            linkedin
             github
+            twitter
+            linkedin
             medium
             unsplash
             email
-            twitter
             devto
             behance
             dribbble
@@ -50,11 +52,6 @@ export default function Social() {
           <div className="level-item">
             <a href={'https://www.youtube.com/' + site.siteMetadata.social.youtube}>
               <FontAwesomeIcon icon={['fab', 'youtube']} size="2x" />
-            </a>
-          </div>
-          <div className="level-item">
-            <a href={'https://www.unsplash.com/' + site.siteMetadata.social.unsplash}>
-              <FontAwesomeIcon icon={faCamera} size="2x" />
             </a>
           </div>
           <div className="level-item">

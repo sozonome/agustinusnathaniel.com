@@ -3,13 +3,25 @@ import SEO from './SEO';
 import Head from './Head';
 import Foot from './Foot';
 
-export default class Layout extends Component<any> {
+export type layoutProps = {
+  className?: string,
+  hasBackground?: boolean,
+}
+
+export default class Layout extends Component<layoutProps> {
   render() {
-    const { className } = this.props;
+    const { className, hasBackground } = this.props;
     return (
       <div className={className}>
         <SEO />
-        <div className="hero is-fullheight is-black">
+        <div className={"hero is-fullheight is-black " + (hasBackground ? "has-background" : null)}>
+          { 
+            hasBackground?
+            <>
+              <img className="hero-background" src="https://source.unsplash.com/user/agustinusnathaniel" alt=""/>
+            </> 
+            : null
+          }
           <div className="hero-head">
             <Head />
           </div>
