@@ -23,7 +23,6 @@ export default function SEO() {
         <meta name="og:title" content={site.siteMetadata.title} />
         <meta name="og:description" content={site.siteMetadata.description} />
         <meta name="Description" content={site.siteMetadata.description} />
-        <meta name="p:domain_verify" content="ed2fd09904cc4be69e2f74c3708bda32"/>
         <link rel="shortcut icon" href="favicon.ico" />
       </Helmet>
     </div>
