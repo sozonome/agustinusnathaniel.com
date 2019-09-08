@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import SEO from './SEO';
 import Head from './Head';
 import Foot from './Foot';
+import 'typeface-muli';
+import 'typeface-open-sans';
 
 export type layoutProps = {
   className?: string,
