@@ -1,4 +1,5 @@
 # Agustinus Nathaniel's Personal Site
+build with Gatsby + SASS + Typescript 💪
 ##### July 2019
 ___
 #### [Live Here](https://agustinusnathaniel.com "My Personal Site")
