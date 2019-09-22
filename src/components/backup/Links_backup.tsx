@@ -53,7 +53,7 @@ export default function Links() {
                       <FontAwesomeIcon icon={['fab', 'youtube']} size="2x" />
                     </a>
                   </div>
-                  {/* <div className="level-item">
+                  <div className="level-item">
                     <a href={'http://be.net/' + site.siteMetadata.social.behance}>
                       <FontAwesomeIcon icon={['fab', 'behance']} size="2x" />
                     </a>
@@ -62,7 +62,7 @@ export default function Links() {
                     <a href={'https://www.dribbble.com/' + site.siteMetadata.social.dribbble}>
                       <FontAwesomeIcon icon={['fab', 'dribbble']} size="2x" />
                     </a>
-                  </div> */}
+                  </div>
                   <div className="level-item">
                     <a href={'https://www.unsplash.com/' + site.siteMetadata.social.unsplash}>
                       <FontAwesomeIcon icon={faCamera} size="2x" />
@@ -81,11 +81,11 @@ export default function Links() {
                       <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
                     </a>
                   </div>
-                  {/* <div className="level-item">
+                  <div className="level-item">
                     <a href={'https://www.dev.to/' + site.siteMetadata.social.devto}>
                       <FontAwesomeIcon icon={['fab', 'dev']} size="2x" />
                     </a>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
@@ -104,11 +104,11 @@ export default function Links() {
                       <FontAwesomeIcon icon={['fab', 'medium']} size="2x" />
                     </a>
                   </div>
-                  {/* <div className="level-item">
+                  <div className="level-item">
                     <a href={site.siteMetadata.social.apple_podcast}>
                       <FontAwesomeIcon icon={faPodcast} size="2x" />
                     </a>
-                  </div> */}
+                  </div>
                   <div className="level-item">
                     <a href={site.siteMetadata.social.spotify_podcast}>
                       <FontAwesomeIcon icon={['fab', 'spotify']} size="2x" />

@@ -5,7 +5,7 @@ import About from '../components/About';
 export default class about extends Component {
   render() {
     return (
-      <Layout>
+      <Layout hasBackground={true}>
         <About/>
       </Layout>
     )

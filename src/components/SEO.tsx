@@ -15,17 +15,15 @@ export default function SEO() {
   `);
 
   return (
-    <div>
-      <Helmet>
-        <html lang="en" />
-        <title>{site.siteMetadata.title}</title>
-        <meta name="og:type" content="website" />
-        <meta name="og:title" content={site.siteMetadata.title} />
-        <meta name="og:description" content={site.siteMetadata.description} />
-        <meta name="Description" content={site.siteMetadata.description} />
-        <link rel="shortcut icon" href="favicon.ico" />
-      </Helmet>
-    </div>
+    <Helmet>
+      <html lang="en" />
+      <title>{site.siteMetadata.title}</title>
+      <meta name="og:type" content="website" />
+      <meta name="og:title" content={site.siteMetadata.title} />
+      <meta name="og:description" content={site.siteMetadata.description} />
+      <meta name="Description" content={site.siteMetadata.description} />
+      <link rel="shortcut icon" href="favicon.ico" />
+    </Helmet>
   )
 
 }
