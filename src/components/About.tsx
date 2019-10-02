@@ -19,6 +19,7 @@ export default class About extends Component {
           </div>
         </article>
         <br />
+        <p style={{marginBottom:"10px", opacity:0.3}}>Oh, you are looking for this, right?</p>
         <div className="buttons">
           <button disabled className="button is-dark" onClick={() => alert("Coming Soon")}>
             Curriculum Vitae
@@ -27,6 +28,7 @@ export default class About extends Component {
             Portfolios
           </button>
         </div>
+        <p style={{marginTop: '-20px', marginBottom:'30px',fontSize:'11px', opacity:0.3}}>Oops, still under construction...take your time 😃</p>
         
         <Link className="button is-dark" to="/">
           Back to Home
