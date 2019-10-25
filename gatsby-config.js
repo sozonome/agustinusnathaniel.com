@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata:{
     title: `Agustinus Nathaniel`,
-    description: `Agustinus Nathaniel's Personal Site build`,
+    description: `Tech and Design enthusiast.`,
     author: `sozonome`,
     siteUrl: `https://agustinusnathaniel.com`, // Domain of your site. No trailing slash!
     social:{
