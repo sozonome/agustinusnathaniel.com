@@ -49,7 +49,7 @@ export default function Social() {
         <a href={'https://www.youtube.com/' + site.siteMetadata.social.youtube}>
           <FontAwesomeIcon icon={['fab', 'youtube']} size="2x" />
         </a>
-        <a href={site.siteMetadata.social.linkedin}>
+        <a href={'https://linkedin.com/in/' + site.siteMetadata.social.linkedin}>
           <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
         </a>
         <a href={'https://www.github.com/' + site.siteMetadata.social.github}>

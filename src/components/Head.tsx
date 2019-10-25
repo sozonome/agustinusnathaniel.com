@@ -42,7 +42,7 @@ export default class Head extends Component {
               <Link to="/" className="navbar-item is-hidden-desktop">Agustinus Nathaniel</Link>
             </div>
             <div className="navbar-end">
-              <Link to="/about" className="navbar-item">About</Link>
+              <Link to="/projects" className="navbar-item">Projects</Link>
               <Link to="/" className="navbar-item">Contact</Link>
             </div>
           </div>
