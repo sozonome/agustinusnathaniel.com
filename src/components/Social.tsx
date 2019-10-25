@@ -36,32 +36,29 @@ export default function Social() {
   `);
 
   return (
-    <>
+    <div className="section">
       <div className="">
-        <div className="column">
-          <a href={"mailto:" + site.siteMetadata.social.email}>
-            <button className="button is-dark">Mail Me</button>
-          </a>
-        </div>
-        <div className="column is-full socialButtonIcons">
-          <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram}>
-            <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
-          </a>
-          <a href={'https://www.youtube.com/' + site.siteMetadata.social.youtube}>
-            <FontAwesomeIcon icon={['fab', 'youtube']} size="2x" />
-          </a>
-          <a href={site.siteMetadata.social.linkedin}>
-            <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
-          </a>
-          <a href={'https://www.github.com/' + site.siteMetadata.social.github}>
-            <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-          </a>
-          <a href={'https://twitter.com/' + site.siteMetadata.social.twitter}>
-            <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" />
-          </a>
-        </div>
+        <a href={"mailto:" + site.siteMetadata.social.email}>
+          <button className="button is-dark">Mail Me</button>
+        </a>
       </div>
-
-    </>
+      <div className="socialButtonIcons">
+        <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram}>
+          <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
+        </a>
+        <a href={'https://www.youtube.com/' + site.siteMetadata.social.youtube}>
+          <FontAwesomeIcon icon={['fab', 'youtube']} size="2x" />
+        </a>
+        <a href={site.siteMetadata.social.linkedin}>
+          <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
+        </a>
+        <a href={'https://www.github.com/' + site.siteMetadata.social.github}>
+          <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
+        </a>
+        <a href={'https://twitter.com/' + site.siteMetadata.social.twitter}>
+          <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" />
+        </a>
+      </div>
+    </div>
   )
 }

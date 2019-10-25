@@ -8,6 +8,10 @@ body, button{
   }
 }
 
+.main-bg{
+  // background-color: #3a7b77;
+}
+
 .svg-inline--fa{
   color: darkgrey;
 }
@@ -20,10 +24,9 @@ body, button{
   -webkit-background-clip: text;
 }
 
-.content, .header, .foot{
+.main-content, .header, .foot{
   max-width: 800px;
   margin:auto;
-  justify-content: space-between;
 }
 
 .socialButtonIcons{

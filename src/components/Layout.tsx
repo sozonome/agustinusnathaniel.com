@@ -8,31 +8,19 @@ import 'typeface-muli';
 import 'typeface-open-sans';
 import Helmet from 'react-helmet';
 
-export type layoutProps = {
-  className?: string,
-  hasBackground?: boolean,
-}
-
-export default class Layout extends Component<layoutProps> {
+export default class Layout extends Component {
   render() {
-    const { className } = this.props;
     return (
-      <div className={`${className} `}>
+      <div className="main-bg">
         <SEO />
         <Helmet>
           <body className="has-navbar-fixed-top"/>
         </Helmet>
-        <div className="">
-          <div className="">
-            <Head />
-          </div>
-          <div className="content">
-            {this.props.children}
-          </div>
-          <div className="">
-            <Foot />
-          </div>
+        <Head />
+        <div className="main-content">
+          {this.props.children}
         </div>
+        <Foot />
       </div>
     )
   }

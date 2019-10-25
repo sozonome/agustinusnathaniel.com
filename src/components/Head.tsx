@@ -24,8 +24,8 @@ export default class Head extends Component {
   }
   render() {
     return (
-      <header className="navbar has-shadow is-fixed-top">
-        <div className="navbar header">
+      <div className="">
+        <header className="navbar is-fixed-top is-spaced is-dark has-background-black">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <img src={require("../images/coconate.png")} alt=""/>
@@ -38,16 +38,16 @@ export default class Head extends Component {
           </div>
           <div className={`navbar-menu ${this.state.activeMenu ? 'is-active' : ''}`}>
           {/* <div className={`navbar-menu`}>           */}
-            {/* <div className="navbar-start">
-              <Link to="/" className="navbar-item">Agustinus Nathaniel</Link>
-            </div> */}
+            <div className="navbar-start">
+              <Link to="/" className="navbar-item is-hidden-desktop">Agustinus Nathaniel</Link>
+            </div>
             <div className="navbar-end">
               <Link to="/about" className="navbar-item">About</Link>
               <Link to="/" className="navbar-item">Contact</Link>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
     )
   }
 }
