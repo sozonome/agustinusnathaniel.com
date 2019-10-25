@@ -37,8 +37,8 @@ export default function Social() {
 
   return (
     <>
-      <div className="columns">
-        <div className="column is-full-mobile">
+      <div className="">
+        <div className="column">
           <a href={"mailto:" + site.siteMetadata.social.email}>
             <button className="button is-dark">Mail Me</button>
           </a>

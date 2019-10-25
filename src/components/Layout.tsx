@@ -6,6 +6,7 @@ import "bulma"
 import "../styles/global.scss"
 import 'typeface-muli';
 import 'typeface-open-sans';
+import Helmet from 'react-helmet';
 
 export type layoutProps = {
   className?: string,
@@ -14,25 +15,21 @@ export type layoutProps = {
 
 export default class Layout extends Component<layoutProps> {
   render() {
-    const { className, hasBackground } = this.props;
+    const { className } = this.props;
     return (
-      <div className={className}>
+      <div className={`${className} `}>
         <SEO />
-        <div className={"hero is-fullheight is-black " + (hasBackground ? "has-background" : null)}>
-          { 
-            hasBackground?
-            <>
-              <img className="hero-background" src="https://source.unsplash.com/user/agustinusnathaniel" alt=""/>
-            </> 
-            : null
-          }
-          <div className="hero-head">
+        <Helmet>
+          <body className="has-navbar-fixed-top"/>
+        </Helmet>
+        <div className="">
+          <div className="">
             <Head />
           </div>
-          <div className="hero-body">
+          <div className="content">
             {this.props.children}
           </div>
-          <div className="hero-foot">
+          <div className="">
             <Foot />
           </div>
         </div>

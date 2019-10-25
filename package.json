@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "sozonome",
   "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/global.scss css/global.scss",
+    "css-watch": "npm run css-build -- --watch",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",

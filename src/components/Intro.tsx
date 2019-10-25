@@ -14,9 +14,6 @@ export default class Intro extends Component {
         <Link to="/about" className="button is-dark">
           Get to Know Me More
           </Link>
-        <p className="has-text-weight-light" style={{ fontSize: "10px", marginTop: "20px" }}>
-          This site is still under construction. Please be kind with it.
-          </p>
       </div>
     )
   }

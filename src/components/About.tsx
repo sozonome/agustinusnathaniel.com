@@ -29,10 +29,6 @@ export default class About extends Component {
           </button>
         </div>
         <p style={{marginTop: '-20px', marginBottom:'30px',fontSize:'11px', opacity:0.3}}>Oops, still under construction...take your time 😃</p>
-        
-        <Link className="button is-dark" to="/">
-          Back to Home
-        </Link>
 
       </div>
     )
