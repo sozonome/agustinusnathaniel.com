@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Layout from '../components/Layout';
-import Head from '../components/Head';
 import { Link } from 'gatsby';
 
 export default class dev404 extends Component {
