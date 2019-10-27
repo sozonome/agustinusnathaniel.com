@@ -29,12 +29,12 @@ export default function ProjectsHome() {
           ]}
         />
         
-        <ProjectCard
+        {/* <ProjectCard
           title="GA Australia Services"
           subtitle="gaaustraliaservices.com"
           subtitleLink="https://gaaustraliaservices.com"
           description={"A business page for GA Australia Services"}
-        />
+        /> */}
       </div>
 
       <div className="has-text-centered">
