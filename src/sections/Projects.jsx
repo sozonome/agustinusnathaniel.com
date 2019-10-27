@@ -2,7 +2,6 @@ import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 import gatsby from '../images/Gatsby-Monogram.svg';
 import netlify from '../images/logomark.svg';
-import gitlab from '../images/gitlab-icon-rgb.svg';
 import { Link } from 'gatsby';
 
 export default function Projects() {
@@ -24,14 +23,9 @@ export default function Projects() {
             },
             {
               link: 'https://netlify.com',
-              linkTitle: 'Hosted by Netlify',
+              linkTitle: 'Hosted using Netlify',
               image: netlify
             },
-            {
-              link: 'https://about.gitlab.com',
-              linkTitle: 'Open-sourced in GitLab',
-              image: gitlab
-            }
           ]}
         />
       </div>
