@@ -17,7 +17,7 @@ export default class ProjectCard extends Component<ProjectCardType> {
   render() {
     const {title, subtitle, previewImage, subtitleLink, description, footer} = this.props;
     return (
-      <div className="card">
+      <div className="card sect">
         {
           previewImage? 
           <div className="card-image">
@@ -44,13 +44,17 @@ export default class ProjectCard extends Component<ProjectCardType> {
             <p>{description}</p>
           </div>
         </div>
-        <div className="card-footer">
-          {footer ? footer.map((link)=>(
-            <a href={link.link}>
-              <img className="image is-32x32" title={link.linkTitle} src={link.image} alt=""/>
-            </a>
-          )) : null}
-        </div>
+          {
+            footer ? 
+              <div className="card-footer padd">
+                {footer.map((link)=>(
+                  <a href={link.link}>
+                    <img className="image is-32x32" title={link.linkTitle} src={link.image} alt=""/>
+                  </a>
+                ))}
+              </div> 
+              : null
+          }
       </div>
     )
   }

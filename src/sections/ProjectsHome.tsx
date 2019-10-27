@@ -4,13 +4,13 @@ import gatsby from '../images/Gatsby-Monogram.svg';
 import netlify from '../images/logomark.svg';
 import { Link } from 'gatsby';
 
-export default function Projects() {
+export default function ProjectsHome() {
   return (
     <div className="section" id="projects">
       <h1 className="title is-1" >Projects</h1>
       <h5 className="subtitle is-5">Some previous projects I worked on</h5>
       
-      <div className="section">
+      <div className="container">
         <ProjectCard
           title="Personal Website"
           subtitle="agustinusnathaniel.com"
@@ -28,9 +28,7 @@ export default function Projects() {
             },
           ]}
         />
-      </div>
-
-      <div className="section">
+        
         <ProjectCard
           title="GA Australia Services"
           subtitle="gaaustraliaservices.com"

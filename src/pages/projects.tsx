@@ -1,17 +1,15 @@
 import React, { Component } from 'react'
 import Layout from '../components/Layout'
-import Projects from '../sections/Projects'
+import ProjectsPage from '../sections/ProjectsPage'
 
 export default class projects extends Component {
   render() {
     return (
       <Layout>
-        <div className="section">
-          <Projects/>
+          <ProjectsPage/>
           <div className="container">
             
           </div>
-        </div>
       </Layout>
     )
   }
