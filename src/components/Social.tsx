@@ -36,8 +36,8 @@ export default function Social() {
   `);
 
   return (
-    <div className="section">
-      <div className="">
+    <div className="section social">
+      <div className="first-bar">
         <a href={"mailto:" + site.siteMetadata.social.email}>
           <button className="button is-dark">Mail Me</button>
         </a>
