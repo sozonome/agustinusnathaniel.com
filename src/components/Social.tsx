@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Mail from './Mail';
 // import { faPodcast, faCamera, faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab, 
@@ -38,9 +39,7 @@ export default function Social() {
   return (
     <div className="section social">
       <div className="first-bar">
-        <a href={"mailto:" + site.siteMetadata.social.email}>
-          <button className="button is-dark">Mail Me</button>
-        </a>
+        <Mail btnClass="button is-dark" mailText="Mail Me"/>
       </div>
       <div className="socialButtonIcons">
         <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram}>

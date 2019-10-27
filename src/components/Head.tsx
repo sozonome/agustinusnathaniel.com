@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby';
+import Mail from './Mail';
 
 const NavbarBurger = (props:any) => (
   <div 
@@ -43,7 +44,7 @@ export default class Head extends Component {
             </div>
             <div className="navbar-end">
               <Link to="/projects" className="navbar-item">Projects</Link>
-              <a href="mailto:hello@agustinusnathaniel.com" className="navbar-item">Let's Connect</a>
+              <Mail mailText="Let's Connect" btnClass="navbar-item"/>
             </div>
           </div>
         </header>
