@@ -43,7 +43,7 @@ export default class Head extends Component {
             </div>
             <div className="navbar-end">
               <Link to="/projects" className="navbar-item">Projects</Link>
-              <Link to="/" className="navbar-item">Contact</Link>
+              <a href="mailto:hello@agustinusnathaniel.com" className="navbar-item">Let's Connect</a>
             </div>
           </div>
         </header>

@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCard'
 import gatsby from '../images/Gatsby-Monogram.svg';
 import netlify from '../images/logomark.svg';
 import gitlab from '../images/gitlab-icon-rgb.svg';
+import { Link } from 'gatsby';
 
 export default function Projects() {
   return (
@@ -42,6 +43,10 @@ export default function Projects() {
           subtitleLink="https://gaaustraliaservices.com"
           description={"A business page for GA Australia Services"}
         />
+      </div>
+
+      <div className="has-text-centered">
+        <Link className="button" to="/projects">More ⏭️</Link>
       </div>
     </div>
   )

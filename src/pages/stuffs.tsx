@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
 import Layout from '../components/Layout'
-import Projects from '../sections/Projects'
 
-export default class projects extends Component {
+export default class stuffs extends Component {
   render() {
     return (
       <Layout>
         <div className="section">
-          <Projects/>
-          <div className="container">
-            
-          </div>
+          Stuffs I'm Into
         </div>
       </Layout>
     )
