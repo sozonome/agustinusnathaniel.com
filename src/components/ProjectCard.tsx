@@ -34,7 +34,7 @@ export default class ProjectCard extends Component<ProjectCardType> {
               <p className="subtitle is-6">
                 {
                   subtitleLink ? 
-                    <a href={subtitleLink}>{subtitle}</a> 
+                    <a href={subtitleLink} target="_blank">{subtitle}</a> 
                   : subtitle
                 }
               </p>
@@ -48,7 +48,7 @@ export default class ProjectCard extends Component<ProjectCardType> {
             footer ? 
               <div className="card-footer padd">
                 {footer.map((link)=>(
-                  <a href={link.link}>
+                  <a href={link.link} target="_blank">
                     <img className="image is-32x32" title={link.linkTitle} src={link.image} alt=""/>
                   </a>
                 ))}

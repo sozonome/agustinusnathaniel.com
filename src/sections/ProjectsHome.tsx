@@ -28,7 +28,7 @@ export default function ProjectsHome() {
             },
           ]}
         />
-        
+
         {/* <ProjectCard
           title="GA Australia Services"
           subtitle="gaaustraliaservices.com"
