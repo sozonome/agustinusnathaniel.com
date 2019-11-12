@@ -30,7 +30,7 @@ export default class Head extends Component {
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <img src={require("../images/coconate.png")} alt=""/>
-              <div className="navbar-item is-hidden-touch">Agustinus Nathaniel</div>
+              <div className="is-hidden-touch">Agustinus Nathaniel</div>
             </Link>
             <NavbarBurger
               active={this.state.activeMenu}
