@@ -28,7 +28,7 @@ export default function About() {
           <div className="container">
             <p style={{marginBottom:"10px"}}>Oh, you are looking for this, right?</p>
             <div className="buttons">
-              <a href="/CV_AgustinusNathaniel.pdf" className="button is-black">
+              <a href="/CV_AgustinusNathaniel.pdf" target="_blank" className="button is-black">
                 Curriculum Vitae
               </a>
               <a href="#projects" className="button is-black">
