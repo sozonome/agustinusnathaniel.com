@@ -1,6 +1,7 @@
 import React from 'react'
 import avatar from '../images/avataaars.svg'; 
 import { Link } from 'gatsby';
+import CV_Nathan from '../../static/CV_AgustinusNathaniel.pdf';
 
 export default function About() {
   return (
@@ -27,9 +28,9 @@ export default function About() {
           <div className="container">
             <p style={{marginBottom:"10px"}}>Oh, you are looking for this, right?</p>
             <div className="buttons">
-              <button disabled className="button is-black" onClick={() => alert("Coming Soon")}>
+              <a href="/CV_AgustinusNathaniel.pdf" className="button is-black">
                 Curriculum Vitae
-              </button>
+              </a>
               <a href="#projects" className="button is-black">
                 Portfolios
               </a>
