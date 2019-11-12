@@ -16,7 +16,7 @@ export default function SEO() {
 
   return (
     <Helmet>
-      <html lang="en" />
+      <html lang="en"/>
       <title>{site.siteMetadata.title}</title>
       <meta name="og:type" content="website" />
       <meta name="og:title" content={site.siteMetadata.title} />

@@ -31,13 +31,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://medium.com/feed/@agustinusnathaniel`,
-        name: `MyBlog`,
-      }
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Agustinus Nathaniel",

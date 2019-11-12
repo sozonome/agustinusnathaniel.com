@@ -4,9 +4,9 @@ import Social from './Social';
 export default class Foot extends Component {
   render() {
     return (
-      <section className="section has-background-black">
+      <footer className="foot has-text-centered">
         <Social />
-      </section>
+      </footer>
     )
   }
 }

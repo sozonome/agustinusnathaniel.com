@@ -3156,6 +3156,11 @@ damerau-levenshtein@^1.0.4:
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.5.tgz#780cf7144eb2e8dbd1c3bb83ae31100ccc31a414"
   integrity sha512-CBCRqFnpu715iPmw1KrdOrzRqbdFwQTwAWyyyYS42+iAgHCuXZ+/TdMgQkUENPomxEz9z1BEzuQU2Xw0kUuAgA==
 
+darkmode-js@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/darkmode-js/-/darkmode-js-1.5.1.tgz#50b3f3395d37ef06077ee34f31543ae9950abf4b"
+  integrity sha512-IrU4xl6+5xwuSHC/9ZpTOqRP5z3zPwKjp2PbTHb4Q2beSuhsFnxQWWpbTXhwmK6dhwQA92nccbx+3MvXC/OFGA==
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
@@ -4675,29 +4680,6 @@ gatsby-react-router-scroll@^2.1.6:
     "@babel/runtime" "^7.5.5"
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
-
-gatsby-source-medium@^2.1.2:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-2.1.4.tgz#22d2711d958f243cdff2968e268f4e4ac5a643f5"
-  integrity sha512-9MSvLAoRglF6+ECLA0ZBdra3mLocwloEk6FECdZc50KidTn1DgQBjZycwJdxz1hDsVUKF4T9hoI0JU4Jea0Fmg==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-    axios "^0.19.0"
-
-gatsby-source-rss-feed@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-rss-feed/-/gatsby-source-rss-feed-1.1.1.tgz#f929e8bdb3b74bcfcc7402d0b1db100727f14301"
-  integrity sha512-plPlNJl74gQAnfocu6g0wH9bD5P2Radq4ujANhMWoc+fjIhOJAXy3Iq9FYXrZhMG/PrG2aYNPP0DGUzxP3tvCw==
-  dependencies:
-    lodash "^4.17.11"
-    rss-parser "^3.6.2"
-
-gatsby-source-rss@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-rss/-/gatsby-source-rss-1.0.0.tgz#67ca6a0d88d13c1d4e4616ff94f807bf6c284c91"
-  integrity sha1-Z8pqDYjRPB1ORhb/lPgHv2woTJE=
-  dependencies:
-    rss-parser "^2.10.1"
 
 gatsby-telemetry@^1.1.19:
   version "1.1.19"
@@ -9203,22 +9185,6 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rss-parser@^2.10.1:
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/rss-parser/-/rss-parser-2.12.1.tgz#f3e2b454a0e6cfe0f64e02f93dedc4fa27ae86dd"
-  integrity sha1-8+K0VKDmz+D2TgL5Pe3E+ieuht0=
-  dependencies:
-    entities "^1.1.1"
-    xml2js "^0.4.17"
-
-rss-parser@^3.6.2:
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/rss-parser/-/rss-parser-3.7.2.tgz#9f5b7d4944d4f7a190b469e31a8353aedb17c052"
-  integrity sha512-kx0VIFelgwBk5qA4n32U6cx40anAU7TwlRXjyxLDFgMlg8/UcJ64x+Hj5oRX1Kjos+OeFGOmnd5YXH5ES+bmzg==
-  dependencies:
-    entities "^1.1.1"
-    xml2js "^0.4.19"
-
 run-async@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
@@ -9300,7 +9266,7 @@ sass-loader@^7.3.1:
     pify "^4.0.1"
     semver "^6.3.0"
 
-sax@>=0.6.0, sax@^1.2.4, sax@~1.2.4:
+sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
@@ -11137,19 +11103,6 @@ xdg-basedir@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-4.0.0.tgz#4bc8d9984403696225ef83a1573cbbcb4e79db13"
   integrity sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E2UKTh+osDLsgNim9Q==
-
-xml2js@^0.4.17, xml2js@^0.4.19:
-  version "0.4.19"
-  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
-  integrity sha512-esZnJZJOiJR9wWKMyuvSE1y6Dq5LCuJanqhxslH2bxM6duahNZ+HMpCLhBQGZkbX6xRf8x1Y2eJlgt2q3qo49Q==
-  dependencies:
-    sax ">=0.6.0"
-    xmlbuilder "~9.0.1"
-
-xmlbuilder@~9.0.1:
-  version "9.0.7"
-  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
-  integrity sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
 
 xmlhttprequest-ssl@~1.5.4:
   version "1.5.5"

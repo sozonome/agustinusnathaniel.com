@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Mail from './Mail';
 // import { faPodcast, faCamera, faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab, 
@@ -36,32 +37,27 @@ export default function Social() {
   `);
 
   return (
-    <>
-      <div className="columns">
-        <div className="column is-full-mobile">
-          <a href={"mailto:" + site.siteMetadata.social.email}>
-            <button className="button is-dark">Mail Me</button>
-          </a>
-        </div>
-        <div className="column is-full socialButtonIcons">
-          <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram}>
-            <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
-          </a>
-          <a href={'https://www.youtube.com/' + site.siteMetadata.social.youtube}>
-            <FontAwesomeIcon icon={['fab', 'youtube']} size="2x" />
-          </a>
-          <a href={site.siteMetadata.social.linkedin}>
-            <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
-          </a>
-          <a href={'https://www.github.com/' + site.siteMetadata.social.github}>
-            <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-          </a>
-          <a href={'https://twitter.com/' + site.siteMetadata.social.twitter}>
-            <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" />
-          </a>
-        </div>
+    <div className="section social">
+      <div className="first-bar">
+        <Mail btnClass="button is-dark" mailText="Mail Me"/>
       </div>
-
-    </>
+      <div className="socialButtonIcons">
+        <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram}>
+          <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
+        </a>
+        <a href={'https://www.youtube.com/' + site.siteMetadata.social.youtube}>
+          <FontAwesomeIcon icon={['fab', 'youtube']} size="2x" />
+        </a>
+        <a href={'https://linkedin.com/in/' + site.siteMetadata.social.linkedin}>
+          <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
+        </a>
+        <a href={'https://www.github.com/' + site.siteMetadata.social.github}>
+          <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
+        </a>
+        <a href={'https://twitter.com/' + site.siteMetadata.social.twitter}>
+          <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" />
+        </a>
+      </div>
+    </div>
   )
 }

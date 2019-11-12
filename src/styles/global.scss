@@ -1,26 +1,29 @@
-body, button{
-  font-family: 'Open Sans', sans-serif;
-  h1, h2, h3, h4, h5, h6, b{
-    font-family: 'Muli', sans-serif;
-  }
-  a{
-    z-index: 1;
+html{
+  scroll-behavior: smooth;
+  body, button{
+    font-family: 'Open Sans', sans-serif;
+    h1, h2, h3, h4, h5, h6, b{
+      font-family: 'Muli', sans-serif;
+    }
+    a{
+      z-index: 1;
+    }
   }
 }
 
-.hero{
-  &.has-background{
-    position: relative;
-    overflow: hidden;
+.sect{
+  margin: 2rem 0;
+}
+
+.padd{
+  padding: 1rem 1.5rem;
+  a{
+    padding: 0 1rem 0 0;
   }
-  &-background{
-    position: absolute;
-    object-fit: cover;
-    object-position: center center;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-  }
+}
+
+.main-bg{
+  // background-color: #3a7b77;
 }
 
 .svg-inline--fa{
@@ -33,6 +36,17 @@ body, button{
   background-size: 100% 100%;
   color: transparent !important;
   -webkit-background-clip: text;
+}
+
+.main-content, .header, .foot{
+  max-width: 800px;
+  margin:auto;
+}
+
+.social{
+  .first-bar{
+    margin-bottom: 12px;
+  }
 }
 
 .socialButtonIcons{

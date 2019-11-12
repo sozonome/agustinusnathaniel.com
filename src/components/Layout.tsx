@@ -6,36 +6,21 @@ import "bulma"
 import "../styles/global.scss"
 import 'typeface-muli';
 import 'typeface-open-sans';
+import Helmet from 'react-helmet';
 
-export type layoutProps = {
-  className?: string,
-  hasBackground?: boolean,
-}
-
-export default class Layout extends Component<layoutProps> {
+export default class Layout extends Component {
   render() {
-    const { className, hasBackground } = this.props;
     return (
-      <div className={className}>
+      <div className="main-bg">
         <SEO />
-        <div className={"hero is-fullheight is-black " + (hasBackground ? "has-background" : null)}>
-          { 
-            hasBackground?
-            <>
-              <img className="hero-background" src="https://source.unsplash.com/user/agustinusnathaniel" alt=""/>
-            </> 
-            : null
-          }
-          <div className="hero-head">
-            <Head />
-          </div>
-          <div className="hero-body">
-            {this.props.children}
-          </div>
-          <div className="hero-foot">
-            <Foot />
-          </div>
+        <Helmet>
+          <body className="has-navbar-fixed-top"/>
+        </Helmet>
+        <Head />
+        <div className="main-content">
+          {this.props.children}
         </div>
+        <Foot />
       </div>
     )
   }
