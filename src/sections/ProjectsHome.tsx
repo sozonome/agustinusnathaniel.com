@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 import gatsby from '../images/Gatsby-Monogram.svg';
 import netlify from '../images/logomark.svg';
+import ionic from '../images/cropped-logo.png';
 import { Link } from 'gatsby';
 
 export default function ProjectsHome() {
@@ -29,12 +30,19 @@ export default function ProjectsHome() {
           ]}
         />
 
-        {/* <ProjectCard
-          title="GA Australia Services"
-          subtitle="gaaustraliaservices.com"
-          subtitleLink="https://gaaustraliaservices.com"
-          description={"A business page for GA Australia Services"}
-        /> */}
+        <ProjectCard
+          title="MantapDjiwa"
+          subtitle="mantapdjiwa.com"
+          subtitleLink="https://mantapdjiwa.com"
+          description={"A showcase page of my Ionic Cross Platform Mobile App learning process"}
+          footer={[
+            {
+              link: 'https://ionicframework.com',
+              linkTitle: 'Built with Ionic Framework',
+              image: ionic
+            },
+          ]}
+        />
       </div>
 
       <div className="has-text-centered">

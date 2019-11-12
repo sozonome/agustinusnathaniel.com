@@ -11,12 +11,31 @@ export type ProjectCardType = {
     image: string,
     linkTitle: string
   }[]
+  disabled?: boolean,
 }
 
 export default class ProjectCard extends Component<ProjectCardType> {
   render() {
-    const {title, subtitle, previewImage, subtitleLink, description, footer} = this.props;
+    const {title, subtitle, previewImage, subtitleLink, description, footer, disabled} = this.props;
     return (
+      disabled ? 
+        <div className="card sect">
+          <div className="card-content">
+            <div className="media">
+              <div className="media-content">
+                <p className="title is-4">Coming Soon</p>
+                <p className="subtitle is-6">
+                  {
+                    subtitleLink ? 
+                      <p>Work in Progress</p> 
+                    : subtitle
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      : 
       <div className="card sect">
         {
           previewImage? 

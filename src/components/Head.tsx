@@ -26,7 +26,7 @@ export default class Head extends Component {
   render() {
     return (
       <div className="">
-        <header className="navbar is-fixed-top is-spaced">
+        <header className="navbar is-fixed-top is-spaced is-black">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <img src={require("../images/coconate.png")} alt=""/>
