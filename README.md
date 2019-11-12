@@ -2,7 +2,8 @@
 build with Gatsby + SASS + Typescript 💪
 ##### July 2019
 ___
-#### [Live Here](https://agustinusnathaniel.com "My Personal Site")
+#### [Live Here](https://agustinusnathaniel.com "My Personal Site") 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d45c72d3-3e0e-431d-a8da-9bd252cccf46/deploy-status)](https://app.netlify.com/sites/sozonome/deploys)
 ___
 Build with / Technology used :
 - [Typescript](https://www.typescriptlang.org/ "Well, I prefer to write in Typescript") 💪 for typing
