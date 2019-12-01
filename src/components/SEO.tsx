@@ -18,7 +18,6 @@ export default function SEO() {
     <Helmet>
       <html lang="en"/>
       <title>{site.siteMetadata.title}</title>
-      <meta name="p:domain_verify" content="ed2fd09904cc4be69e2f74c3708bda32"/>
       <meta name="og:type" content="website" />
       <meta name="og:title" content={site.siteMetadata.title} />
       <meta name="og:description" content={site.siteMetadata.description} />
