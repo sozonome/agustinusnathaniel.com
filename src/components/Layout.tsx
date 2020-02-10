@@ -16,11 +16,11 @@ export default class Layout extends Component {
         <Helmet>
           <body className="has-navbar-fixed-top"/>
         </Helmet>
-        <Head />
+        {/* <Head /> */}
         <div className="main-content">
           {this.props.children}
         </div>
-        <Foot />
+        {/* <Foot /> */}
       </div>
     )
   }
