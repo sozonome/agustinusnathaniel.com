@@ -4,7 +4,8 @@ import Foot from '../components/Foot'
 export default class Intro extends Component {
   render() {
     return (
-      <section className="hero is-fullheight-with-navbar" id="intro">
+      <section className="hero is-black is-fullheight has-background" id="intro">
+        <img className="hero-background" src="https://source.unsplash.com/user/agustinusnathaniel" alt=""/>
         <div className="hero-body">
           <div className="container has-text-centered">
             <h1 className="title is-1">Hi! <span className="darkmode-ignore" role="img">👋</span></h1>
@@ -14,10 +15,14 @@ export default class Intro extends Component {
             <a href="#about" className="button is-dark">
               Get to Know Me More
             </a> */}
+            <Foot/>
           </div>
         </div>
         <div className="hero-foot">
-          <Foot/>
+          <div className="container has-text-centered" style={{marginBottom: '12px'}}>
+            <p style={{fontSize: '14px'}}>2019 - Agustinus Nathaniel</p>
+            <p style={{fontSize: '12px'}}>This site is still under construction.<br/>Please be kind with it 🙂.</p>
+          </div>
         </div>
       </section>
     )

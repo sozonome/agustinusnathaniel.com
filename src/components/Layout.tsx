@@ -14,7 +14,9 @@ export default class Layout extends Component {
       <div className="main-bg">
         <SEO />
         <Helmet>
-          <body className="has-navbar-fixed-top"/>
+          <body 
+            // className="has-navbar-fixed-top"
+          />
         </Helmet>
         {/* <Head /> */}
         <div className="main-content">
