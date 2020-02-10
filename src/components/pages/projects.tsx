@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Layout from '../components/Layout'
-import ProjectsPage from '../sections/ProjectsPage'
+import Layout from '../Layout'
+import ProjectsPage from '../../sections/ProjectsPage'
 
 export default class projects extends Component {
   render() {

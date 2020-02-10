@@ -8,8 +8,8 @@ export default function IndexPage() {
   return (
     <Layout>
       <Intro/>
-      <About/>
-      <ProjectsHome/>
+      {/* <About/>
+      <ProjectsHome/> */}
     </Layout>
   )
 }

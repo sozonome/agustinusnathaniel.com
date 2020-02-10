@@ -58,6 +58,10 @@ export default function Social() {
           <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" />
         </a>
       </div>
+      <div style={{marginTop: '12px'}}>
+        <p>2019 - Agustinus Nathaniel</p>
+        <p style={{fontSize: '12px'}}>This site is still under construction. <br/>Please be kind with it 🙂.</p>
+      </div>
     </div>
   )
 }
