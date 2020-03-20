@@ -54,9 +54,6 @@ export default function Social() {
         <a href={'https://www.github.com/' + site.siteMetadata.social.github}>
           <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
         </a>
-        <a href={'https://twitter.com/' + site.siteMetadata.social.twitter}>
-          <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" />
-        </a>
       </div>
     </div>
   )

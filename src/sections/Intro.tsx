@@ -21,7 +21,6 @@ export default class Intro extends Component {
         <div className="hero-foot">
           <div className="container has-text-centered" style={{marginBottom: '12px'}}>
             <p style={{fontSize: '14px'}}>2019 - Agustinus Nathaniel</p>
-            <p style={{fontSize: '12px'}}>This site is still under construction.<br/>Please be kind with it 🙂.</p>
           </div>
         </div>
       </section>
