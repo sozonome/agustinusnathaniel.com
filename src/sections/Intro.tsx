@@ -5,7 +5,7 @@ export default class Intro extends Component {
   render() {
     return (
       <section className="hero is-black is-fullheight has-background" id="intro">
-        <img className="hero-background" src="https://source.unsplash.com/user/agustinusnathaniel" alt=""/>
+        {/* <img className="hero-background" src="https://source.unsplash.com/user/agustinusnathaniel" alt=""/> */}
         <div className="hero-body">
           <div className="container has-text-centered">
             <h1 className="title is-1">Hi! <span className="darkmode-ignore" role="img">👋</span></h1>
