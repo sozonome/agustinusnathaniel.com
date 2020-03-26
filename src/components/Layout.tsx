@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import SEO from './SEO';
 import Head from './Head';
 import Foot from './Foot';
-import "bulma"
 import "../styles/global.scss"
 import 'typeface-muli';
 import 'typeface-open-sans';

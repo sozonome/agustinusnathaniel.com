@@ -22,7 +22,8 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-sass`,    
     `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-google-analytics`,

@@ -37,11 +37,11 @@ export default function Social() {
   `);
 
   return (
-    <div className="section social">
-      <div className="first-bar">
-        <Mail btnClass="button is-dark" mailText="Mail Me"/>
+    <div className="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+      <div className="">
+        <Mail btnClass="bg-blue-500" mailText="Mail Me"/>
       </div>
-      <div className="socialButtonIcons">
+      <div className="">
         <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram}>
           <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
         </a>
