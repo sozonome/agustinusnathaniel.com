@@ -1,10 +1,14 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, config } from '@fortawesome/fontawesome-svg-core';
+import "@fortawesome/fontawesome-svg-core/styles.css";
+// https://medium.com/@fabianterh/fixing-flashing-huge-font-awesome-icons-on-a-gatsby-static-site-787e1cfb3a18
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Mail from './Mail';
 // import { faPodcast, faCamera, faHeadphones } from '@fortawesome/free-solid-svg-icons';
+
+config.autoAddCss = false;
 
 library.add(fab, 
   // faPodcast, faCamera, faHeadphones
