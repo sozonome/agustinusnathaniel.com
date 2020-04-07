@@ -7,3 +7,5 @@
 //     window.location.reload()
 //   }
 // } 
+
+import "./src/styles/tailwind.css";

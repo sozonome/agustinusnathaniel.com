@@ -1,53 +1,24 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby';
-import Mail from './Mail';
-
-const NavbarBurger = (props:any) => (
-  <div 
-    onClick={props.toggleMenu}
-    className={`navbar-burger ${props.active ? 'is-active' : ''}`}
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-)
+import { Link } from 'gatsby'
+import MyIcon from "../images/avataaars.svg";
 
 export default class Head extends Component {
-  state = {
-    activeMenu: false,
-  }
-
-  toggleMenu=()=>{
-    this.setState({
-      activeMenu: !this.state.activeMenu
-    })
-  }
   render() {
     return (
-      <div className="">
-        <header className="navbar is-fixed-top is-spaced is-black">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item">
-              <img src={require("../images/coconate.png")} alt=""/>
-              <div className="is-hidden-touch">Agustinus Nathaniel</div>
-            </Link>
-            <NavbarBurger
-              active={this.state.activeMenu}
-              toggleMenu={this.toggleMenu}
-            />
-          </div>
-          <div className={`navbar-menu ${this.state.activeMenu ? 'is-active' : ''}`}>
-          {/* <div className={`navbar-menu`}>           */}
-            <div className="navbar-start">
-              <Link to="/" className="navbar-item is-hidden-desktop">Home</Link>
-            </div>
-            <div className="navbar-end">
-              <Link to="/projects" className="navbar-item">Projects</Link>
-              <Mail mailText="Let's Connect" btnClass="navbar-item"/>
-            </div>
-          </div>
-        </header>
+      <div className="flex text-gray-600 bg-gray-900 sm:bg-black h-24 items-center px-6">
+        <div className="w-1/4 sm:w-1/2 font-bold hover:text-white">
+          <Link className="flex" to="/">
+            <img className="h-12 w-12 mr-2" src={MyIcon}/>
+            <p className="py-3 hidden sm:flex">Agustinus Nathaniel</p>
+          </Link>
+        </div>
+        <ul className="flex w-1/2 justify-center sm:justify-end">
+          <li className="hover:text-white">
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li className="pl-2 hover:text-white">About</li>
+          <li className="pl-2 hover:text-white">Contact</li>
+        </ul>
       </div>
     )
   }
