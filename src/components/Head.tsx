@@ -13,11 +13,12 @@ export default class Head extends Component {
           </Link>
         </div>
         <div className="flex w-1/2 justify-center sm:justify-end">
-          <Link className="hover:text-white" to="/">
+          <Link className="hover:text-white" to="/blog">
             Blog
           </Link>
           <Link className="pl-3 hover:text-white" to="/about">About</Link>
-          <Link className="pl-3 hover:text-white" to="/">Contact</Link>
+          {/* <Link className="pl-3 hover:text-white" to="/contact">Contact</Link> */}
+          <a href={"mailto:hello@agustinusnathaniel.com?subject=Let%27s%20Work%20Together&cc=agustinusnathaniel228@gmail.com"} className="pl-3 hover:text-white">Contact</a>
         </div>
       </div>
     )

@@ -44,12 +44,12 @@ export default function About() {
             The first 2 year of college is full of stuggling because I just realized there are so many courses and I only like almost 20% of them. 
             The only subjects I really like is only about web and mobile development.
           </div>
-          <h2 className="text-2xl font-semibold mb-2">Beside being an IT Student...</h2>
+          {/* <h2 className="text-2xl font-semibold mb-2">Beside being an IT Student...</h2>
           <div className="mb-4 text-sm">
             I also do freelance website development, photography and videography services.
             I share my personal shoots (mainly travel content) on my <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram} className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold">Instagram</a>.
             <div className="mt-2 text-xs">N.B. Yeah I'm so used to people assumed myself as a film / photography student 😂.</div>
-          </div>
+          </div> */}
         </section>
         <section id="content-foot">
         </section>
