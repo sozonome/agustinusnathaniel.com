@@ -34,16 +34,16 @@ export default function Foot() {
       </div>
       <div className="sm:flex w-full sm:w-1/2 sm:justify-end">
         <div className="flex items-center justify-center">
-          <a href="" className="w-8 hover:text-white">
+          <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram} className="w-8 hover:text-white">
             <FontAwesomeIcon icon={['fab', 'instagram']} size="1x"/>
           </a>
-          <a href="" className="w-8 ml-2 hover:text-white">
+          <a href={"https://youtube.com/" + site.siteMetadata.social.youtube} className="w-8 ml-2 hover:text-white">
             <FontAwesomeIcon icon={['fab', 'youtube']} size="2x"/>
           </a>
-          <a href="" className="w-8 ml-2 hover:text-white">
+          <a href={"https://linkedin.com/in/" + site.siteMetadata.social.linkedin} className="w-8 ml-2 hover:text-white">
             <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"/>
           </a>
-          <a href="" className="w-8 ml-2 hover:text-white">
+          <a href={"https://github.com/" + site.siteMetadata.social.github} className="w-8 ml-2 hover:text-white">
             <FontAwesomeIcon icon={['fab', 'github']} size="2x"/>
           </a>
         </div>
