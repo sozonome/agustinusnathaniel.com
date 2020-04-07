@@ -1,15 +1,24 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import { Link } from 'gatsby';
 
 export default function IndexPage() {
   return (
     <Layout>
-      <div className="px-6 justify-center h-screen">
-        <div className="sm:flex items-end">
-          <h1 className="flex w-full sm:w-1/2 text-5xl sm:text-6xl font-bold sm:justify-end">Hi! 👋</h1>
-          <h2 className="w-full sm:w-1/2 text-4xl sm:text-5xl font-semibold">I'm <span className="font-bold">Nathan</span></h2>
+      <section id="intro" className="items-center">
+        <div className="">
+          <div id="title" className="">
+            <h1 className="text-3xl sm:text-4xl font-bold">Hi! 👋</h1> 
+            <h1 className="text-3xl sm:text-4xl font-bold">I'm <span className="text-orange-700">Nathan</span></h1>
+          </div>
+          <div className="mt-4 text-sm sm:text-lg">
+            <p>I'm a tech and design enthusiast.</p>
+            <div className="mt-4 text-lg">
+              <Link to="/about" className="py-2 px-4 bg-orange-600 rounded hover:bg-green-600">About Me</Link>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }

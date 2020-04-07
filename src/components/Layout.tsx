@@ -10,13 +10,13 @@ import Foot from './Foot';
 export default class Layout extends Component {
   render() {
     return (
-      <div className="mainwrapper mx-auto">
+      <div className="flex flex-wrap mainwrapper mx-auto h-screen">
         <SEO />
         <Helmet>
           <body className="bg-black text-white"/>
         </Helmet>
         <Head/>
-        <div className="mt-8 h-auto">
+        <div className="my-8 px-6">
           {this.props.children}
         </div>
         <Foot/>

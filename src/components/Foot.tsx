@@ -3,6 +3,7 @@ import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useStaticQuery } from 'gatsby';
+import {graphql} from 'gatsby';
 
 config.autoAddCss = false;
 library.add(fab);
@@ -28,7 +29,7 @@ export default function Foot() {
   `);
 
   return (
-    <div className="sm:flex text-gray-600 bg-gray-900 sm:bg-black h-30 sm:h-16 items-center px-6 pb-6 sm:pb-2">
+    <div className="w-full self-end sm:flex text-gray-600 bg-gray-900 sm:bg-black h-30 sm:h-16 items-center px-6 pb-6 sm:pb-2">
       <div className="flex sm:block w-full sm:w-1/2 py-4 sm:py-0 justify-center">
         <p className="text-xs">&copy; Copyright 2020. Agustinus Nathaniel</p>
       </div>
@@ -39,6 +40,9 @@ export default function Foot() {
           </a>
           <a href={"https://youtube.com/" + site.siteMetadata.social.youtube} className="w-8 ml-2 hover:text-white">
             <FontAwesomeIcon icon={['fab', 'youtube']} size="2x"/>
+          </a>
+          <a href={"https://twitter.com/" + site.siteMetadata.social.twitter} className="w-8 ml-2 hover:text-white">
+            <FontAwesomeIcon icon={['fab', 'twitter']} size="2x"/>
           </a>
           <a href={"https://linkedin.com/in/" + site.siteMetadata.social.linkedin} className="w-8 ml-2 hover:text-white">
             <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"/>
