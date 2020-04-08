@@ -11,16 +11,16 @@ export default function dailyuse() {
         <h2 className="text-2xl font-bold">Computer</h2>
         <ul className="list-disc px-5">
           <li>
-            <a href="https://www.asus.com/Laptops/ROG-GL552VW/" className="text-indigo-400 hover:text-indigo-200 hover:underline hover:font-bold" target="_blank">ASUS RoG GL552VW</a>
+            <a href="https://www.asus.com/Laptops/ROG-GL552VW/" className="text-indigo-400 hover:text-indigo-200 hover:underline hover:font-bold" target="_blank" rel="noopener">ASUS RoG GL552VW</a>
           </li>
           <li>
-            <a href="https://www.logitech.com/id-id/product/m170-m171-wireless-mouse" className="text-indigo-400 hover:text-indigo-200 hover:underline hover:font-bold" target="_blank">Logitech M170 Wireless Mouse</a>
+            <a href="https://www.logitech.com/id-id/product/m170-m171-wireless-mouse" className="text-indigo-400 hover:text-indigo-200 hover:underline hover:font-bold" target="_blank" rel="noopener">Logitech M170 Wireless Mouse</a>
           </li>
           <li>
-            <a href="https://code.visualstudio.com/" className="text-indigo-400 hover:text-indigo-200 hover:underline hover:font-bold" target="_blank">Visual Studio Code</a>
+            <a href="https://code.visualstudio.com/" className="text-indigo-400 hover:text-indigo-200 hover:underline hover:font-bold" target="_blank" rel="noopener">Visual Studio Code</a>
           </li>
           <li>
-            <a href="https://www.sourcetreeapp.com/" className="text-indigo-400 hover:text-indigo-200 hover:underline hover:font-bold" target="_blank">SourceTree</a>
+            <a href="https://www.sourcetreeapp.com/" className="text-indigo-400 hover:text-indigo-200 hover:underline hover:font-bold" target="_blank" rel="noopener">SourceTree</a>
           </li>
         </ul>
       </section>
@@ -28,22 +28,22 @@ export default function dailyuse() {
         <h2 className="text-2xl font-bold">Productivity</h2>
         <ul className="list-disc px-5">
           <li>
-            <a href="https://evernote.com/" className="text-green-400 hover:text-green-200 hover:underline hover:font-bold" target="_blank">Evernote</a>
+            <a href="https://evernote.com/" className="text-green-400 hover:text-green-200 hover:underline hover:font-bold" target="_blank" rel="noopener">Evernote</a>
           </li>
           <li>
-            <a href="https://notion.so" className="text-green-400 hover:text-green-200 hover:underline hover:font-bold" target="_blank">Notion</a>
+            <a href="https://notion.so" className="text-green-400 hover:text-green-200 hover:underline hover:font-bold" target="_blank" rel="noopener">Notion</a>
           </li>
           <li>
-            <a href="https://trello.com/" className="text-green-400 hover:text-green-200 hover:underline hover:font-bold" target="_blank">Trello</a>
+            <a href="https://trello.com/" className="text-green-400 hover:text-green-200 hover:underline hover:font-bold" target="_blank" rel="noopener">Trello</a>
           </li>
           <li>
-            <a href="https://www.google.com/calendar/about/" className="text-green-400 hover:text-green-200 hover:underline hover:font-bold" target="_blank">Google Calendar</a>
+            <a href="https://www.google.com/calendar/about/" className="text-green-400 hover:text-green-200 hover:underline hover:font-bold" target="_blank" rel="noopener">Google Calendar</a>
           </li>
         </ul>
       </section>
       <section id="photoVideo" className="mb-6">
         <h2 className="text-2xl font-bold">Shooting Gears</h2>
-        <p>Check out my shooting gears <a href="https://kit.co/agustinusnathaniel" className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold" target="_blank">here</a>.</p>
+        <p>Check out my shooting gears <a href="https://kit.co/agustinusnathaniel" className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold" target="_blank" rel="noopener">here</a>.</p>
       </section>
       <section id="sitestack">
         <h2 className="text-2xl font-bold">Site Stacks</h2>

@@ -67,7 +67,7 @@ export default function About() {
                 <Link to="/sitestack" className="text-teal-500 hover:text-teal-200 font-semibold hover:underline">This site stacks</Link>
               </li>
               <li>
-                <a href="https://github.com/sozonome/great-apps-sites" className="text-teal-500 hover:text-teal-200 font-semibold hover:underline" target="_blank">Fun Apps / Sites</a>
+                <a href="https://github.com/sozonome/great-apps-sites" className="text-teal-500 hover:text-teal-200 font-semibold hover:underline" target="_blank" rel="noopener">Fun Apps / Sites</a>
               </li>
             </ul>
           </div>

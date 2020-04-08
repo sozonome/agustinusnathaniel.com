@@ -10,10 +10,10 @@ export default function sitestack() {
         <h2 className="text-2xl font-bold">Frameworks</h2>
         <ul className="list-disc px-5">
           <li>
-            <a href="https://www.gatsbyjs.org/" className="text-purple-400 hover:text-purple-200 hover:underline hover:font-bold" target="_blank">GatsbyJS</a>
+            <a href="https://www.gatsbyjs.org/" className="text-purple-400 hover:text-purple-200 hover:underline hover:font-bold" target="_blank" rel="noopener">GatsbyJS</a>
           </li>
           <li>
-            <a href="https://tailwindcss.com/" className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold" target="_blank">Tailwind CSS</a>
+            <a href="https://tailwindcss.com/" className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold" target="_blank" rel="noopener">Tailwind CSS</a>
           </li>
         </ul>
       </section>
@@ -21,13 +21,13 @@ export default function sitestack() {
         <h2 className="text-2xl font-bold">Deployment, Hosting, & Domain</h2>
         <ul className="list-disc px-5">
           <li>
-            <a href="https://www.gatsbyjs.org/" className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold" target="_blank">Netlify (Hosting and Deployment)</a>
+            <a href="https://www.gatsbyjs.org/" className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold" target="_blank" rel="noopener">Netlify (Hosting and Deployment)</a>
           </li>
           <li>
-            <a href="https://tailwindcss.com/" className="text-orange-400 hover:text-orange-200 hover:underline hover:font-bold" target="_blank">GitLab</a>
+            <a href="https://tailwindcss.com/" className="text-orange-400 hover:text-orange-200 hover:underline hover:font-bold" target="_blank" rel="noopener">GitLab</a>
           </li>
           <li>
-            <a href="https://www.rumahweb.com/" className="text-blue-400 hover:text-blue-200 hover:underline hover:font-bold" target="_blank">RumahWeb (Domain)</a>
+            <a href="https://www.rumahweb.com/" className="text-blue-400 hover:text-blue-200 hover:underline hover:font-bold" target="_blank" rel="noopener">RumahWeb (Domain)</a>
           </li>
         </ul>
       </section>
@@ -35,13 +35,13 @@ export default function sitestack() {
         <h2 className="text-2xl font-bold">Web Performance</h2>
         <ul className="list-disc px-5">
           <li>
-            <a href="https://analytics.google.com/analytics/web/" className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold" target="_blank">Google Analytics</a>
+            <a href="https://analytics.google.com/analytics/web/" className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold" target="_blank" rel="noopener">Google Analytics</a>
           </li>
           <li>
-            <a href="https://tailwindcss.com/" className="text-orange-400 hover:text-orange-200 hover:underline hover:font-bold" target="_blank">GitLab</a>
+            <a href="https://tailwindcss.com/" className="text-orange-400 hover:text-orange-200 hover:underline hover:font-bold" target="_blank" rel="noopener">GitLab</a>
           </li>
           <li>
-            <a href="https://www.rumahweb.com/" className="text-blue-400 hover:text-blue-200 hover:underline hover:font-bold" target="_blank">RumahWeb</a>
+            <a href="https://www.rumahweb.com/" className="text-blue-400 hover:text-blue-200 hover:underline hover:font-bold" target="_blank" rel="noopener">RumahWeb</a>
           </li>
         </ul>
       </section>
