@@ -12,7 +12,7 @@ export default function IndexPage() {
             <h1 className="text-3xl sm:text-4xl font-bold">I'm <span className="text-orange-700">Nathan</span></h1>
           </div>
           <div className="mt-4 text-sm sm:text-lg">
-            <p>I'm a tech and design enthusiast.</p>
+            <p>Tech and design enthusiast.</p>
             <div className="mt-4 text-lg">
               <Link to="/about" className="py-2 px-4 bg-orange-600 rounded hover:bg-green-600">About Me</Link>
             </div>
