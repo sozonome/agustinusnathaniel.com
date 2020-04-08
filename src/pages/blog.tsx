@@ -46,6 +46,7 @@ export const pageQuery = graphql`
       filter: {
         frontmatter: {
           type: {eq: "personal"}
+          published: {eq: true}
         }
       }
     ) {

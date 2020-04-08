@@ -10,7 +10,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
-        
+        filter: {
+          frontmatter: {
+            published: {
+              eq: true
+            }
+          }
+        }
       ) {
         edges {
           node {
@@ -35,7 +41,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       createPage({
         path: '/blog/' + node.frontmatter.slug,
         component: path.resolve(`src/templates/blogTemplate.tsx`),
-        context: {}, // additional data can be passed via context
+        context: {} // additional data can be passed via context
       })
     } else{
       createPage({

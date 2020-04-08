@@ -6,7 +6,11 @@ published: true
 slug: "stackbit-the-game-changer"
 path: "/dev/stackbit-the-game-changer"
 description: You can launch a powerful and beautiful static site in just under 10 minutes and at super low-cost.
-tags: Stackbit, Netlify, Github, Sanity
+tags: 
+  - Stackbit
+  - Netlify
+  - Github
+  - Sanity
 cover_image: https://dev-to-uploads.s3.amazonaws.com/i/h0by35x00oeg8t9v7k90.png
 ---
 *by the time I wrote this post, Stackbit is still at Beta.*

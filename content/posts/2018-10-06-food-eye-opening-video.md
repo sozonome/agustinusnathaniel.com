@@ -3,6 +3,7 @@ title: "These Videos Opened my Eyes About Food"
 date: "2018-10-06"
 slug: "food-eye-opening-video"
 path: "/blog/food-eye-opening-video"
+published: true
 type: personal
 tags: 
   - personal

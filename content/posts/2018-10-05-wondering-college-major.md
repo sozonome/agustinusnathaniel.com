@@ -3,6 +3,7 @@ title: "For You Who Are Still Wondering about College or Confused with Your Majo
 date: "2018-10-05"
 slug: "wondering-college-or-majors"
 path: "/blog/wondering-college-or-majors"
+published: true
 type: personal
 tags: 
   - personal
