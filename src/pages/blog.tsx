@@ -13,7 +13,7 @@ export default function blog({
         <Link className="py-2 px-4 h-10 text-sm bg-blue-700 rounded mr-2" to="/blog">Personal</Link>
         <Link className="py-2 px-4 h-10 text-sm bg-gray-700 rounded hover:bg-teal-700" to="/dev">Dev Notes</Link>
       </div>
-      <h1 className="w-1/2 text-5xl font-bold mb-2">Blog</h1>
+      <h1 className="text-5xl font-bold mb-2">Blog</h1>
       <div className="mt-16">
         {
           edges

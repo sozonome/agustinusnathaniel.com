@@ -1,22 +1,24 @@
+import {siteMetadata} from './data/siteConfig';
+
 module.exports = {
   siteMetadata:{
-    title: `Agustinus Nathaniel`,
-    description: `Tech and Design enthusiast.`,
-    author: `sozonome`,
-    siteUrl: `https://agustinusnathaniel.com`, // Domain of your site. No trailing slash!
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    author: siteMetadata.author,
+    siteUrl: siteMetadata.siteUrl, // Domain of your site. No trailing slash!
     social:{
-      youtube: `AgustinusNathaniel`,
-      linkedin: `agustinusnathaniel`,
-      github: `sozonome`,
-      devto: `sozonome`,
-      twitter: `sozonome`,
-      instagram: `agustinusnathaniel`,
-      medium: `@agustinusnathaniel`,
-      behance: `agustinusnathaniel`,
-      email: `hello@agustinusnathaniel.com`,
-      spotify_podcast: `https://open.spotify.com/show/0ORzchlOopGccuNlQ5SAyy`,
-      apple_podcast: `https://podcasts.apple.com/id/podcast/decompiling-fruits/id1452637576`,
-      spotify_playlist: `https://open.spotify.com/user/214cjghp4c3lzsygqz73qvuxi`,
+      youtube: siteMetadata.social.youtube,
+      linkedin: siteMetadata.social.linkedin,
+      github: siteMetadata.social.github,
+      devto: siteMetadata.social.devto,
+      twitter: siteMetadata.social.twitter,
+      instagram: siteMetadata.social.instagram,
+      medium: siteMetadata.social.medium,
+      behance: siteMetadata.social.behance,
+      email: siteMetadata.social.email,
+      spotify_podcast: siteMetadata.social.spotify_podcast,
+      apple_podcast: siteMetadata.social.apple_podcast,
+      spotify_playlist: siteMetadata.social.spotify_playlist,
     },
   },
   plugins: [

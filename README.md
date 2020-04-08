@@ -17,8 +17,11 @@ It's performance. Just check out their tagline. (Blazing Fast site...they're not
 
 ##### Update v2 (July 2019)
 - Switching to Bulma
+- PWA Enabled
 
 ##### Update v3 (06 - 08 April 2020)
 - Re-build site from scratch, still use GatsbyJS as SSG
 - Switching to Tailwind CSS
 - Add blog functions (markdown)
+  (two seperate blogs - personal and dev in one site)
+- RSS Feed Features

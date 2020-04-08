@@ -12,6 +12,11 @@ tags:
 ---
 >I was a boy who always thought the “school education system” is just a bull$#i# created just to build uniformed people. It wasted 12 years of my life until I don’t wanna waste it more by continuing to college.
 
+<figure>
+  <img src="https://images.unsplash.com/photo-1533247774066-59cbfc352299?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+  <figcaption>Photo by <a href="https://unsplash.com/photos/HJqzDHuWQqQ" target="_blank" rel="noopener">Carli Jeen</a> on <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a></figcaption>
+</figure>
+
 Yeah, I often quarreled and babble so much about “don’t wanna go to college” with my mom while I still at high school. I hate school so much so I thought going to college gonna waste my life like I was at school. Even though I hate school, it doesn’t mean I do it half-heartedly. I strived for good grades, but still hate the system. Yeah, the “system” / the “curriculum” is just what I hate. Not the school, but the “system”.
 (*fyi, I’m from Indonesia)
 
@@ -21,7 +26,14 @@ Applying for College at 12th Grade made me thought more about what I truly wanna
 
 ## I Was Wrong
 Everything I know is just 0.000001% of what I should known about software engineering. I thought I can run away so far from high-level mathematics, but I just make myself drown into it more. Coding, which is a “cool” stuffs for me when I was still a kid until high school, becomes a “nightmare” for me as an Informatics student. I’m not talking about what I face as an Informatics student, because I know some of you who read this will go to College for another majors. The point is, my expectations and my hopes are crumbled down.
+
 >In the time I wrote this story, I already at my 5th Semester (3rd year) of my journey as a college student.
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1468070454955-c5b6932bd08d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+  <figcaption>Photo by <a href="https://unsplash.com/photos/xekxE_VR0Ec" target="_blank" rel="noopener">Markus Spiske</a> on <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a></figcaption>
+</figure>
+
 I faced several semesters of regretting my decisions to take Informatics major because the subjects in it were so random and alien-like for my head. I don’t even know what am I learning and what am I doing in those classes. But luckily I can pass every test by the help of that “overnight system” (for you who are Indonesians, you know what this means). Even some of my friends often teased me “You are Graphic Design student, right?”, “Why do you take Informatics?”, “Why don’t you take Film major? You love to take shots, right?”, etc and the list goes on (because I sometimes do some graphic design and photo-videography stuffs).
 
 ## Turning Point
