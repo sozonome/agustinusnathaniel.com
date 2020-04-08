@@ -1,18 +1,24 @@
 # Agustinus Nathaniel's Personal Site
 build with Gatsby + SASS + Typescript 💪
-##### July 2019
+##### Last Update of this README: 08 April 2020
 ___
 #### [Live Here](https://agustinusnathaniel.com "My Personal Site") 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d45c72d3-3e0e-431d-a8da-9bd252cccf46/deploy-status)](https://app.netlify.com/sites/sozonome/deploys)
 ___
-Build with / Technology used :
-- [Typescript](https://www.typescriptlang.org/ "Well, I prefer to write in Typescript") 💪 for typing
-- [Gatsby](https://gatsbyjs.org "One of the coolest React Framework") for blazing fast performance ( [React](https://reactjs.org) and GraphQL included )
-- [SASS](https://sass-lang.com/ "Great CSS Pre-processors") 
-- [Bulma](https://bulma.io/ "Bored with Bootstrap") for Styling
+Build with :
+- [Gatsby](https://gatsbyjs.org "One of the coolest React Framework") for blazing fast performance ( [React](https://reactjs.org) and GraphQL power )
+- [Tailwind CSS](https://tailwindcss.com/ "Bored and frustrated with Bootstrap, Semantic, and Bulma") for Styling
 
 ### Background of This Project
 This personal site project initially started at 2018. I'm so excited with Bootstrap so I build this site only using HTML + CSS (Bootstrap) + vanilla JS. After ignoring this project for several months, I finally get my hands on ReactJS Framework. It was so fun learning with React to build things. I decided to re-build my site using React after getting used to it. But I also want to learn something new while working on this project. I remembered GatsbyJS, a framework based on React+GraphQL. (fun fact: the first thing I get my hands on when learning web development in 2018 was GatsbyJS, without knowing it was a framework based on React+GraphQL even though I haven't learned about it 😂. As expected, I puked a lot. Luckily I already get used to it in the next year.)
 
 ##### Why GatsbyJS?
 It's performance. Just check out their tagline. (Blazing Fast site...they're not kidding)
+
+##### Update v2 (July 2019)
+- Switching to Bulma
+
+##### Update v3 (06 - 08 April 2020)
+- Re-build site from scratch, still use GatsbyJS as SSG
+- Switching to Tailwind CSS
+- Add blog functions (markdown)
