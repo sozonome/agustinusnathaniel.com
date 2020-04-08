@@ -11,10 +11,8 @@ module.exports = {
       devto: `sozonome`,
       twitter: `sozonome`,
       instagram: `agustinusnathaniel`,
-      unsplash: `@agustinusnathaniel`,
       medium: `@agustinusnathaniel`,
       behance: `agustinusnathaniel`,
-      dribbble: `agustinusnathaniel`,
       email: `hello@agustinusnathaniel.com`,
       spotify_podcast: `https://open.spotify.com/show/0ORzchlOopGccuNlQ5SAyy`,
       apple_podcast: `https://podcasts.apple.com/id/podcast/decompiling-fruits/id1452637576`,
@@ -22,7 +20,15 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss")
+        ],
+      }
+    },
+    `gatsby-plugin-sass`,    
     `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -30,6 +36,14 @@ module.exports = {
         trackingId: `UA-89527004-1`,
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/content/posts`,
+      }
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
