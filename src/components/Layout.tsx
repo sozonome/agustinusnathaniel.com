@@ -16,7 +16,7 @@ export default class Layout extends Component {
           <body className="bg-black text-white"/>
         </Helmet>
         <Head/>
-        <div className="my-8 px-6">
+        <div className="my-8 px-6 w-full">
           {this.props.children}
         </div>
         <Foot/>

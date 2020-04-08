@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import { Link } from 'gatsby';
+import { Link,} from 'gatsby';
 
 export default function IndexPage() {
   return (
@@ -13,8 +13,13 @@ export default function IndexPage() {
           </div>
           <div className="mt-4 text-sm sm:text-lg">
             <p>Tech and design enthusiast.</p>
-            <div className="mt-4 text-lg">
-              <Link to="/about" className="py-2 px-4 bg-orange-600 rounded hover:bg-green-600">About Me</Link>
+            <div className="flex">
+              <div className="mt-4 text-lg mr-2">
+                <Link to="/about" className="py-2 px-4 bg-orange-600 rounded hover:bg-green-600">About Me</Link>
+              </div>
+              <div className="mt-4 text-lg">
+                <Link to="/blog" className="py-2 px-4 bg-blue-600 rounded hover:bg-green-600">Blog</Link>
+              </div>
             </div>
           </div>
         </div>

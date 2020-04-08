@@ -1,9 +1,9 @@
 ---
-path: "/blog/wondering-college-or-majors/"
-date: "2018-10-05"
 title: "For You Who Are Still Wondering about College or Confused with Your Major Choice"
-categories: 
-  - personal
+date: "2018-10-05"
+slug: "wondering-college-or-majors"
+path: "/blog/wondering-college-or-majors"
+type: personal
 tags: 
   - personal
   - education
@@ -27,7 +27,7 @@ I faced several semesters of regretting my decisions to take Informatics major b
 ## Turning Point
 I was enjoying my summer holiday and suddenly I realize I’ve been through those two years with so many doubts and regrets, but I still survive while some of my friends change major or even drop-out. I decided to finish my journey by reducing my thoughts of regrets, then think and act differently in my studying process. I started to find some “fun” part in some of the subjects, curios to find out more by myself.
 Being a college student give so many eye-opener actually. You meet more diverse people than in high school and more activities provided to make sure you will be ready for the “real-world”.
-
+***
 There’re no straight roads for the journey of college, from the apply process until you graduate. There will be some quarrel with yourself, with your parents, or even with your “soulmate” (if you have one? 😂). Except, you already know very well what you wanna choose and the consequences. Sometimes, if you are like me, you will face some regrets phase, maybe asking yourself “am I in the right place? Is this really the right choice?”, or “wait, this is not my place, I wanna move to . . .”, or even “well, college is wasting my time, let’s end this now and start that business I wanna do since a long time ago” and then there will be a phase where you already enjoy yourself in your place. Everyone will have their own story, there will be so much ups and downs. As long as you stay calm and try to enjoy it, you can do it. Just remember…talk or consult about your studying problems with someone you feel like can help you find the answers or feel better (your parents, teachers, friends, or the psychologist at counseling department).
-
+***
 Thank you for reading this story. I hope it can give you some new perspectives…I also write this story to train my English skills, so I’m really sorry if there’re so many mistakes with my vocabularies or grammars, really appreciate it if you are kind to tell me through response button / comment below.
