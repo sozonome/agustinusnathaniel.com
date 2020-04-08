@@ -1,4 +1,4 @@
-import {siteMetadata} from './data/siteConfig';
+const {siteMetadata} = require('./data/siteConfig.tsx');
 
 module.exports = {
   siteMetadata:{
