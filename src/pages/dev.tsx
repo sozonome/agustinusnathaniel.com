@@ -9,12 +9,11 @@ export default function dev({
 }) {
   return (
     <Layout>
-      <div className="flex items-center w-full">
-        <h1 className="w-1/2 text-5xl font-bold mb-2">Dev Blog</h1>
-        <div className="flex w-1/2 justify-end">
-          <Link className="py-2 px-4 h-12 text-lg bg-teal-700 rounded" to="/blog">Personal</Link>
-        </div>
+      <div className="mb-4">
+        <Link className="py-2 px-4 h-10 text-sm bg-gray-700 rounded mr-2 hover:bg-blue-700" to="/blog">Personal</Link>
+        <Link className="py-2 px-4 h-10 text-sm bg-teal-700 rounded" to="/dev">Dev Notes</Link>
       </div>
+      <h1 className="w-1/2 text-5xl font-bold mb-2">Dev Blog</h1>
       <div className="w-full mt-16">
         {
           edges
