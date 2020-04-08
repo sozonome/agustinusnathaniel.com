@@ -2,4 +2,20 @@
 
 @tailwind components;
 
+.mkdown blockquote{
+  @apply text-sm italic border-l-4 pl-4 border-white mb-6;
+}
+.mkdown p{
+  @apply mb-4;
+}
+.mkdown h2{
+  @apply text-3xl font-bold mb-2;
+}
+.mkdown hr{
+  @apply mb-4;
+}
+.mkdown img{
+  @apply w-full rounded-lg my-4;
+}
+
 @tailwind utilities;

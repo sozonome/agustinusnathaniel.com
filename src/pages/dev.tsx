@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import {graphql, Link} from 'gatsby'
 
-export default function blog({
+export default function dev({
   data:{
     allMarkdownRemark: {edges},
   },
@@ -10,19 +10,19 @@ export default function blog({
   return (
     <Layout>
       <div className="flex items-center w-full">
-        <h1 className="w-1/2 text-5xl font-bold mb-2">Blog</h1>
+        <h1 className="w-1/2 text-5xl font-bold mb-2">Dev Blog</h1>
         <div className="flex w-1/2 justify-end">
-          <Link className="py-2 px-4 h-12 text-lg bg-teal-700 rounded" to="/dev">Dev Notes</Link>
+          <Link className="py-2 px-4 h-12 text-lg bg-teal-700 rounded" to="/blog">Personal</Link>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="w-full mt-16">
         {
           edges
             .filter(edge => edge.node.frontmatter.title.length > 0)
             .map((edge) => {
               return(
-                <Link to={'/blog/'+edge.node.frontmatter.slug} className="">
-                  <div className="bg-gray-700 rounded-lg p-6 mb-8 hover:bg-blue-800 w-full">
+                <Link to={'/dev/'+edge.node.frontmatter.slug} className="w-full">
+                  <div className="bg-gray-700 rounded-lg p-6 mb-8 hover:bg-blue-800">
                     <h1 className="text-2xl font-bold mb-1">
                       {edge.node.frontmatter.title}
                     </h1>
@@ -46,7 +46,7 @@ export const pageQuery = graphql`
       fields: [frontmatter___date]},
       filter: {
         frontmatter: {
-          type: {eq: "personal"}
+          type: {eq: "dev"}
         }
       }
     ) {
