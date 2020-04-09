@@ -2,13 +2,21 @@ import React from 'react';
 import {graphql} from "gatsby";
 import Layout from '../components/Layout';
 import Helmet from 'react-helmet';
-import { library, config } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const configQuery = require('../../data/siteConfig');
 
-config.autoAddCss = false;
-library.add(fab);
+import {
+  TwitterShareButton,
+  FacebookShareButton,
+  LinkedinShareButton,
+  WhatsappShareButton,
+  FacebookIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+  TelegramShareButton,
+  TelegramIcon,
+  TwitterIcon,
+  FacebookShareCount
+} from 'react-share';
 
 export default function blogTemplate({
   data
@@ -17,8 +25,6 @@ export default function blogTemplate({
   const { frontmatter, html } = markdownRemark
   const { siteMetadata  } = configQuery
   const shareTwtr = `http://twitter.com/share?text=${frontmatter.title}&url=${siteMetadata.siteUrl}${frontmatter.path}/&via=sozonome`
-  // const shareFb = `https://www.facebook.com/plugins/share_button.php?href=${siteMetadata.siteUrl}${frontmatter.path}&t=${frontmatter.title}&layout=button&size=small&width=79&height=20&appId`
-  // const shareFbLg = `https://www.facebook.com/plugins/share_button.php?href=${siteMetadata.siteUrl}${frontmatter.path}&t=${frontmatter.title}&layout=button&size=small&width=91&height=28&appId`
 
   return (
     <Layout>
@@ -29,25 +35,99 @@ export default function blogTemplate({
         <div className="postContainer">
           <div id="post-head" className="mb-8">
             <h1 className="font-bold text-4xl mb-2">{frontmatter.title}</h1>
-            <div className="flex items-center h-10">
+            <div className="flex items-center h-4 mb-2">
               <h2 className="text-sm mr-4">{frontmatter.date}</h2>
-              <a href={shareTwtr} className="flex text-blue-600 font-bold text-sm hover:font-extrabold hover:text-blue-400" target="_blank" rel="noopener">
-                <FontAwesomeIcon className="w-4 mr-1" icon={['fab', 'twitter']} size="xs"/> 
-                <div>Share</div>
-              </a>
-              {/* <iframe className="ml-2" src={shareFb} width="100" height="32" style={{border:"none",overflow:"hidden"}} scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> */}
+            </div>
+            <div className="flex items-center">
+              <TwitterShareButton 
+                title={frontmatter.title} 
+                via={siteMetadata.social.twitter} 
+                url={siteMetadata.siteUrl+frontmatter.path}
+              >
+                <div className="flex items-center rounded-lg">
+                  <TwitterIcon className="h-8 w-8 mr-2" round={true} />
+                </div>
+              </TwitterShareButton>
+              <FacebookShareButton
+                title={frontmatter.title}
+                url={siteMetadata.siteUrl+frontmatter.path}
+              >
+                <div className="flex items-center rounded-lg">
+                  <FacebookIcon className="h-8 w-8 mr-2" round={true} />
+                </div>
+              </FacebookShareButton>
+              <LinkedinShareButton
+                title={frontmatter.title}
+                url={siteMetadata.siteUrl+frontmatter.path}
+              >
+                <div className="flex items-center rounded-lg p-0">
+                  <LinkedinIcon className="h-8 w-8 mr-2" round={true} />
+                </div>
+              </LinkedinShareButton>
+              <WhatsappShareButton
+                title={frontmatter.title}
+                url={siteMetadata.siteUrl+frontmatter.path}
+              >
+                <div className="flex items-center rounded-lg p-0 mr-2">
+                  <WhatsappIcon className="h-8 w-8" round={true} />
+                </div>
+              </WhatsappShareButton>
+              <TelegramShareButton
+                title={frontmatter.title}
+                url={siteMetadata.siteUrl+frontmatter.path}
+              >
+                <div className="flex items-center rounded-lg p-0">
+                  <TelegramIcon className="h-8 w-8" round={true} />
+                </div>
+              </TelegramShareButton>
             </div>
           </div>
           <div
             className="mkdown mb-6"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <div className="flex items-center">
-            <a href={shareTwtr} className="flex py-2 px-4 font-bold text-sm bg-blue-600 hover:bg-blue-400 rounded-md" target="_blank" rel="noopener">
-              <FontAwesomeIcon className="w-4 mr-1" icon={['fab', 'twitter']} size="xs"/> 
-              <div>Share</div>
-            </a>
-            {/* <iframe className="ml-2" src={shareFbLg} width="100" height="56" style={{border:"none",overflow:"hidden"}} scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> */}
+          <div className="flex items-center">  
+            <TwitterShareButton 
+              title={frontmatter.title} 
+              via={siteMetadata.social.twitter} 
+              url={siteMetadata.siteUrl+frontmatter.path}
+            >
+              <div className="flex items-center rounded-lg">
+                <TwitterIcon className="h-8 w-8 mr-2" round={true} />
+              </div>
+            </TwitterShareButton>
+            <FacebookShareButton
+              title={frontmatter.title}
+              url={siteMetadata.siteUrl+frontmatter.path}
+            >
+              <div className="flex items-center rounded-lg mr-2">
+                <FacebookIcon className="h-8 w-8" round={true} />
+              </div>
+            </FacebookShareButton>
+            <LinkedinShareButton
+              title={frontmatter.title}
+              url={siteMetadata.siteUrl+frontmatter.path}
+            >
+              <div className="flex items-center rounded-lg p-0 mr-2">
+                <LinkedinIcon className="h-8 w-8" round={true} />
+              </div>
+            </LinkedinShareButton>
+            <WhatsappShareButton
+              title={frontmatter.title}
+              url={siteMetadata.siteUrl+frontmatter.path}
+            >
+              <div className="flex items-center rounded-lg p-0 mr-2">
+                <WhatsappIcon className="h-8 w-8" round={true} />
+              </div>
+            </WhatsappShareButton>
+            <TelegramShareButton
+              title={frontmatter.title}
+              url={siteMetadata.siteUrl+frontmatter.path}
+            >
+              <div className="flex items-center rounded-lg p-0">
+                <TelegramIcon className="h-8 w-8" round={true} />
+              </div>
+            </TelegramShareButton>
           </div>
         </div>
       </div>
