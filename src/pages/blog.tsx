@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import {graphql, Link} from 'gatsby'
-import PostCard from '../components/PostCard'
 
 // export type globalPostType = {
 //   id?: string,

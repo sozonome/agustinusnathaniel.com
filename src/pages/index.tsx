@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import { Link,} from 'gatsby';
+import { Link, graphql,} from 'gatsby';
+import RecentPersonalPosts from '../components/recentPosts/recentPersonalPosts';
 
 export default function IndexPage() {
   return (
@@ -24,6 +25,15 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
+      <section id="recent-posts" className="">
+        <div id="dev" className="">
+
+        </div>
+        <div id="personal" className="">
+          {/* <RecentPersonalPosts/> */}
+        </div>
+      </section>
     </Layout>
   )
 }
+
