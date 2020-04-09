@@ -3,6 +3,8 @@ title:
 date:
 slug:
 path:
+thumbnail:
+published: 
 type:
 tags:
 ---

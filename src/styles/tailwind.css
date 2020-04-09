@@ -26,8 +26,17 @@
 .mkdown figcaption a{
   @apply text-blue-600 font-semibold;
 }
+.mkdown h2, .mkdown h3, .mkdown h4{
+  @apply font-bold mb-2 text-teal-600;
+}
 .mkdown h2{
-  @apply text-3xl font-bold mb-2 text-teal-600;
+  @apply text-3xl;
+}
+.mkdown h3{
+  @apply text-2xl;
+}
+.mkdown h4{
+  @apply text-lg;
 }
 .mkdown hr{
   @apply mb-4 mx-12;
