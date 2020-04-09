@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import { Link, graphql,} from 'gatsby';
-import RecentPersonalPosts from '../components/recentPosts/recentPersonalPosts';
+import { Link } from 'gatsby';
 
 export default function IndexPage() {
   return (
@@ -9,7 +8,7 @@ export default function IndexPage() {
       <section id="intro" className="items-center">
         <div className="">
           <div id="title" className="">
-            <h1 className="text-3xl sm:text-4xl font-bold">Hi! 👋</h1> 
+            <h1 className="text-3xl sm:text-4xl font-bold">Hi! <span role="img" aria-label="hand-waving">👋</span></h1> 
             <h1 className="text-3xl sm:text-4xl font-bold">I'm <span className="text-orange-700">Nathan</span></h1>
           </div>
           <div className="mt-4 text-sm sm:text-lg">

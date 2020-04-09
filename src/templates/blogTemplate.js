@@ -2,8 +2,6 @@ import React from 'react';
 import {graphql} from "gatsby";
 import Layout from '../components/Layout';
 import Helmet from 'react-helmet';
-const configQuery = require('../../data/siteConfig');
-
 import {
   TwitterShareButton,
   FacebookShareButton,
@@ -14,9 +12,10 @@ import {
   WhatsappIcon,
   TelegramShareButton,
   TelegramIcon,
-  TwitterIcon,
-  FacebookShareCount
+  TwitterIcon
 } from 'react-share';
+
+const configQuery = require('../../data/siteConfig');
 
 export default function blogTemplate({
   data
@@ -24,7 +23,6 @@ export default function blogTemplate({
   const {markdownRemark} = data
   const { frontmatter, html } = markdownRemark
   const { siteMetadata  } = configQuery
-  const shareTwtr = `http://twitter.com/share?text=${frontmatter.title}&url=${siteMetadata.siteUrl}${frontmatter.path}/&via=sozonome`
 
   return (
     <Layout>

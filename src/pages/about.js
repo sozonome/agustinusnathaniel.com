@@ -53,8 +53,8 @@ export default function About() {
             {/* <div className="mb-2">
               (Check out my works <a href="https://www.instagram.com/cherocaptures" className="text-blue-300 font-semibold underline hover:text-blue-200" target="_blank">here</a>.)
             </div> */}
-            I share my personal shoots (mainly travel content) on my <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram} target="_blank" className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold">Instagram</a>.
-            <div className="mt-2 text-xs">N.B. Yeah I'm so used to people assumed myself as a film / photography student 😂.</div>
+            I share my personal shoots (mainly travel content) on my <a href={'https://www.instagram.com/' + site.siteMetadata.social.instagram} target="_blank" rel="noopener noreferrer" className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold">Instagram</a>.
+            <div className="mt-2 text-xs">N.B. Yeah I'm so used to people assumed myself as a film / photography student <span role="img" aria-label="laugh">😂</span>.</div>
           </div>
           <h2 className="text-2xl font-bold mt-12 text-teal-400">Lists</h2>
           <h4 className="text-1xl font-semibold mb-2">Some lists or recommendations of stuffs I like and/or use.</h4>
@@ -67,7 +67,7 @@ export default function About() {
                 <Link to="/sitestack" className="text-teal-500 hover:text-teal-200 font-semibold hover:underline">This site stacks</Link>
               </li>
               <li>
-                <a href="https://github.com/sozonome/great-apps-sites" className="text-teal-500 hover:text-teal-200 font-semibold hover:underline" target="_blank" rel="noopener">Fun Apps / Sites</a>
+                <a href="https://github.com/sozonome/great-apps-sites" className="text-teal-500 hover:text-teal-200 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Fun Apps / Sites</a>
               </li>
             </ul>
           </div>

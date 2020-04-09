@@ -1,4 +1,4 @@
-const {siteMetadata} = require('./data/siteConfig.tsx');
+const {siteMetadata} = require('./data/siteConfig');
 
 module.exports = {
   siteMetadata:{
@@ -26,12 +26,13 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require("tailwindcss")
+          require("tailwindcss"),
+          require("autoprefixer")
         ],
       }
     },
     `gatsby-plugin-sass`,    
-    `gatsby-plugin-typescript`,
+    // `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options:{
@@ -179,5 +180,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options:{
+        printRejected: false,
+        develop: false,
+        tailwind: true
+      }
+    }
   ],
 }

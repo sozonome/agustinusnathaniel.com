@@ -3,7 +3,7 @@ const path = require(`path`)
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.tsx`)
+  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
 
   const result = await graphql(`
     {
@@ -40,13 +40,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     if(node.frontmatter.type === "personal"){
       createPage({
         path: '/blog/' + node.frontmatter.slug,
-        component: path.resolve(`src/templates/blogTemplate.tsx`),
+        component: path.resolve(`src/templates/blogTemplate.js`),
         context: {} // additional data can be passed via context
       })
     } else{
       createPage({
         path: '/dev/' + node.frontmatter.slug,
-        component: path.resolve(`src/templates/blogTemplate.tsx`),
+        component: path.resolve(`src/templates/blogTemplate.js`),
         context: {}, // additional data can be passed via context
       })
     }
