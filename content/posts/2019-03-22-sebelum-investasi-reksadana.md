@@ -3,7 +3,7 @@ title: "Sebelum Investasi Reksa Dana..."
 date: "2019-03-22"
 slug: "sebelum-investasi-reksadana"
 path: "/blog/sebelum-investasi-reksadana"
-thumbnail: "https://img.icons8.com/cute-clipart/64/000000/money.png"
+thumbnail: "https://img.icons8.com/doodle/48/000000/money.png"
 published: true
 type: personal
 tags:
