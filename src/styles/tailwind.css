@@ -44,5 +44,8 @@
 .mkdown img{
   @apply w-full rounded-lg my-4;
 }
+.mkdown ul{
+  @apply list-disc px-6 mb-3;
+}
 
 @tailwind utilities;
