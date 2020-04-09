@@ -34,7 +34,7 @@ export default function Foot() {
         <div className="sm:flex w-full sm:w-1/2 sm:justify-start mt-2 mb-4 sm:my-0">
           <div className="flex items-center justify-center">
             <Link to="/dailyuse" className="hover:text-gray-300 mr-4">What I Use</Link>
-            <Link to="/rss" className="hover:text-gray-300">RSS</Link>
+            {/* <Link to="/rss" className="hover:text-gray-300">RSS</Link> */}
           </div>
         </div>
         <div className="sm:flex w-full sm:justify-end">

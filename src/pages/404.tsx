@@ -6,12 +6,12 @@ export default class dev404 extends Component {
   render() {
     return (
       <Layout>
-        <div className="section">
-          <h1 className="jumboTitle">
+        <div className="px-2">
+          <h1 className="text-6xl font-extrabold">
             404
           </h1>
-          <h1 className="title is-1">Looks like you're lost.</h1>
-          <Link to="/" className="button is-dark">Let's get back</Link>
+          <h1 className="text-lg mb-4">Looks like you're lost.</h1>
+          <Link to="/" className="text-md bg-blue-700 px-2 rounded-md hover:bg-blue-300 hover:text-teal-700">Let's get back</Link>
         </div>
       </Layout>
     )
