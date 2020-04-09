@@ -18,6 +18,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    textColor: ['group-hover']
+  },
   plugins: [],
 }
