@@ -63,6 +63,7 @@ export const pageQuery = graphql`
             type
             date(formatString: "MMMM DD, YYYY")
             slug
+            thumbnail
           }
         }
       }
