@@ -29,7 +29,7 @@ export default function Foot() {
   `);
 
   return (
-    <div className="w-full self-end text-gray-600 bg-black">
+    <div className="w-full self-end text-gray-600">
       <div className="sm:flex items-center px-6 pt-2 sm:pt-0 sm:py-0">
         <div className="sm:flex w-full sm:w-1/2 sm:justify-start mt-2 mb-4 sm:my-0">
           <div className="flex items-center justify-center">
