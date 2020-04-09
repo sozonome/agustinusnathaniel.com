@@ -76,6 +76,9 @@ module.exports = {
                       type:{
                         eq: "personal"
                       }
+                      published:{
+                        eq: true
+                      }
                     }
                   }
                 ) {
@@ -116,6 +119,9 @@ module.exports = {
                     frontmatter:{
                       type:{
                         eq: "dev"
+                      }
+                      published:{
+                        eq: true
                       }
                     }
                   }
