@@ -23,9 +23,10 @@ export default function blogTemplate({
             </div>
           </div>
           <div
-            className="mkdown"
+            className="mkdown mb-6"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          <a href={shareTwtr} className="py-2 px-4 font-bold text-sm bg-blue-600 hover:bg-blue-400 rounded-md" target="_blank" rel="noopener">Share</a>
         </div>
       </div>
     </Layout>

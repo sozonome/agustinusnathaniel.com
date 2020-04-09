@@ -4,6 +4,7 @@ date: "2018-10-06"
 slug: "food-eye-opening-video"
 path: "/blog/food-eye-opening-video"
 published: true
+thumbnail: "https://img.icons8.com/color/48/000000/hamburger.png"
 type: personal
 tags: 
   - personal

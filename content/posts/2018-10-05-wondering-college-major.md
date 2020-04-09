@@ -4,6 +4,7 @@ date: "2018-10-05"
 slug: "wondering-college-or-majors"
 path: "/blog/wondering-college-or-majors"
 published: true
+thumbnail: "https://img.icons8.com/color/48/000000/book.png"
 type: personal
 tags: 
   - personal
