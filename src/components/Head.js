@@ -8,7 +8,7 @@ export default class Head extends Component {
       <div className="w-full flex text-gray-600 bg-black h-24 items-center px-6">
         <div className="w-1/4 sm:w-1/2 font-bold hover:text-white">
           <Link className="flex" to="/">
-            <img className="h-12 w-12 mr-2" src={MyIcon}/>
+            <img className="h-12 w-12 mr-2" src={MyIcon} alt="agustinusnathaniel"/>
             <p className="py-3 hidden sm:flex">Agustinus Nathaniel</p>
           </Link>
         </div>

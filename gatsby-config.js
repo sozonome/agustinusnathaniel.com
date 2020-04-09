@@ -1,4 +1,4 @@
-const {siteMetadata} = require('./data/siteConfig.tsx');
+const {siteMetadata} = require('./data/siteConfig');
 
 module.exports = {
   siteMetadata:{
@@ -31,7 +31,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-sass`,    
-    `gatsby-plugin-typescript`,
+    // `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options:{
