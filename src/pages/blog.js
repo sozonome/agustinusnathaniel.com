@@ -34,7 +34,7 @@ export default function blog({
               return(
                 <>
                   <Link to={'/blog/'+edge.node.frontmatter.slug} className="">
-                    <div id="postListSingle" className="group flex rounded-lg p-6 mb-4 w-full hover:bg-gray-900">
+                    <div className="postListSingle group flex rounded-lg p-6 mb-4 w-full hover:bg-gray-900">
                       <div className="mr-4 flex items-center">
                         <img className="" src={edge.node.frontmatter.thumbnail} alt=""/>
                       </div>
