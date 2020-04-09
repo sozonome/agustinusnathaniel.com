@@ -12,6 +12,33 @@ html{
   }
 }
 
+body{
+  transition: background 0.3s ease-out;
+  transition-delay: 0.25;
+}
+
+#site-content{
+  transition: all 0.4s ease-out;
+  
+}
+
+#site-head{
+  transition: height 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 1s;
+}
+
+#site-foot{
+
+}
+
+a, .postListSingle {
+  transition: 0.4s ease;
+}
+
+a:hover, .postListSingle:hover{
+  transition: 0.2s ease;
+}
+
 .mainHeight{
   height: 80vh;
 }

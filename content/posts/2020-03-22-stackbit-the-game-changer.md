@@ -21,7 +21,9 @@ Have you ever thought of launching a landing page or a blog with the technology 
 Yes, this is for you if you want to get a taste of what is JAMStack site about, how does it work in general, but you don't want to build it from scratch just to know it. This is for you if you are someone who are very familiar with building JAMStack sites, having multiple and upcoming clients who requests high performance yet low-cost site. Well, this is where <a href="https://www.stackbit.com/" target="_blank" rel="noopener">Stackbit</a> plays the role for you.
 
 You can call Stackbit as your smart-assistant who helps you to start your JAMStack site. It's very easy to use, you just need to prepare your <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> account (<a href="https://gitlab.com/" target="_blank" rel="noopener">GitLab</a> and <a href="https://bitbucket.com/" target="_blank" rel="noopener">BitBucket</a> support coming soon) and a <a href="https://netlify.com/" target="_blank" rel="noopener">Netlify</a> account. The next thing is just register yourself into Stackbit (you can even register using your GitHub account so it's more convenient) and you can start to Build a Project. You gonna choose the site theme, the site generator framework, CMS, then you can deploy it. 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/cnssp8ul8ti64bky4ftq.png)
+
+![Stackbit Beta](../images/stackbit-beta.png)
+
 All of it are done just by picking, doing some clicks, and voila. Yeah, all of the process involve no code. But if you want to develop and customize the project further, that's where your hands start getting dirty.
 
 So, what are you waiting for? Don't just read this post, it won't bring you anywhere. *<a href="https://www.stackbit.com/" target="_blank" rel="noopener">Try it now</a>* and you will know what I'm talking about 😂.
