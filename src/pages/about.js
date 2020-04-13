@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { Link } from '@reach/router';
 import { useStaticQuery, graphql} from 'gatsby';
+import profileImg from '../images/profile.jpg';
 
 export default function About() {
   const { site } = useStaticQuery(graphql`
@@ -35,6 +36,7 @@ export default function About() {
             <br/>
             I love to explore and learn stuffs around technology and design.
           </p>
+          <img className="w-1/2 rounded-lg mb-4" src={profileImg} alt="" srcset=""/>
           <h2 className="text-2xl font-semibold mb-2">How do I got into Tech?</h2>
           <div className="mb-4 text-sm">
             I was fascinated by computer technology since I was little. Then, internet is becoming more accessible. 
