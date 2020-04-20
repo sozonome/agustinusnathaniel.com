@@ -33,7 +33,7 @@ export default function Foot() {
       <div className="sm:flex items-center px-6 pt-2 sm:pt-0 sm:py-0">
         <div className="sm:flex w-full sm:w-1/2 sm:justify-start mt-2 mb-4 sm:my-0">
           <div className="flex items-center justify-center">
-            <Link to="/dailyuse" className="hover:text-gray-300 mr-4">What I Use</Link>
+            <Link to="/projects" className="hover:text-gray-300 mr-4">Projects / Portfolios</Link>
             {/* <Link to="/rss" className="hover:text-gray-300">RSS</Link> */}
           </div>
         </div>

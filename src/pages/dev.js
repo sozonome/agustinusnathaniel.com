@@ -18,10 +18,9 @@ export default function dev({
         {
           edges
             .filter(edge => edge.node.frontmatter.title.length > 0)
-            .map((edge) => {
+            .map((edge, index) => {
               return(
-                <>
-                  <Link to={'/dev/'+edge.node.frontmatter.slug} className="">
+                  <Link key={index} to={'/dev/'+edge.node.frontmatter.slug} className="">
                     <div className="group flex rounded-lg p-6 mb-4 w-full hover:bg-gray-900">
                       <div className="mr-4 flex items-center">
                         <img className="" src={edge.node.frontmatter.thumbnail} alt=""/>
@@ -36,7 +35,6 @@ export default function dev({
                     </div>
                     {/* <PostCard value={edge.node} postType="blog"/> */}
                   </Link>
-                </>
               )
             })
         }

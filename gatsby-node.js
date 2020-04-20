@@ -40,13 +40,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     if(node.frontmatter.type === "personal"){
       createPage({
         path: '/blog/' + node.frontmatter.slug,
-        component: path.resolve(`src/templates/blogTemplate.js`),
+        component: blogPostTemplate,
         context: {} // additional data can be passed via context
       })
     } else{
       createPage({
         path: '/dev/' + node.frontmatter.slug,
-        component: path.resolve(`src/templates/blogTemplate.js`),
+        component: blogPostTemplate,
         context: {}, // additional data can be passed via context
       })
     }

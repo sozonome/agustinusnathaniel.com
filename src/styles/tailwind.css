@@ -50,6 +50,14 @@
 .mkdown ul{
   @apply list-disc px-6 mb-3;
 }
+
+.projectStacks p{
+  @apply flex;
+}
+
+.projectStacks img, p span a img{
+  @apply w-8 mr-2;
+}
 /* purgecss end ignore */
 
 @tailwind utilities;

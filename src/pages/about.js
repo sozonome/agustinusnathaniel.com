@@ -28,26 +28,16 @@ export default function About() {
     <Layout>
       <div>
         <h1 className="text-3xl font-bold">About me</h1>
-        <p className="text-xs text-gray-600">Last update : 08 April 2020. <br/> (in progress doing thesis ✌️)</p>
+        <p className="text-xs text-gray-600">Last update : April 2020. <br/> (in progress doing bachelor thesis ✌️)</p>
         <section id="intro" className="mt-4">
           <p className="mb-4 text-md">
-            I'm Agustinus Nathaniel, currently an IT (Computer Science / Informatics) Student from Indonesia. 
+            Hi! I'm Agustinus Nathaniel, currently an IT (Computer Science / Informatics) Student from Indonesia. 
             {/* I aim to be a Front End Developer after graduate in several more months. */}
             <br/>
             I love to explore and learn stuffs around technology and design.
+            I believe experiences + mistakes are the greatest teacher and learning is a lifetime process. 
           </p>
           <img className="w-1/2 rounded-lg mb-4" src={profileImg} alt="" srcset=""/>
-          <h2 className="text-2xl font-semibold mb-2">How do I got into Tech?</h2>
-          <div className="mb-4 text-sm">
-            I was fascinated by computer technology since I was little. Then, internet is becoming more accessible. 
-            I started to know Google, Yahoo!, blogger, facebook, twitter, etc. I became interested in web technologies and applications.
-            But I took it for granted, I just thought my interest towards computer and web technologies is just the same as my other friends, so I didn't feel special at all having that interest.
-            I started to have so many interests towards various things.
-            Even when I was looking for college at my final year of high school, IT is not my first option. Long story short, after applying myself to some college with non-IT major and scholarship programs (which I also failed to get), I finally took IT major.
-            The first 2 year of college is full of stuggling because there are so many courses and I like almost 20% of them only. 
-            The only subjects I really like is subjects around web and mobile development.
-            Hoping to graduate soon in several more months.
-          </div>
           <h2 className="text-2xl font-semibold mb-2">Beside Tech...</h2>
           <div className="mb-4 text-sm">
             I also do photography and videography.

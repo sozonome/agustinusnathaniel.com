@@ -41,10 +41,10 @@ export default function dailyuse() {
           </li>
         </ul>
       </section>
-      <section id="photoVideo" className="mb-6">
+      {/* <section id="photoVideo" className="mb-6">
         <h2 className="text-2xl font-bold">Shooting Gears</h2>
         <p>Check out my shooting gears <a href="https://kit.co/agustinusnathaniel" className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold" target="_blank" rel="noopener noreferrer">here</a>.</p>
-      </section>
+      </section> */}
       <section id="sitestack">
         <h2 className="text-2xl font-bold">Site Stacks</h2>
         <Link to="/sitestack" className="text-green-400 hover:text-green-200 hover:underline hover:font-bold">Wanna know which stacks I use to build this site?</Link>

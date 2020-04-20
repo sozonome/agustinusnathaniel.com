@@ -157,7 +157,28 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/content/`,
+        path: `${__dirname}/content/posts`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/content/projects`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `postImages`,
+        path: `${__dirname}/content/images`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projectStackLogos`,
+        path: `${__dirname}/content/stacklogos`
       }
     },
     `gatsby-plugin-sharp`,
