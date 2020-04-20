@@ -2,18 +2,6 @@ import React from 'react'
 import Layout from '../components/Layout'
 import {graphql, Link} from 'gatsby'
 
-// export type globalPostType = {
-//   id?: string,
-//   frontmatter: {
-//     slug: string,
-//     path?: string,
-//     type: string,
-//     date: Date,
-//     thumbnail: string,
-//     title: string
-//   }
-// }
-
 export default function blog({
   data:{
     allMarkdownRemark: {edges},

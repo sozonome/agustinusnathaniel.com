@@ -4,7 +4,7 @@ date: "2019-03-22"
 slug: "sebelum-investasi-reksadana"
 path: "/blog/sebelum-investasi-reksadana"
 thumbnail: "https://img.icons8.com/doodle/48/000000/money.png"
-published: true
+published: false
 type: personal
 tags:
   - personal

@@ -1,22 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-// export type edge = {
-//   node: {
-//     frontmatter : {
-//       slug: string,
-//       thumbnail: string,
-//       title: string
-//       date: Date
-//     }
-//   }
-// }
-
-export type postType = "blog" | "dev"
-
 export default function PostCard(
-  value: any,
-  postType: postType
+  value,
+  postType
 ) {
   return (
     <Link to={'/'+postType+'/'+value.frontmatter.slug} className="">

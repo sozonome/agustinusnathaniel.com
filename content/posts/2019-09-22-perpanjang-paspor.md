@@ -4,7 +4,7 @@ date: "2019-09-22"
 slug: "perpanjang-paspor"
 path: "/blog/perpanjang-paspor"
 thumbnail: "https://img.icons8.com/doodle/48/000000/passport--v2.png"
-published: true
+published: false
 type: personal
 tags: 
   - indonesia
