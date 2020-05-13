@@ -11,7 +11,7 @@ export default class dev404 extends Component {
             404
           </h1>
           <h1 className="text-lg mb-4">Looks like you're lost.</h1>
-          <Link to="/" className="text-md bg-blue-700 px-2 rounded-md hover:bg-blue-300 hover:text-teal-700">Let's get back</Link>
+          <Link to="/" className="p-2 text-md bg-blue-700 px-2 rounded-md hover:bg-blue-300 hover:text-teal-700">Let's get back</Link>
         </div>
       </Layout>
     )
