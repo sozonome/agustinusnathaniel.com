@@ -1,5 +1,10 @@
 .mainwrapper{
   max-width: 800px;
+  min-height: 100vh;
+}
+
+body{
+  background: black;
 }
 
 html{
@@ -12,7 +17,7 @@ html{
   }
 }
 
-body{
+.mainwrapper{
   transition: background 0.3s ease-out;
   transition-delay: 0.25s;
 }

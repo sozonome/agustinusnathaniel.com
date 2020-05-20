@@ -36,7 +36,6 @@ export default function SEO() {
       {/* <meta property="twitter:description" content={""} /> */}
       {/* <meta property="twitter:image" content={""} /> */}
 
-      
       <link rel="shortcut icon" href="favicon.ico" />
     </Helmet>
   )
