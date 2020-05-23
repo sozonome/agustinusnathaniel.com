@@ -114,12 +114,12 @@ export default function About() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/sozonome/great-apps-sites"
+                    href="https://github.com/sozonome/bookmarks"
                     className="text-teal-500 hover:text-teal-200 font-semibold hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Fun Apps / Sites
+                    Bookmarks
                   </a>
                 </li>
               </ul>
