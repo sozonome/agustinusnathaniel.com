@@ -14,6 +14,7 @@ const siteConfig = {
       medium: `@agustinusnathaniel`,
       behance: `agustinusnathaniel`,
       email: `hello@agustinusnathaniel.com`,
+      spotify: `214cjghp4c3lzsygqz73qvuxi`,
       spotify_podcast: `https://open.spotify.com/show/0ORzchlOopGccuNlQ5SAyy`,
       apple_podcast: `https://podcasts.apple.com/id/podcast/decompiling-fruits/id1452637576`,
       spotify_playlist: `https://open.spotify.com/user/214cjghp4c3lzsygqz73qvuxi`,

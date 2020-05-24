@@ -16,6 +16,7 @@ module.exports = {
       medium: siteMetadata.social.medium,
       behance: siteMetadata.social.behance,
       email: siteMetadata.social.email,
+      spotify: siteMetadata.social.spotify,
       spotify_podcast: siteMetadata.social.spotify_podcast,
       apple_podcast: siteMetadata.social.apple_podcast,
       spotify_playlist: siteMetadata.social.spotify_playlist,

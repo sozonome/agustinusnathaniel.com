@@ -22,6 +22,7 @@ export default function Foot() {
             medium
             email
             behance
+            spotify
           }
         }
       }
@@ -53,6 +54,9 @@ export default function Foot() {
             </a>
             <a href={"https://github.com/" + site.siteMetadata.social.github} className="w-8 ml-2 hover:text-white" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={['fab', 'github']} size="2x"/>
+            </a>
+            <a href={"https://open.spotify.com/user/" + site.siteMetadata.social.spotify} className="w-8 ml-2 hover:text-white" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={['fab', 'spotify']} size="2x"/>
             </a>
           </div>
         </div>
