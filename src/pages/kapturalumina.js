@@ -42,7 +42,7 @@ export default function kapturalumina() {
               </button>
             </a>
             <a
-              href="https://sznm.dev/kapturalumina/android/app-release.apk"
+              href="https://s.id/kapturalumina_android"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -66,7 +66,7 @@ export default function kapturalumina() {
             <h3 className="text-xl font-bold mb-1">Questionaire Form</h3>
             <p className="mb-1">If you have used the app, I'm very thankful if you can fill in the questionaire form.</p>
             <a
-              href="https://s.id/KapturaLuminaForm"
+              href="https://s.id/kapturalumina_form"
               target="_blank"
               rel="noopener noreferrer"
               className="mr-2"
