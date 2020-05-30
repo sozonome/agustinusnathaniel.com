@@ -63,7 +63,7 @@ export default function kapturalumina() {
             </a>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-1">Questionaire Form</h3>
+            <h3 className="text-xl font-bold mb-1">Questionnaire Form</h3>
             <p className="mb-1">If you have used the app, I'm very thankful if you can fill in the questionaire form.</p>
             <a
               href="https://s.id/kapturalumina_form"
