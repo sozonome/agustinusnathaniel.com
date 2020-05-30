@@ -42,7 +42,7 @@ export default function kapturalumina() {
               </button>
             </a>
             <a
-              // href="https://play.google.com"
+              // href="https://sznm.dev/KapturaLumina-v1.0.apk"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,7 +57,7 @@ export default function kapturalumina() {
                     style={{ height: "20px" }}
                     className="mr-2"
                   />
-                  Google Play Store
+                  Android App
                 </div>
               </button>
             </a>
