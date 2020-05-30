@@ -38,7 +38,7 @@ export default function IndexPage() {
                 </Link>
               </div>
             </div>
-            {/* <div>
+            <div>
               <div className="mt-4 text-2xl">
                 <p className="mb-2"><span>👇👇👇👇👇</span></p> 
                 <Link
@@ -48,7 +48,7 @@ export default function IndexPage() {
                   Help Me
                 </Link>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
