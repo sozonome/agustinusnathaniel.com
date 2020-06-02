@@ -10,37 +10,39 @@ library.add(fab)
 export default function kapturalumina() {
   return (
     <Layout>
-      <div>
+      <section id="head" className="mb-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold">
             <span>📷</span>KapturaLumina
           </h1>
-          <h5 className="text-1xl mb-4">Basic Photography Learning App</h5>
+          <h5 className="text-1xl mb-4">
+            Aplikasi Pembelajaran Fotografi Dasar
+          </h5>
           <p className="text-xs text-gray-600">
-            Page Last Update : 30 May 2020
+            Page Last Update : 01 June 2020
           </p>
         </div>
-        <p className="mb-2">
-          KapturaLumina is part of my Bachelor Thesis.
-          <br/>
-          The App currently only available in Indonesian language.
+        <p className="mb-4">
+          KapturaLumina adalah aplikasi yang saya rancang dan bangun untuk
+          penelitian skripsi saya.
           <br />
-          If you want to help me, please try the App for a while and then fill
-          in the questionaire form.
+          {/* The App currently only available in Indonesian language. */}
+          <br />
+          Saya ingin meminta bantuan teman-teman untuk menggunakan aplikasi tersebut
+          kemudian mengisi form kuisioner untuk kelancaran skripsi saya.
         </p>
+        <a
+          href="#questionnaireLink"
+          className="bg-green-200 text-black p-2 rounded-lg"
+        >
+          👇 Isi Form 👇
+        </a>
+      </section>
+      <section id="appLink" className="mb-8">
+        <h3 className="text-xl font-bold mb-1">Aplikasi KapturaLumina</h3>
         <div>
-          <div className="mb-2">
-            <h3 className="text-xl font-bold mb-1">The App</h3>
-            <a
-              href="https://kapturalumina.sznm.dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mr-2"
-            >
-              <button className="bg-teal-400 p-4 rounded-lg font-bold text-teal-900 hover:bg-teal-200 hover:text-teal-700">
-                Web App
-              </button>
-            </a>
+          <div className="mb-4">
+            <h3>Untuk pengguna Android : </h3>
             <a
               href="https://s.id/kapturalumina_android"
               target="_blank"
@@ -48,36 +50,51 @@ export default function kapturalumina() {
             >
               <button
                 disabled={true}
-                className="bg-teal-400 p-4 rounded-lg font-bold text-teal-900 hover:bg-teal-200 hover:text-teal-700"
+                className="w-full sm:w-1/4 bg-teal-400 p-4 rounded-lg font-bold text-teal-900 hover:bg-teal-200 hover:text-teal-700"
               >
-                <div className="flex">
-                  <FontAwesomeIcon
+                  {/* <FontAwesomeIcon
                     icon={faGooglePlay}
                     size="sm"
                     style={{ height: "20px" }}
                     className="mr-2"
-                  />
+                  /> */}
                   Android App
-                </div>
+                
               </button>
             </a>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-1">Questionnaire Form</h3>
-            <p className="mb-1">If you have used the app, I'm very thankful if you can fill in the questionaire form.</p>
+            <h3>Untuk pengguna iOS : </h3>
             <a
-              href="https://s.id/kapturalumina_form"
+              href="https://kapturalumina.sznm.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="mr-2"
             >
-              <button className="bg-orange-400 p-4 rounded-lg font-bold text-orange-900 hover:bg-orange-200 hover:text-orange-700">
-                Let's Go!
+              <button className="w-full sm:w-1/4 bg-teal-400 p-4 rounded-lg font-bold text-teal-900 hover:bg-teal-200 hover:text-teal-700">
+                Web App
               </button>
             </a>
           </div>
         </div>
-      </div>
+      </section>
+      <section id="questionnaireLink">
+        <h3 className="text-xl font-bold mb-1">👇👇 Form Kuisioner</h3>
+        <p className="mb-1">
+          Mohon isi form kuisioner berikut jika anda sudah menggunakan aplikasi
+          KapturaLumina. Setiap satu respon dari Anda sangat berarti bagi saya.
+        </p>
+        <a
+          href="https://s.id/kapturalumina_form"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-2"
+        >
+          <button className="w-full sm:w-1/4 bg-orange-400 p-4 rounded-lg font-bold text-orange-900 hover:bg-orange-200 hover:text-orange-700">
+            Isi Form
+          </button>
+        </a>
+      </section>
     </Layout>
   )
 }
