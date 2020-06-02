@@ -175,13 +175,6 @@ module.exports = {
         path: `${__dirname}/content/images`
       }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `projectStackLogos`,
-        path: `${__dirname}/content/stacklogos`
-      }
-    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
