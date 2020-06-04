@@ -6,5 +6,3 @@ description: Mobile app showcasing Indonesia's culture, heritage, and archipelag
 date: "2019-12-10"
 type: "projects"
 ---
-![Ionic](../stacklogos/ionic-icon.svg)
-![Angular](../stacklogos/angular.svg)
