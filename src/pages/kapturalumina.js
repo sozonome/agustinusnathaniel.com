@@ -28,8 +28,9 @@ export default function kapturalumina() {
           <br />
           {/* The App currently only available in Indonesian language. */}
           <br />
-          Saya ingin meminta bantuan teman-teman untuk menggunakan aplikasi tersebut
-          kemudian mengisi form kuisioner untuk kelancaran skripsi saya.
+          Saya ingin meminta bantuan teman-teman untuk menggunakan aplikasi
+          tersebut kemudian mengisi form kuisioner untuk kelancaran skripsi
+          saya.
         </p>
         <a
           href="#questionnaireLink"
@@ -48,18 +49,8 @@ export default function kapturalumina() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button
-                disabled={true}
-                className="w-full sm:w-1/4 bg-teal-400 p-4 rounded-lg font-bold text-teal-900 hover:bg-teal-200 hover:text-teal-700"
-              >
-                  {/* <FontAwesomeIcon
-                    icon={faGooglePlay}
-                    size="sm"
-                    style={{ height: "20px" }}
-                    className="mr-2"
-                  /> */}
-                  Android App
-                
+              <button className="w-full sm:w-1/4 bg-teal-400 p-4 rounded-lg font-bold text-teal-900 hover:bg-teal-200 hover:text-teal-700">
+                Android App
               </button>
             </a>
           </div>
