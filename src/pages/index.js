@@ -38,17 +38,6 @@ export default function IndexPage() {
                 </Link>
               </div>
             </div>
-            <div>
-              <div className="mt-4 text-2xl">
-                <p className="mb-2"><span>👇👇👇👇👇</span></p> 
-                <Link
-                  to="/kapturalumina"
-                  className="font-bold py-2 px-4 bg-teal-600 rounded hover:bg-green-600"
-                >
-                  Help Me
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>

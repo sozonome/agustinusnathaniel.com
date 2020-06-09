@@ -1,11 +1,5 @@
 import React from "react"
-import Layout from "../components/Layout"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { library, config } from "@fortawesome/fontawesome-svg-core"
-import { fab, faGooglePlay } from "@fortawesome/free-brands-svg-icons"
-
-config.autoAddCss = false
-library.add(fab)
+import Layout from "../Layout"
 
 export default function kapturalumina() {
   return (
