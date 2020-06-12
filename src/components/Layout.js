@@ -8,7 +8,7 @@ import Foot from "./Foot"
 export default class Layout extends Component {
   render() {
     return (
-      <div className="flex flex-wrap mainwrapper bg-black text-white mx-auto">
+      <div className="flex flex-wrap mainwrapper bg-black text-gray-400 mx-auto">
         <SEO />
         <Head />
         <div id="site-content" className="my-8 px-6 w-full">
