@@ -18,6 +18,8 @@ export default function About() {
             medium
             email
             behance
+
+            devInstagram
           }
         }
       }
@@ -28,15 +30,36 @@ export default function About() {
     <Layout>
       <div>
         <h1 className="text-3xl font-bold">About me</h1>
-        <p className="text-xs text-gray-600">
+        {/* <p className="text-xs text-gray-600">
           Last update : April 2020. <br /> (in progress doing bachelor thesis
           ✌️)
-        </p>
+        </p> */}
         <section id="intro" className="mt-4">
           <p className="mb-4 text-md">
-            Hi! I'm Agustinus Nathaniel, currently an IT (Computer Science /
-            Informatics) Student from Indonesia.
-            {/* I aim to be a Front End Developer after graduate in several more months. */}
+            Hi! I'm{" "}
+            <a
+              href={
+                "https://www.instagram.com/" +
+                site.siteMetadata.social.instagram
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold"
+            >
+              Agustinus Nathaniel
+            </a>
+            , also known as {" "}
+            <a
+              href={
+                "https://www.instagram.com/" +
+                site.siteMetadata.social.devInstagram
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold"
+            >
+              @sozonome.
+            </a>
             <br />I love to explore and learn stuffs around technology and
             design. I believe experiences + mistakes are the greatest teacher
             and learning is a lifetime process.
@@ -47,13 +70,13 @@ export default function About() {
             alt=""
             srcset=""
           />
-          <h2 className="text-2xl font-semibold mb-2">Beside Tech...</h2>
+          {/* <h2 className="text-2xl font-semibold mb-2">Beside Tech...</h2>
           <div className="mb-4 text-sm">
             I also do photography and videography.
             <br />
-            {/* <div className="mb-2">
+            <div className="mb-2">
               (Check out my works <a href="https://www.instagram.com/cherocaptures" className="text-blue-300 font-semibold underline hover:text-blue-200" target="_blank">here</a>.)
-            </div> */}
+            </div>
             I share my personal shoots (mainly travel content) on my{" "}
             <a
               href={
@@ -75,7 +98,7 @@ export default function About() {
               </span>
               .
             </div>
-          </div>
+          </div> */}
           <div>
             <h2 className="text-2xl font-bold mt-12">Some Documents</h2>
             <div className="mt-4">
