@@ -13,7 +13,7 @@ export default function projects({
       <div className="text-gray-500">
         <h1 className="text-4xl font-bold">Projects / Portfolios</h1>
         <p className="text-sm font-semibold">
-          Previous projects I've worked on.
+          Some notable projects I've worked on previously.
         </p>
         <div className="mt-12 sm:flex sm:flex-wrap">
           {edges
