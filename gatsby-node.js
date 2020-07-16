@@ -15,6 +15,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             published: {
               eq: true
             }
+            type:{
+              regex: "/personal|dev/"
+            }
           }
         }
       ) {
