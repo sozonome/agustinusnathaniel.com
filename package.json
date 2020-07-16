@@ -2,18 +2,18 @@
   "name": "agustinusnathaniel-personal-site",
   "private": true,
   "description": "Agustinus Nathaniel's Personal Front-End Project",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "sozonome",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url sass/global.scss css/global.scss",
     "css-watch": "npm run css-build -- --watch",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "prettify": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "prettify": "prettier --write src/",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "release": "standard-version"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
@@ -51,7 +51,8 @@
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "standard-version": "^8.0.2"
   },
   "repository": {
     "type": "git",
