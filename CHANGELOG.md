@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/gatsbyjs/gatsby-starter-hello-world/compare/v0.1.1...v3.0.1) (2020-07-16)
+
 ### 0.1.1 (2020-07-16)
 
 
