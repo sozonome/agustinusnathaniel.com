@@ -1,7 +1,7 @@
-import React from 'react';
-import {graphql} from "gatsby";
-import Layout from '../components/Layout';
-import Helmet from 'react-helmet';
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../components/Layout"
+import Helmet from "react-helmet"
 import {
   TwitterShareButton,
   FacebookShareButton,
@@ -12,22 +12,22 @@ import {
   WhatsappIcon,
   TelegramShareButton,
   TelegramIcon,
-  TwitterIcon
-} from 'react-share';
+  TwitterIcon,
+} from "react-share"
 
-const configQuery = require('../../data/siteConfig');
+const configQuery = require("../../data/siteConfig")
 
-export default function blogTemplate({
-  data
-}) {
-  const {markdownRemark} = data
+export default function blogTemplate({ data }) {
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const { siteMetadata  } = configQuery
+  const { siteMetadata } = configQuery
 
   return (
     <Layout>
       <Helmet>
-        <title>{frontmatter.title} | {siteMetadata.title}</title>
+        <title>
+          {frontmatter.title} | {siteMetadata.title}
+        </title>
       </Helmet>
       <div className="post">
         <div className="postContainer">
@@ -37,10 +37,10 @@ export default function blogTemplate({
               <h2 className="text-sm mr-4">{frontmatter.date}</h2>
             </div>
             <div className="flex items-center">
-              <TwitterShareButton 
-                title={frontmatter.title} 
-                via={siteMetadata.social.twitter} 
-                url={siteMetadata.siteUrl+frontmatter.path}
+              <TwitterShareButton
+                title={frontmatter.title}
+                via={siteMetadata.social.twitter}
+                url={siteMetadata.siteUrl + frontmatter.path}
               >
                 <div className="flex items-center rounded-lg">
                   <TwitterIcon className="h-8 w-8 mr-2" round={true} />
@@ -48,7 +48,7 @@ export default function blogTemplate({
               </TwitterShareButton>
               <FacebookShareButton
                 title={frontmatter.title}
-                url={siteMetadata.siteUrl+frontmatter.path}
+                url={siteMetadata.siteUrl + frontmatter.path}
               >
                 <div className="flex items-center rounded-lg">
                   <FacebookIcon className="h-8 w-8 mr-2" round={true} />
@@ -56,7 +56,7 @@ export default function blogTemplate({
               </FacebookShareButton>
               <LinkedinShareButton
                 title={frontmatter.title}
-                url={siteMetadata.siteUrl+frontmatter.path}
+                url={siteMetadata.siteUrl + frontmatter.path}
               >
                 <div className="flex items-center rounded-lg p-0">
                   <LinkedinIcon className="h-8 w-8 mr-2" round={true} />
@@ -64,7 +64,7 @@ export default function blogTemplate({
               </LinkedinShareButton>
               <WhatsappShareButton
                 title={frontmatter.title}
-                url={siteMetadata.siteUrl+frontmatter.path}
+                url={siteMetadata.siteUrl + frontmatter.path}
               >
                 <div className="flex items-center rounded-lg p-0 mr-2">
                   <WhatsappIcon className="h-8 w-8" round={true} />
@@ -72,7 +72,7 @@ export default function blogTemplate({
               </WhatsappShareButton>
               <TelegramShareButton
                 title={frontmatter.title}
-                url={siteMetadata.siteUrl+frontmatter.path}
+                url={siteMetadata.siteUrl + frontmatter.path}
               >
                 <div className="flex items-center rounded-lg p-0">
                   <TelegramIcon className="h-8 w-8" round={true} />
@@ -84,11 +84,11 @@ export default function blogTemplate({
             className="mkdown mb-6"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <div className="flex items-center">  
-            <TwitterShareButton 
-              title={frontmatter.title} 
-              via={siteMetadata.social.twitter} 
-              url={siteMetadata.siteUrl+frontmatter.path}
+          <div className="flex items-center">
+            <TwitterShareButton
+              title={frontmatter.title}
+              via={siteMetadata.social.twitter}
+              url={siteMetadata.siteUrl + frontmatter.path}
             >
               <div className="flex items-center rounded-lg">
                 <TwitterIcon className="h-8 w-8 mr-2" round={true} />
@@ -96,7 +96,7 @@ export default function blogTemplate({
             </TwitterShareButton>
             <FacebookShareButton
               title={frontmatter.title}
-              url={siteMetadata.siteUrl+frontmatter.path}
+              url={siteMetadata.siteUrl + frontmatter.path}
             >
               <div className="flex items-center rounded-lg mr-2">
                 <FacebookIcon className="h-8 w-8" round={true} />
@@ -104,7 +104,7 @@ export default function blogTemplate({
             </FacebookShareButton>
             <LinkedinShareButton
               title={frontmatter.title}
-              url={siteMetadata.siteUrl+frontmatter.path}
+              url={siteMetadata.siteUrl + frontmatter.path}
             >
               <div className="flex items-center rounded-lg p-0 mr-2">
                 <LinkedinIcon className="h-8 w-8" round={true} />
@@ -112,7 +112,7 @@ export default function blogTemplate({
             </LinkedinShareButton>
             <WhatsappShareButton
               title={frontmatter.title}
-              url={siteMetadata.siteUrl+frontmatter.path}
+              url={siteMetadata.siteUrl + frontmatter.path}
             >
               <div className="flex items-center rounded-lg p-0 mr-2">
                 <WhatsappIcon className="h-8 w-8" round={true} />
@@ -120,7 +120,7 @@ export default function blogTemplate({
             </WhatsappShareButton>
             <TelegramShareButton
               title={frontmatter.title}
-              url={siteMetadata.siteUrl+frontmatter.path}
+              url={siteMetadata.siteUrl + frontmatter.path}
             >
               <div className="flex items-center rounded-lg p-0">
                 <TelegramIcon className="h-8 w-8" round={true} />

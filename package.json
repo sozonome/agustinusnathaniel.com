@@ -1,8 +1,8 @@
 {
-  "name": "agustinusnathaniel-personal-site",
+  "name": "agustinusnathaniel.com",
   "private": true,
-  "description": "Agustinus Nathaniel's Personal Front-End Project",
-  "version": "3.0.2",
+  "description": "Agustinus Nathaniel's Personal Site Project",
+  "version": "3.0.0",
   "author": "sozonome",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url sass/global.scss css/global.scss",

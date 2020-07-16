@@ -1,12 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const PostCard = (props) => {
+const PostCard = props => {
   return (
-    <Link key={props.key} to={"/blog/" + props.value.node.frontmatter.slug} className="">
+    <Link
+      key={props.key}
+      to={"/blog/" + props.value.node.frontmatter.slug}
+      className=""
+    >
       <div className="postListSingle group flex rounded-lg p-6 mb-4 w-full hover:bg-gray-900">
         <div className="mr-4 flex items-center">
-          <img className="" src={props.value.node.frontmatter.thumbnail} alt="" />
+          <img
+            className=""
+            src={props.value.node.frontmatter.thumbnail}
+            alt=""
+          />
         </div>
         <div className="w-5/6">
           <h1 className="text-2xl font-bold mb-1 group-hover:text-teal-400">
@@ -21,4 +29,4 @@ const PostCard = (props) => {
   )
 }
 
-export default PostCard;
+export default PostCard

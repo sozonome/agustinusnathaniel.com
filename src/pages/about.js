@@ -48,7 +48,7 @@ export default function About() {
             >
               Agustinus Nathaniel
             </a>
-            , also known as {" "}
+            , also known as{" "}
             <a
               href={
                 "https://www.instagram.com/" +
