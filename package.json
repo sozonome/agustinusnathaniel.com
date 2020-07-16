@@ -2,7 +2,7 @@
   "name": "agustinusnathaniel.com",
   "private": true,
   "description": "Agustinus Nathaniel's Personal Site Project",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "author": "sozonome",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url sass/global.scss css/global.scss",
@@ -56,9 +56,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/sozonome/agustinusnathaniel.com"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/sozonome/agustinusnathaniel.com/issues"
   }
 }
