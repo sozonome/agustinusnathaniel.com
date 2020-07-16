@@ -2,7 +2,7 @@
   "name": "agustinusnathaniel-personal-site",
   "private": true,
   "description": "Agustinus Nathaniel's Personal Front-End Project",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "author": "sozonome",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url sass/global.scss css/global.scss",
