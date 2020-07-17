@@ -1,16 +1,14 @@
-const {siteMetadata} = require('./data/siteConfig');
+const { siteMetadata } = require("./data/siteConfig")
 
 module.exports = {
-  siteMetadata:{
+  siteMetadata: {
     title: siteMetadata.title,
     description: siteMetadata.description,
     author: siteMetadata.author,
     siteUrl: siteMetadata.siteUrl, // Domain of your site. No trailing slash!
-    social:{
+    social: {
       youtube: siteMetadata.social.youtube,
       linkedin: siteMetadata.social.linkedin,
-      github: siteMetadata.social.github,
-      devto: siteMetadata.social.devto,
       twitter: siteMetadata.social.twitter,
       instagram: siteMetadata.social.instagram,
       medium: siteMetadata.social.medium,
@@ -39,21 +37,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [
-          require("tailwindcss"),
-          require("autoprefixer")
-        ],
-      }
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+      },
     },
-    `gatsby-plugin-sass`,    
+    `gatsby-plugin-sass`,
     // `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
-      options:{
+      options: {
         siteUrl: `https://agustinusnathaniel.com`,
-        stripQueryString: true
-      }
+        stripQueryString: true,
+      },
     },
+
+    /** RSS */
     // {
     //   resolve: `gatsby-plugin-feed`,
     //   options: {
@@ -86,7 +83,7 @@ module.exports = {
     //           {
     //             allMarkdownRemark(
     //               sort: { order: DESC, fields: [frontmatter___date]},
-    //               filter: { 
+    //               filter: {
     //                 frontmatter:{
     //                   type:{
     //                     eq: "personal"
@@ -130,7 +127,7 @@ module.exports = {
     //           {
     //             allMarkdownRemark(
     //               sort: { order: DESC, fields: [frontmatter___date]},
-    //               filter: { 
+    //               filter: {
     //                 frontmatter:{
     //                   type:{
     //                     eq: "dev"
@@ -165,28 +162,28 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-89527004-1`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
         path: `${__dirname}/content/posts`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
         path: `${__dirname}/content/projects`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `postImages`,
-        path: `${__dirname}/content/images`
-      }
+        path: `${__dirname}/content/images`,
+      },
     },
     `gatsby-plugin-sharp`,
     {
@@ -196,11 +193,11 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 800
-            }
-          }
-        ]
-      }
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -223,11 +220,11 @@ module.exports = {
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-purgecss`,
-      options:{
+      options: {
         printRejected: false,
         develop: false,
-        tailwind: true
-      }
-    }
+        tailwind: true,
+      },
+    },
   ],
 }
