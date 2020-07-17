@@ -1,32 +1,37 @@
-.mainwrapper{
+.mainwrapper {
   max-width: 800px;
   min-height: 100vh;
-}
 
-body{
-  background: black;
-}
-
-html{
-  scroll-behavior: smooth;
-  body, button{
-    font-family: 'Open Sans', sans-serif;
-    h1, h2, h3, h4, h5, h6, b{
-      font-family: 'Muli', sans-serif;
-    }
-  }
-}
-
-.mainwrapper{
   transition: background 0.3s ease-out;
   transition-delay: 0.25s;
 }
 
-#site-content{
+body {
+  background: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  body,
+  button {
+    font-family: "Open Sans", sans-serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    b {
+      font-family: "Muli", sans-serif;
+    }
+  }
+}
+
+#site-content {
   transition: all 0.4s ease-out;
 }
 
-.fadeTrans{
+.fadeTrans {
   transition: 0.25s;
   opacity: 1;
   animation: slideUp 0.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -36,45 +41,42 @@ html.is-animating .fadeTrans {
   opacity: 0;
 }
 @keyframes slideUp {
-0% {
-  transform: translate3d(0, 4vh, 0);
-}
-100% {
-  transform: translate3d(0, 0, 0);
-}
+  0% {
+    transform: translate3d(0, 4vh, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-
-#site-head{
+#site-head {
   transition: height 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition-delay: 1s;
 }
 
-#site-foot{
-
-}
-
-a, .postListSingle {
+a,
+.postListSingle {
   transition: 0.4s ease;
 }
 
-a:hover, .postListSingle:hover{
+a:hover,
+.postListSingle:hover {
   transition: 0.2s ease;
 }
 
-.mainHeight{
+.mainHeight {
   height: 80vh;
 }
 
-.mainHeightMobile{
+.mainHeightMobile {
   height: 70vh;
 }
 
-img{
+img {
   pointer-events: none;
 }
 
-.mkdown .gatsby-resp-image-wrapper{
+.mkdown .gatsby-resp-image-wrapper {
   margin-bottom: 1rem;
   pointer-events: none;
 }
