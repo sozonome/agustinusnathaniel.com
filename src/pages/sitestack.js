@@ -34,7 +34,7 @@ export default function sitestack() {
         </ul>
       </section>
       <section id="deployHosting" className="mb-6">
-        <h2 className="text-2xl font-bold">Deployment, Hosting, & Domain</h2>
+        <h2 className="text-2xl font-bold">Deployment {"&"} Hosting</h2>
         <ul className="list-disc px-5">
           <li>
             <a
@@ -48,37 +48,12 @@ export default function sitestack() {
           </li>
           <li>
             <a
-              href="https://gitlab.com/"
+              href="https://github.com/"
               className="text-orange-400 hover:text-orange-200 hover:underline hover:font-bold"
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitLab
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.rumahweb.com/"
-              className="text-blue-400 hover:text-blue-200 hover:underline hover:font-bold"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              RumahWeb (Domain)
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section id="performance">
-        <h2 className="text-2xl font-bold">Web Performance</h2>
-        <ul className="list-disc px-5">
-          <li>
-            <a
-              href="https://analytics.google.com/analytics/web/"
-              className="text-teal-400 hover:text-teal-200 hover:underline hover:font-bold"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Analytics
+              GitHub
             </a>
           </li>
         </ul>
