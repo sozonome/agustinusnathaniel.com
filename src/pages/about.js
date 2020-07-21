@@ -30,10 +30,6 @@ export default function About() {
     <Layout>
       <div>
         <h1 className="text-3xl font-bold">About me</h1>
-        {/* <p className="text-xs text-gray-600">
-          Last update : April 2020. <br /> (in progress doing bachelor thesis
-          ✌️)
-        </p> */}
         <section id="intro" className="mt-4">
           <p className="mb-4 text-md">
             Hi! I'm{" "}
@@ -70,48 +66,6 @@ export default function About() {
             alt=""
             srcset=""
           />
-          {/* <h2 className="text-2xl font-semibold mb-2">Beside Tech...</h2>
-          <div className="mb-4 text-sm">
-            I also do photography and videography.
-            <br />
-            <div className="mb-2">
-              (Check out my works <a href="https://www.instagram.com/cherocaptures" className="text-blue-300 font-semibold underline hover:text-blue-200" target="_blank">here</a>.)
-            </div>
-            I share my personal shoots (mainly travel content) on my{" "}
-            <a
-              href={
-                "https://www.instagram.com/" +
-                site.siteMetadata.social.instagram
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold"
-            >
-              Instagram
-            </a>
-            .
-            <div className="mt-2 text-xs">
-              N.B. Yeah I'm so used to people assumed myself as a film /
-              photography student{" "}
-              <span role="img" aria-label="laugh">
-                😂
-              </span>
-              .
-            </div>
-          </div> */}
-          <div>
-            <h2 className="text-2xl font-bold mt-12">Some Documents</h2>
-            <div className="mt-4">
-              <a
-                className="bg-teal-700 p-2 rounded-lg hover:bg-teal-400 hover:text-gray-700"
-                href="/CV_AgustinusNathaniel.pdf"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                CV - Resume
-              </a>
-            </div>
-          </div>
           <div>
             <h2 className="text-2xl font-bold mt-12 text-teal-400">Lists</h2>
             <h4 className="text-1xl font-semibold mb-2">
@@ -119,14 +73,6 @@ export default function About() {
             </h4>
             <div className="mb-4 text-md">
               <ul>
-                <li className="mb-2">
-                  <Link
-                    to="/dailyuse"
-                    className="text-teal-500 hover:text-teal-200 font-semibold hover:underline"
-                  >
-                    What I use daily
-                  </Link>
-                </li>
                 <li className="mb-2">
                   <Link
                     to="/sitestack"
