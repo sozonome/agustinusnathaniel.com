@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/sozonome/agustinusnathaniel.com/compare/v3.1.3...v3.2.0) (2020-07-21)
+
+
+### Features
+
+* **rss:** enable RSS feed ([e0a721f](https://github.com/sozonome/agustinusnathaniel.com/commit/e0a721f288ff2194e831799fdca8c650ec030058))
+
 ### [3.1.3](https://github.com/sozonome/agustinusnathaniel.com/compare/v3.1.2...v3.1.3) (2020-07-16)
 
 ### [3.1.2](https://github.com/sozonome/agustinusnathaniel.com/compare/v3.1.1...v3.1.2) (2020-07-16)
