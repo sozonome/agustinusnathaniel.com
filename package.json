@@ -23,6 +23,7 @@
     "@types/react-helmet": "^5.0.8",
     "autoprefixer": "^9.7.6",
     "eslint-plugin-react-hooks": "^1.6.1",
+    "fontsource-recursive": "^2.2.6",
     "gatsby": "^2.13.31",
     "gatsby-plugin-canonical-urls": "^2.2.1",
     "gatsby-plugin-feed": "^2.4.1",
@@ -45,7 +46,6 @@
     "react-router-dom": "^5.0.1",
     "react-share": "^4.1.0",
     "tailwindcss": "^1.2.0",
-    "typeface-muli": "^0.0.71",
     "typeface-open-sans": "^0.0.75",
     "typescript": "^3.5.3"
   },

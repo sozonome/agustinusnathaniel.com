@@ -6043,6 +6043,11 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.12.1.tgz#de54a6205311b93d60398ebc01cf7015682312b6"
   integrity sha512-tmRv0AVuR7ZyouUHLeNSiO6pqulF7dYa3s19c6t+wz9LD69/uSzdMxJ2S91nTI9U3rt/IldxpzMOFejp6f0hjg==
 
+fontsource-recursive@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/fontsource-recursive/-/fontsource-recursive-2.2.6.tgz#a243f59c288297e3c1c2627e3040b0769a0a3d73"
+  integrity sha512-jLn1zhTeag2ucnD5kNkfh0XipCqNDdNlzngXm/D8gZni85sF6ZvDPo+I27Bycp4ksCXQFMucyOgYzutsZOcu5Q==
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -14289,11 +14294,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typeface-muli@^0.0.71:
-  version "0.0.71"
-  resolved "https://registry.yarnpkg.com/typeface-muli/-/typeface-muli-0.0.71.tgz#e25f4bd4158a1636a1c93cfd6d04346bc3c7fb82"
-  integrity sha512-gWRJSv8D938dsngyYSrx3vLLPtuYwTHuDqa0isvB+p3x6f72QnWBbpKns+BNOe3P+7xsWZcTxQWbIrbGzfzq+w==
 
 typeface-open-sans@^0.0.75:
   version "0.0.75"

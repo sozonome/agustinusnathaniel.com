@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import SEO from "./SEO"
-import "typeface-muli"
+import "fontsource-recursive"
 import "typeface-open-sans"
 import Head from "./Head"
 import Foot from "./Foot"

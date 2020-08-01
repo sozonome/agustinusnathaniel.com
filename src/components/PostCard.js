@@ -3,11 +3,7 @@ import { Link } from "gatsby"
 
 const PostCard = props => {
   return (
-    <Link
-      key={props.key}
-      to={"/blog/" + props.value.node.frontmatter.slug}
-      className=""
-    >
+    <Link to={"/blog/" + props.value.node.frontmatter.slug} className="">
       <div className="postListSingle group flex rounded-lg p-6 mb-4 w-full hover:bg-gray-900">
         <div className="mr-4 flex items-center">
           <img
