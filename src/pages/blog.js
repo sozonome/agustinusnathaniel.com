@@ -27,7 +27,7 @@ export default function blog({
       <h1 className="text-5xl font-bold mb-2">Blog</h1>
       <div className="mt-16">
         {edges
-          .filter(edge => edge.node.frontmatter.title.length > 0)
+          .filter((edge) => edge.node.frontmatter.title.length > 0)
           .map((edge, index) => {
             return <PostCard key={index} value={edge} />
           })}

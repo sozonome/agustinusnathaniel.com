@@ -23,7 +23,7 @@ export default function dev({
       <h1 className="text-5xl font-bold mb-2">Dev Blog</h1>
       <div className="w-full mt-16">
         {edges
-          .filter(edge => edge.node.frontmatter.title.length > 0)
+          .filter((edge) => edge.node.frontmatter.title.length > 0)
           .map((edge, index) => {
             return (
               <Link

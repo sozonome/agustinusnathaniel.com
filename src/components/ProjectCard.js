@@ -1,6 +1,6 @@
 import React from "react"
 
-const ProjectCard = props => {
+const ProjectCard = (props) => {
   return (
     <div className="w-full my-2 bg-gray-900 hover:bg-blue-800 p-4 rounded-lg">
       <h2 className="text-2xl font-bold">{props.value.title}</h2>

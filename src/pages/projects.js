@@ -17,7 +17,7 @@ export default function projects({
         </p>
         <div className="mt-12 sm:flex sm:flex-wrap">
           {edges
-            .filter(edge => edge.node.frontmatter.title.length > 0)
+            .filter((edge) => edge.node.frontmatter.title.length > 0)
             .map((edge, index) => {
               const project = edge.node.frontmatter
               return <ProjectCard key={index} value={project} />

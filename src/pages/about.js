@@ -60,7 +60,11 @@ export default function About() {
             design. I believe experiences + mistakes are the greatest teacher
             and learning is a lifetime process.
           </p>
-          <img className="w-1/2 rounded-lg mb-4" src={profileImg} />
+          <img
+            className="w-1/2 rounded-lg mb-4"
+            src={profileImg}
+            alt="Agustinus Nathaniel"
+          />
           <div>
             <h2 className="text-2xl font-bold mt-12 text-teal-400">Lists</h2>
             <h4 className="text-1xl font-semibold mb-2">

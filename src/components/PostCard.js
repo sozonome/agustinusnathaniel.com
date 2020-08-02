@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const PostCard = props => {
+const PostCard = (props) => {
   return (
     <Link to={"/blog/" + props.value.node.frontmatter.slug} className="">
       <div className="postListSingle group flex rounded-lg p-6 mb-4 w-full hover:bg-gray-900">
