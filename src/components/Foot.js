@@ -87,7 +87,7 @@ export default function Foot() {
             >
               <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
             </a>
-            <a
+            {/* <a
               href={
                 "https://open.spotify.com/user/" +
                 site.siteMetadata.social.spotify
@@ -97,7 +97,7 @@ export default function Foot() {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={["fab", "spotify"]} size="2x" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
