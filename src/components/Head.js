@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import MyIcon from "../images/avataaars.svg"
+
+import MyIcon from "../images/coconate.png"
 
 export default class Head extends Component {
   render() {

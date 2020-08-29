@@ -10,16 +10,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
-        filter: {
-          frontmatter: {
-            published: {
-              eq: true
-            }
-            type:{
-              regex: "/personal|dev/"
-            }
-          }
-        }
+        filter: { frontmatter: { published: { eq: true } } }
       ) {
         edges {
           node {
@@ -40,15 +31,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    if(node.frontmatter.type === "personal"){
+    if (node.frontmatter.type === "personal") {
       createPage({
-        path: '/blog/' + node.frontmatter.slug,
-        component: blogPostTemplate,
-        context: {} // additional data can be passed via context
-      })
-    } else{
-      createPage({
-        path: '/dev/' + node.frontmatter.slug,
+        path: "/blog/" + node.frontmatter.slug,
         component: blogPostTemplate,
         context: {}, // additional data can be passed via context
       })

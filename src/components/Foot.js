@@ -1,9 +1,8 @@
 import React from "react"
+import { useStaticQuery, Link, graphql } from "gatsby"
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { useStaticQuery, Link } from "gatsby"
-import { graphql } from "gatsby"
 
 config.autoAddCss = false
 library.add(fab)
@@ -34,10 +33,12 @@ export default function Foot() {
       <div className="sm:flex items-center px-6 pt-2 sm:pt-0 sm:py-0">
         <div className="sm:flex w-full sm:w-1/2 sm:justify-start mt-2 mb-4 sm:my-0">
           <div className="flex items-center justify-center">
-            <Link to="/projects" className="hover:text-gray-300 mr-4">
-              Projects / Portfolios
+            <Link to="/stuffs" className="hover:text-gray-300 mr-4">
+              Stuffs I'm working on
             </Link>
-            {/* <Link to="/rss" className="hover:text-gray-300">RSS</Link> */}
+            <Link to="/rss.xml" className="hover:text-gray-300">
+              RSS
+            </Link>
           </div>
         </div>
         <div className="sm:flex w-full sm:justify-end">
@@ -102,7 +103,7 @@ export default function Foot() {
         </div>
       </div>
       <div className="px-6 py-2 flex sm:block w-full sm:w-1/2 py-4 justify-center">
-        <p className="text-xs">&copy; Copyright 2020. Agustinus Nathaniel</p>
+        <p className="text-xs">2020 - Agustinus Nathaniel</p>
       </div>
     </div>
   )

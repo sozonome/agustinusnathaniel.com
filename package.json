@@ -15,7 +15,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "release": "standard-version",
     "push-changelog": "git push --follow-tags origin master",
-    "update-interactive": "npm-check --update"
+    "update-interactive": "npm-check --update",
+    "update-content": "git submodule update --remote content"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
