@@ -1,6 +1,8 @@
 import React, { Component } from "react"
-import Layout from "../components/Layout"
 import { Link } from "gatsby"
+
+import Layout from "../components/Layout"
+
 import Oops from "../images/404-bot-amico.svg"
 
 export default class dev404 extends Component {

@@ -1,7 +1,8 @@
 import React from "react"
-import Layout from "../components/Layout"
-import { Link } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
+
+import Layout from "../components/Layout"
+
 import profileImg from "../images/profile.jpg"
 
 export default function About() {
@@ -71,26 +72,14 @@ export default function About() {
               Some lists or recommendations of stuffs I like and/or use.
             </h4>
             <div className="mb-4 text-md">
-              <ul>
-                <li className="mb-2">
-                  <Link
-                    to="/sitestack"
-                    className="text-teal-500 hover:text-teal-200 font-semibold hover:underline"
-                  >
-                    This site stacks
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://sozonome.github.io/bookmarks"
-                    className="text-teal-500 hover:text-teal-200 font-semibold hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Bookmarks
-                  </a>
-                </li>
-              </ul>
+              <a
+                href="https://sozonome.github.io/bookmarks"
+                className="text-teal-500 hover:text-teal-200 font-semibold hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bookmarks
+              </a>
             </div>
           </div>
         </section>

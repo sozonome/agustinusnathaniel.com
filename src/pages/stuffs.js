@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../components/Layout"
 
 import sznmicon from "../images/avataaars.svg"
-import cherocapturesicon from "../images/cherocaptures-icon.jpg"
 
 const stuffs = () => {
   return (
@@ -14,7 +13,7 @@ const stuffs = () => {
           <a href="https://sznm.dev" rel="noopener noreferrer" target="_blank">
             <div className="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg mb-4">
               <div className="flex items-center">
-                <img src={sznmicon} className="w-12 mr-4" />
+                <img src={sznmicon} className="w-12 mr-4" alt="sozonome" />
                 <div>
                   <h2 className="text-2xl font-bold">sozonome</h2>
                   <p className="text-sm">

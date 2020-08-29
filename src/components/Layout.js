@@ -1,7 +1,9 @@
 import React, { Component } from "react"
-import SEO from "./SEO"
-import "fontsource-recursive"
+
 import "typeface-open-sans"
+import "fontsource-recursive"
+
+import SEO from "./SEO"
 import Head from "./Head"
 import Foot from "./Foot"
 
