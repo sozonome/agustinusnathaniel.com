@@ -11,7 +11,7 @@ export default function blog({
   return (
     <Layout>
       <div className="mb-4"></div>
-      <h1 className="text-5xl font-bold mb-2">Blog</h1>
+      <h1 className="text-5xl font-bold mb-2">Posts</h1>
       <div className="mt-16">
         {edges
           .filter((edge) => edge.node.frontmatter.title.length > 0)
