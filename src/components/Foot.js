@@ -3,6 +3,7 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import LinkButton from "./LinkButton"
 
 config.autoAddCss = false
 library.add(fab)
@@ -43,62 +44,50 @@ export default function Foot() {
         </div>
         <div className="sm:flex w-full sm:justify-end">
           <div className="flex items-center justify-center">
-            <a
+            <LinkButton
               href={
                 "https://www.instagram.com/" +
                 site.siteMetadata.social.instagram
               }
               className="w-8 hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={["fab", "instagram"]} size="1x" />
-            </a>
-            <a
+            </LinkButton>
+            <LinkButton
               href={"https://youtube.com/" + site.siteMetadata.social.youtube}
               className="w-8 ml-2 hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={["fab", "youtube"]} size="2x" />
-            </a>
-            <a
+            </LinkButton>
+            <LinkButton
               href={"https://twitter.com/" + site.siteMetadata.social.twitter}
               className="w-8 ml-2 hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
-            </a>
-            <a
+            </LinkButton>
+            <LinkButton
               href={
                 "https://linkedin.com/in/" + site.siteMetadata.social.linkedin
               }
               className="w-8 ml-2 hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
-            </a>
-            <a
+            </LinkButton>
+            <LinkButton
               href={"https://github.com/" + site.siteMetadata.social.github}
               className="w-8 ml-2 hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
-            </a>
-            {/* <a
+            </LinkButton>
+            {/* <LinkButton
               href={
                 "https://open.spotify.com/user/" +
                 site.siteMetadata.social.spotify
               }
               className="w-8 ml-2 hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+                          >
               <FontAwesomeIcon icon={["fab", "spotify"]} size="2x" />
-            </a> */}
+            </LinkButton> */}
           </div>
         </div>
       </div>

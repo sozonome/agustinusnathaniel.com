@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
 
 import profileImg from "../images/profile.jpg"
+import LinkButton from "../components/LinkButton"
 
 export default function About() {
   const { site } = useStaticQuery(graphql`
@@ -34,29 +35,25 @@ export default function About() {
         <section id="intro" className="mt-4">
           <p className="mb-4 text-md">
             Hi! I'm{" "}
-            <a
+            <LinkButton
               href={
                 "https://www.instagram.com/" +
                 site.siteMetadata.social.instagram
               }
-              target="_blank"
-              rel="noopener noreferrer"
               className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold"
             >
               Agustinus Nathaniel
-            </a>
+            </LinkButton>
             , also known as{" "}
-            <a
+            <LinkButton
               href={
                 "https://www.instagram.com/" +
                 site.siteMetadata.social.devInstagram
               }
-              target="_blank"
-              rel="noopener noreferrer"
               className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold"
             >
               @sozonome.
-            </a>
+            </LinkButton>
             <br />I love to explore and learn stuffs around technology and
             design. I believe experiences + mistakes are the greatest teacher
             and learning is a lifetime process.
@@ -72,14 +69,12 @@ export default function About() {
               Some lists or recommendations of stuffs I like and/or use.
             </h4>
             <div className="mb-4 text-md">
-              <a
+              <LinkButton
                 href="https://sozonome.github.io/bookmarks"
                 className="text-teal-500 hover:text-teal-200 font-semibold hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Bookmarks
-              </a>
+              </LinkButton>
             </div>
           </div>
         </section>
