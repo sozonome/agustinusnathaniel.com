@@ -36,100 +36,67 @@ export default function blogTemplate({ data }) {
             <div className="flex items-center h-4 mb-2">
               <h2 className="text-sm mr-4">{frontmatter.date}</h2>
             </div>
-            <div className="flex items-center">
-              <TwitterShareButton
-                title={frontmatter.title}
-                via={siteMetadata.social.twitter}
-                url={siteMetadata.siteUrl + frontmatter.path}
-              >
-                <div className="flex items-center rounded-lg">
-                  <TwitterIcon className="h-8 w-8 mr-2" round={true} />
-                </div>
-              </TwitterShareButton>
-              <FacebookShareButton
-                title={frontmatter.title}
-                url={siteMetadata.siteUrl + frontmatter.path}
-              >
-                <div className="flex items-center rounded-lg">
-                  <FacebookIcon className="h-8 w-8 mr-2" round={true} />
-                </div>
-              </FacebookShareButton>
-              <LinkedinShareButton
-                title={frontmatter.title}
-                url={siteMetadata.siteUrl + frontmatter.path}
-              >
-                <div className="flex items-center rounded-lg p-0">
-                  <LinkedinIcon className="h-8 w-8 mr-2" round={true} />
-                </div>
-              </LinkedinShareButton>
-              <WhatsappShareButton
-                title={frontmatter.title}
-                url={siteMetadata.siteUrl + frontmatter.path}
-              >
-                <div className="flex items-center rounded-lg p-0 mr-2">
-                  <WhatsappIcon className="h-8 w-8" round={true} />
-                </div>
-              </WhatsappShareButton>
-              <TelegramShareButton
-                title={frontmatter.title}
-                url={siteMetadata.siteUrl + frontmatter.path}
-              >
-                <div className="flex items-center rounded-lg p-0">
-                  <TelegramIcon className="h-8 w-8" round={true} />
-                </div>
-              </TelegramShareButton>
-            </div>
+            <ShareButtons
+              frontmatter={frontmatter}
+              siteMetadata={siteMetadata}
+            />
           </div>
           <div
             className="mkdown mb-6"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <div className="flex items-center">
-            <TwitterShareButton
-              title={frontmatter.title}
-              via={siteMetadata.social.twitter}
-              url={siteMetadata.siteUrl + frontmatter.path}
-            >
-              <div className="flex items-center rounded-lg">
-                <TwitterIcon className="h-8 w-8 mr-2" round={true} />
-              </div>
-            </TwitterShareButton>
-            <FacebookShareButton
-              title={frontmatter.title}
-              url={siteMetadata.siteUrl + frontmatter.path}
-            >
-              <div className="flex items-center rounded-lg mr-2">
-                <FacebookIcon className="h-8 w-8" round={true} />
-              </div>
-            </FacebookShareButton>
-            <LinkedinShareButton
-              title={frontmatter.title}
-              url={siteMetadata.siteUrl + frontmatter.path}
-            >
-              <div className="flex items-center rounded-lg p-0 mr-2">
-                <LinkedinIcon className="h-8 w-8" round={true} />
-              </div>
-            </LinkedinShareButton>
-            <WhatsappShareButton
-              title={frontmatter.title}
-              url={siteMetadata.siteUrl + frontmatter.path}
-            >
-              <div className="flex items-center rounded-lg p-0 mr-2">
-                <WhatsappIcon className="h-8 w-8" round={true} />
-              </div>
-            </WhatsappShareButton>
-            <TelegramShareButton
-              title={frontmatter.title}
-              url={siteMetadata.siteUrl + frontmatter.path}
-            >
-              <div className="flex items-center rounded-lg p-0">
-                <TelegramIcon className="h-8 w-8" round={true} />
-              </div>
-            </TelegramShareButton>
-          </div>
+          <ShareButtons frontmatter={frontmatter} siteMetadata={siteMetadata} />
         </div>
       </div>
     </Layout>
+  )
+}
+
+const ShareButtons = ({ frontmatter, siteMetadata }) => {
+  return (
+    <div className="flex items-center">
+      <TwitterShareButton
+        title={frontmatter.title}
+        via={siteMetadata.social.twitter}
+        url={siteMetadata.siteUrl + frontmatter.path}
+      >
+        <div className="flex items-center rounded-lg">
+          <TwitterIcon className="h-8 w-8 mr-2" round={true} />
+        </div>
+      </TwitterShareButton>
+      <FacebookShareButton
+        title={frontmatter.title}
+        url={siteMetadata.siteUrl + frontmatter.path}
+      >
+        <div className="flex items-center rounded-lg">
+          <FacebookIcon className="h-8 w-8 mr-2" round={true} />
+        </div>
+      </FacebookShareButton>
+      <LinkedinShareButton
+        title={frontmatter.title}
+        url={siteMetadata.siteUrl + frontmatter.path}
+      >
+        <div className="flex items-center rounded-lg p-0">
+          <LinkedinIcon className="h-8 w-8 mr-2" round={true} />
+        </div>
+      </LinkedinShareButton>
+      <WhatsappShareButton
+        title={frontmatter.title}
+        url={siteMetadata.siteUrl + frontmatter.path}
+      >
+        <div className="flex items-center rounded-lg p-0 mr-2">
+          <WhatsappIcon className="h-8 w-8" round={true} />
+        </div>
+      </WhatsappShareButton>
+      <TelegramShareButton
+        title={frontmatter.title}
+        url={siteMetadata.siteUrl + frontmatter.path}
+      >
+        <div className="flex items-center rounded-lg p-0">
+          <TelegramIcon className="h-8 w-8" round={true} />
+        </div>
+      </TelegramShareButton>
+    </div>
   )
 }
 

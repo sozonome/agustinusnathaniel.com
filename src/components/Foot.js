@@ -1,33 +1,18 @@
 import React from "react"
-import { useStaticQuery, Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import LinkButton from "./LinkButton"
+
+import { useSiteMetadata } from "../queries/siteQuery"
 
 config.autoAddCss = false
 library.add(fab)
 
 export default function Foot() {
-  const { site } = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          social {
-            instagram
-            youtube
-            github
-            twitter
-            linkedin
-            medium
-            email
-            behance
-            spotify
-          }
-        }
-      }
-    }
-  `)
+  const { social } = useSiteMetadata()
 
   return (
     <div className="w-full self-end text-gray-600">
@@ -45,36 +30,31 @@ export default function Foot() {
         <div className="sm:flex w-full sm:justify-end">
           <div className="flex items-center justify-center">
             <LinkButton
-              href={
-                "https://www.instagram.com/" +
-                site.siteMetadata.social.instagram
-              }
+              href={"https://www.instagram.com/" + social.instagram}
               className="w-8 hover:text-white"
             >
               <FontAwesomeIcon icon={["fab", "instagram"]} size="1x" />
             </LinkButton>
             <LinkButton
-              href={"https://youtube.com/" + site.siteMetadata.social.youtube}
+              href={"https://youtube.com/" + social.youtube}
               className="w-8 ml-2 hover:text-white"
             >
               <FontAwesomeIcon icon={["fab", "youtube"]} size="2x" />
             </LinkButton>
             <LinkButton
-              href={"https://twitter.com/" + site.siteMetadata.social.twitter}
+              href={"https://twitter.com/" + social.twitter}
               className="w-8 ml-2 hover:text-white"
             >
               <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
             </LinkButton>
             <LinkButton
-              href={
-                "https://linkedin.com/in/" + site.siteMetadata.social.linkedin
-              }
+              href={"https://linkedin.com/in/" + social.linkedin}
               className="w-8 ml-2 hover:text-white"
             >
               <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
             </LinkButton>
             <LinkButton
-              href={"https://github.com/" + site.siteMetadata.social.github}
+              href={"https://github.com/" + social.github}
               className="w-8 ml-2 hover:text-white"
             >
               <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
@@ -82,7 +62,7 @@ export default function Foot() {
             {/* <LinkButton
               href={
                 "https://open.spotify.com/user/" +
-                site.siteMetadata.social.spotify
+                social.spotify
               }
               className="w-8 ml-2 hover:text-white"
                           >
@@ -91,7 +71,7 @@ export default function Foot() {
           </div>
         </div>
       </div>
-      <div className="px-6 py-2 flex sm:block w-full sm:w-1/2 py-4 justify-center">
+      <div className="px-6 flex sm:block w-full sm:w-1/2 py-4 justify-center">
         <p className="text-xs">2020 - Agustinus Nathaniel</p>
       </div>
     </div>

@@ -1,32 +1,13 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 
 import profileImg from "../images/profile.jpg"
 import LinkButton from "../components/LinkButton"
+import { useSiteMetadata } from "../queries/siteQuery"
 
 export default function About() {
-  const { site } = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          social {
-            instagram
-            youtube
-            github
-            twitter
-            linkedin
-            medium
-            email
-            behance
-
-            devInstagram
-          }
-        }
-      }
-    }
-  `)
+  const { social } = useSiteMetadata()
 
   return (
     <Layout>
@@ -36,20 +17,14 @@ export default function About() {
           <p className="mb-4 text-md">
             Hi! I'm{" "}
             <LinkButton
-              href={
-                "https://www.instagram.com/" +
-                site.siteMetadata.social.instagram
-              }
+              href={"https://www.instagram.com/" + social.instagram}
               className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold"
             >
               Agustinus Nathaniel
             </LinkButton>
             , also known as{" "}
             <LinkButton
-              href={
-                "https://www.instagram.com/" +
-                site.siteMetadata.social.devInstagram
-              }
+              href={"https://www.instagram.com/" + social.devInstagram}
               className="w-8 text-orange-600 hover:text-blue-400 underline hover:font-bold"
             >
               @sozonome.
