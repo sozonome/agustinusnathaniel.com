@@ -5,6 +5,8 @@ ___
 ## [Live Here](https://agustinusnathaniel.com "My Personal Site") 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d45c72d3-3e0e-431d-a8da-9bd252cccf46/deploy-status)](https://app.netlify.com/sites/sozonome/deploys) ![codefactor badge](https://www.codefactor.io/repository/github/sozonome/agustinusnathaniel.com/badge?style=flat-square)
 ___
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sozonome_agustinusnathaniel.com&metric=alert_status)](https://sonarcloud.io/dashboard?id=sozonome_agustinusnathaniel.com) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=sozonome_agustinusnathaniel.com&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=sozonome_agustinusnathaniel.com) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=sozonome_agustinusnathaniel.com&metric=bugs)](https://sonarcloud.io/dashboard?id=sozonome_agustinusnathaniel.com) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=sozonome_agustinusnathaniel.com&metric=code_smells)](https://sonarcloud.io/dashboard?id=sozonome_agustinusnathaniel.com) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=sozonome_agustinusnathaniel.com&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=sozonome_agustinusnathaniel.com) 
+___
 Build with :
 - [Gatsby](https://gatsbyjs.org)
 - [Tailwind CSS](https://tailwindcss.com/ "Bored and frustrated with Bootstrap, Semantic, and Bulma") for Styling
