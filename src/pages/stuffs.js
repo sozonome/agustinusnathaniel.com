@@ -24,27 +24,6 @@ const stuffs = () => {
               </div>
             </div>
           </LinkButton>
-          {/* <a
-            href="https://www.instagram.com/cherocaptures"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <div className="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg mb-4">
-              <div className="flex items-center">
-                <img
-                  src={cherocapturesicon}
-                  className="w-12 h-12 mr-4 rounded-full"
-                />
-                <div>
-                  <h2 className="text-2xl font-bold">Chero Captures</h2>
-                  <p className="text-sm">
-                    Photography and Videography services ready to cherish your
-                    events or life moments.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a> */}
           <p className="text-sm">More stuffs will be added soon, stay tuned.</p>
         </div>
       </section>
