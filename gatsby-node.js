@@ -17,6 +17,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               slug
               type
+              path
             }
           }
         }

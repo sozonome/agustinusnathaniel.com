@@ -73,8 +73,8 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
@@ -101,6 +101,8 @@ module.exports = {
                       frontmatter{
                         title
                         date
+                        path
+                        slug
                       }
                     }
                   }
@@ -119,13 +121,6 @@ module.exports = {
       options: {
         name: `posts`,
         path: `${__dirname}/content/posts`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `postImages`,
-        path: `${__dirname}/content/images`,
       },
     },
     `gatsby-plugin-sharp`,
