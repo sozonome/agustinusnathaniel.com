@@ -68,13 +68,14 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: {site, allMarkdownRemark} }) => {
-              return allMarkdownRemark.edges.map(edge => {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
                   guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  tags: [edge.node.frontmatter.tags],
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
@@ -103,6 +104,7 @@ module.exports = {
                         date
                         path
                         slug
+                        tags
                       }
                     }
                   }
@@ -113,8 +115,8 @@ module.exports = {
             title: "Agustinus Nathaniel's RSS Feed",
             match: "^/blog/",
           },
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
