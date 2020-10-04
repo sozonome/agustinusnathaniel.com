@@ -75,8 +75,12 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
                   guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  tags: edge.node.frontmatter.tags,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  custom_elements: [
+                    {
+                      "content:encoded": edge.node.html,
+                      tags: edge.node.frontmatter.tags,
+                    },
+                  ],
                 })
               })
             },
