@@ -70,6 +70,11 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map((edge) => {
+                const categoryTags = edge.node.frontmatter.tags.map((tag) => {
+                  return {
+                    category: tag,
+                  }
+                });
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
@@ -78,8 +83,8 @@ module.exports = {
                   custom_elements: [
                     {
                       "content:encoded": edge.node.html,
-                      tags: edge.node.frontmatter.tags,
                     },
+                    ...categoryTags
                   ],
                 })
               })
