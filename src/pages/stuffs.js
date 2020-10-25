@@ -2,8 +2,9 @@ import React from "react"
 
 import Layout from "../components/Layout"
 
-import sznmicon from "../images/avataaars.svg"
 import LinkButton from "../components/LinkButton"
+import SznmIcon from "../images/avataaars.svg"
+import CheroCapturesIcon from "../images/cherocaptures-icon.jpg"
 
 const stuffs = () => {
   return (
@@ -14,7 +15,7 @@ const stuffs = () => {
           <LinkButton href="https://sznm.dev">
             <div className="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg mb-4">
               <div className="flex items-center">
-                <img src={sznmicon} className="w-12 mr-4" alt="sozonome" />
+                <img src={SznmIcon} className="w-12 mr-4" alt="sozonome" />
                 <div>
                   <h2 className="text-2xl font-bold">sozonome</h2>
                   <p className="text-sm">
@@ -24,7 +25,24 @@ const stuffs = () => {
               </div>
             </div>
           </LinkButton>
-          <p className="text-sm">More stuffs will be added soon, stay tuned.</p>
+          <LinkButton href="https://cherocaptures.com">
+            <div className="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg mb-4">
+              <div className="flex items-center">
+                <img
+                  src={CheroCapturesIcon}
+                  className="w-12 mr-4 rounded-full"
+                  alt="sozonome"
+                />
+                <div>
+                  <h2 className="text-2xl font-bold">CheroCaptures</h2>
+                  <p className="text-sm">
+                    Photography and Videography services for family / couple
+                    sessions / events.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </LinkButton>
         </div>
       </section>
     </Layout>
