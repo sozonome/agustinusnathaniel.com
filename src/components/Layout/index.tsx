@@ -1,4 +1,5 @@
 import React from "react";
+import { Box, Flex } from "@chakra-ui/react";
 
 import "typeface-open-sans";
 import "fontsource-recursive";
@@ -13,14 +14,22 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="flex flex-wrap mainwrapper bg-black text-gray-400 mx-auto">
+    <Box backgroundColor="black" color="gray.400">
       <SEO />
-      <Head />
-      <div id="site-content" className="my-8 px-6 w-full">
-        <div className="fadeTrans">{children}</div>
-      </div>
-      <Foot />
-    </div>
+      <Flex
+        margin="0 auto"
+        flexWrap="wrap"
+        maxWidth="800px"
+        width="100%"
+        minHeight="100vh"
+      >
+        <Head />
+        <Box id="site-content" marginY={8} paddingX={6} width="100%">
+          <Box className="fadeTrans">{children}</Box>
+        </Box>
+        <Foot />
+      </Flex>
+    </Box>
   );
 };
 
