@@ -1,4 +1,4 @@
-const { siteMetadata } = require("./data/siteConfig")
+const { siteMetadata } = require("./data/siteConfig");
 
 module.exports = {
   siteMetadata: {
@@ -74,7 +74,7 @@ module.exports = {
                 const categoryTags = edge.node.frontmatter.tags.map((tag) => {
                   return {
                     category: tag,
-                  }
+                  };
                 });
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
@@ -85,10 +85,10 @@ module.exports = {
                     {
                       "content:encoded": edge.node.html,
                     },
-                    ...categoryTags
+                    ...categoryTags,
                   ],
-                })
-              })
+                });
+              });
             },
             query: `
               {
@@ -177,4 +177,4 @@ module.exports = {
       },
     },
   ],
-}
+};
