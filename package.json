@@ -9,7 +9,7 @@
     "css-watch": "npm run css-build -- --watch",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "prettify": "prettier --write src/**/*.{js,jsx,scss,css}",
+    "prettify": "prettier --write src",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
@@ -25,6 +25,7 @@
     "@emotion/styled": "^11.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@types/react-helmet": "^6.1.0",
     "autoprefixer": "^9.7.6",
     "eslint-plugin-react-hooks": "^4.0.8",
     "fontsource-recursive": "^2.2.6",
@@ -44,7 +45,7 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.7.1",
     "node-sass": "^4.12.0",
-    "react": "^16.8.6",
+    "react": "^17.0.1",
     "react-dom": "^16.8.6",
     "react-helmet": "^6.1.0",
     "react-router": "^5.0.1",
@@ -57,6 +58,7 @@
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@types/react": "^16.9.56",
     "prettier": "2.0.5",
     "standard-version": "^8.0.2"
   },

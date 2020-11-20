@@ -1,28 +1,32 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from "../components/Layout"
-import PostCard from "../components/PostCard"
+import Layout from "../components/Layout";
+import PostCard from "../components/PostCard";
 
-export default function blog({
+type BlogProps = {
+  data: any;
+};
+
+const Blog = ({
   data: {
     allMarkdownRemark: { edges },
   },
-}) {
+}: BlogProps) => {
   return (
     <Layout>
       <div className="mb-4"></div>
       <h1 className="text-5xl font-bold mb-2">Posts</h1>
       <div className="mt-16">
         {edges
-          .filter((edge) => edge.node.frontmatter.title.length > 0)
-          .map((edge, index) => {
-            return <PostCard key={index} value={edge} />
+          .filter((edge: any) => edge.node.frontmatter.title.length > 0)
+          .map((edge: any, index: number) => {
+            return <PostCard key={index} value={edge} />;
           })}
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export const pageQuery = graphql`
   query {
@@ -46,4 +50,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
+
+export default Blog;

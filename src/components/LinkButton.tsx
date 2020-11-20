@@ -1,6 +1,12 @@
-import React from "react"
+import React from "react";
 
-const LinkButton = ({ href, className, children }) => {
+type LinkButtonProps = {
+  href: string;
+  className?: string;
+  children: any;
+};
+
+const LinkButton = ({ href, className, children }: LinkButtonProps) => {
   return (
     <a
       href={href}
@@ -10,7 +16,7 @@ const LinkButton = ({ href, className, children }) => {
     >
       {children}
     </a>
-  )
-}
+  );
+};
 
-export default LinkButton
+export default LinkButton;

@@ -1,7 +1,7 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import Helmet from "react-helmet"
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Helmet from "react-helmet";
 import {
   TwitterShareButton,
   FacebookShareButton,
@@ -13,14 +13,14 @@ import {
   TelegramShareButton,
   TelegramIcon,
   TwitterIcon,
-} from "react-share"
+} from "react-share";
 
-const configQuery = require("../../data/siteConfig")
+const configQuery = require("../../data/siteConfig");
 
 export default function blogTemplate({ data }) {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
-  const { siteMetadata } = configQuery
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
+  const { siteMetadata } = configQuery;
 
   return (
     <Layout>
@@ -49,7 +49,7 @@ export default function blogTemplate({ data }) {
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
 const ShareButtons = ({ frontmatter, siteMetadata }) => {
@@ -97,8 +97,8 @@ const ShareButtons = ({ frontmatter, siteMetadata }) => {
         </div>
       </TelegramShareButton>
     </div>
-  )
-}
+  );
+};
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -112,4 +112,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

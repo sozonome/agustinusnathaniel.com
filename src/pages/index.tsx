@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from "../components/Layout"
+import Layout from "../components/Layout";
 
-export default function IndexPage() {
+const IndexPage = () => {
   return (
     <Layout>
       <section id="intro" className="items-center">
@@ -43,5 +43,7 @@ export default function IndexPage() {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
+
+export default IndexPage;

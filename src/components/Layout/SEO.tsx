@@ -1,8 +1,8 @@
-import React from "react"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
-export default function SEO() {
+const SEO = () => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -12,7 +12,7 @@ export default function SEO() {
         }
       }
     }
-  `)
+  `);
 
   return (
     <Helmet>
@@ -38,5 +38,7 @@ export default function SEO() {
 
       <link rel="shortcut icon" href="favicon.ico" />
     </Helmet>
-  )
-}
+  );
+};
+
+export default SEO;

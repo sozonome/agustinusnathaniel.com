@@ -1,18 +1,18 @@
-import React from "react"
-import { Link } from "gatsby"
-import { library, config } from "@fortawesome/fontawesome-svg-core"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react";
+import { Link } from "gatsby";
+import { library, config } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import LinkButton from "./LinkButton"
+import LinkButton from "../LinkButton";
 
-import { useSiteMetadata } from "../queries/siteQuery"
+import { useSiteMetadata } from "../../queries/siteQuery";
 
-config.autoAddCss = false
-library.add(fab)
+config.autoAddCss = false;
+library.add(fab);
 
-export default function Foot() {
-  const { social } = useSiteMetadata()
+const Foot = () => {
+  const { social } = useSiteMetadata();
 
   return (
     <div className="w-full self-end text-gray-600">
@@ -75,5 +75,7 @@ export default function Foot() {
         <p className="text-xs">2020 - Agustinus Nathaniel</p>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default Foot;

@@ -1,13 +1,13 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/Layout"
+import Layout from "../components/Layout";
 
-import profileImg from "../images/profile.jpg"
-import LinkButton from "../components/LinkButton"
-import { useSiteMetadata } from "../queries/siteQuery"
+import profileImg from "../images/profile.jpg";
+import LinkButton from "../components/LinkButton";
+import { useSiteMetadata } from "../queries/siteQuery";
 
-export default function About() {
-  const { social } = useSiteMetadata()
+const About = () => {
+  const { social } = useSiteMetadata();
 
   return (
     <Layout>
@@ -56,5 +56,7 @@ export default function About() {
         <section id="content-foot"></section>
       </div>
     </Layout>
-  )
-}
+  );
+};
+
+export default About;

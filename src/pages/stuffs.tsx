@@ -1,12 +1,12 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/Layout"
+import Layout from "../components/Layout";
 
-import LinkButton from "../components/LinkButton"
-import SznmIcon from "../images/avataaars.svg"
-import CheroCapturesIcon from "../images/cherocaptures-icon.jpg"
+import LinkButton from "../components/LinkButton";
+import SznmIcon from "../images/avataaars.svg";
+import CheroCapturesIcon from "../images/cherocaptures-icon.jpg";
 
-const stuffs = () => {
+const Stuffs = () => {
   return (
     <Layout>
       <h1 className="text-3xl font-bold">Some Stuffs I'm Working On</h1>
@@ -46,7 +46,7 @@ const stuffs = () => {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default stuffs
+export default Stuffs;
