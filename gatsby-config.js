@@ -42,7 +42,7 @@ module.exports = {
     },
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-sass`,
-    // `gatsby-plugin-typescript`,
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
