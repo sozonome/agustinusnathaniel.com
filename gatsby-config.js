@@ -40,6 +40,7 @@ module.exports = {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
       },
     },
+    `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-sass`,
     // `gatsby-plugin-typescript`,
     {
