@@ -12,7 +12,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "release": "standard-version",
-    "push-changelog": "git push --follow-tags origin master",
+    "push-release-tag": "git push --follow-tags origin main",
     "update-content": "git submodule update --remote content"
   },
   "dependencies": {
