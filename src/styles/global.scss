@@ -1,30 +1,5 @@
-.mainwrapper {
-  max-width: 800px;
-  min-height: 100vh;
-
-  transition: background 0.3s ease-out;
-  transition-delay: 0.25s;
-}
-
-body {
-  background: black;
-}
-
 html {
   scroll-behavior: smooth;
-  body,
-  button {
-    font-family: "Recursive", sans-serif;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    b {
-      font-family: "Open Sans", sans-serif;
-    }
-  }
 }
 
 #site-content {
@@ -54,24 +29,6 @@ html.is-animating .fadeTrans {
   transition-delay: 1s;
 }
 
-a,
-.postListSingle {
-  transition: 0.4s ease;
-}
-
-a:hover,
-.postListSingle:hover {
-  transition: 0.2s ease;
-}
-
-.mainHeight {
-  height: 80vh;
-}
-
-.mainHeightMobile {
-  height: 70vh;
-}
-
 img {
   pointer-events: none;
 }
@@ -79,4 +36,94 @@ img {
 .mkdown .gatsby-resp-image-wrapper {
   margin-bottom: 1rem;
   pointer-events: none;
+}
+
+.mkdown {
+  blockquote {
+    color: #a0aec0;
+    font-size: small;
+    font-style: italic;
+    padding-left: 1rem;
+    border-left: 0.25rem solid white;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #3182ce;
+    font-weight: 600;
+
+    &:hover {
+      color: #4299e1;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+
+  figure {
+    padding: 1rem 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 16rem;
+    border-radius: 2rem;
+  }
+
+  figcaption {
+    font-size: small;
+    color: gray;
+    margin-top: 0.5rem;
+    text-align: center;
+
+    a {
+      color: #3182ce;
+      font-weight: 600;
+    }
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: teal;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  hr {
+    margin: 2rem;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 2rem;
+    margin: 1rem 0;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding: 0 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.projectStacks img,
+p span a img {
+  width: 2rem;
+  margin-right: 0.5rem;
 }

@@ -1,4 +1,4 @@
-const { siteMetadata } = require("./data/siteConfig")
+const { siteMetadata } = require("./data/siteConfig");
 
 module.exports = {
   siteMetadata: {
@@ -34,14 +34,9 @@ module.exports = {
     },
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
-      },
-    },
+    `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-sass`,
-    // `gatsby-plugin-typescript`,
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -73,7 +68,7 @@ module.exports = {
                 const categoryTags = edge.node.frontmatter.tags.map((tag) => {
                   return {
                     category: tag,
-                  }
+                  };
                 });
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
@@ -84,10 +79,10 @@ module.exports = {
                     {
                       "content:encoded": edge.node.html,
                     },
-                    ...categoryTags
+                    ...categoryTags,
                   ],
-                })
-              })
+                });
+              });
             },
             query: `
               {
@@ -167,13 +162,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false,
-        develop: false,
-        tailwind: true,
-      },
-    },
   ],
-}
+};
