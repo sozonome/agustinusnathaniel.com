@@ -1,26 +1,45 @@
 import React from "react";
 import { Link } from "gatsby";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 const PostCard = (props: any) => {
   return (
     <Link to={"/blog/" + props.value.node.frontmatter.slug} className="">
-      <div className="postListSingle group flex rounded-lg p-6 mb-4 w-full hover:bg-gray-900">
-        <div className="mr-4 flex items-center">
+      <Flex
+        borderRadius={12}
+        padding={6}
+        marginBottom={4}
+        width="100%"
+        _hover={{ backgroundColor: "gray.900" }}
+        className="postListSingle"
+        role="group"
+      >
+        <Flex marginRight={4} alignItems="center">
           <img
-            className=""
             src={props.value.node.frontmatter.thumbnail}
-            alt=""
+            alt={props.value.node.frontmatter.title}
           />
-        </div>
-        <div className="w-5/6">
-          <h1 className="text-2xl font-bold mb-1 group-hover:text-teal-400">
+        </Flex>
+        <Box width="83.33%">
+          <Heading
+            as="h2"
+            size="lg"
+            fontWeight="bold"
+            _groupHover={{ color: "teal.400" }}
+            marginBottom={1}
+          >
             {props.value.node.frontmatter.title}
-          </h1>
-          <h2 className="text-sm text-gray-300 font-light mb-2">
+          </Heading>
+          <Text
+            fontSize="sm"
+            color="gray.300"
+            fontWeight="light"
+            marginBottom={2}
+          >
             {props.value.node.frontmatter.date}
-          </h2>
-        </div>
-      </div>
+          </Text>
+        </Box>
+      </Flex>
     </Link>
   );
 };

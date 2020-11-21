@@ -1,50 +1,75 @@
 import React from "react";
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 
 import Layout from "../components/Layout";
 
-import LinkButton from "../components/LinkButton";
 import SznmIcon from "../images/avataaars.svg";
 import CheroCapturesIcon from "../images/cherocaptures-icon.jpg";
 
 const Stuffs = () => {
   return (
     <Layout>
-      <h1 className="text-3xl font-bold">Some Stuffs I'm Working On</h1>
-      <section className="my-4">
-        <div>
-          <LinkButton href="https://sznm.dev">
-            <div className="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg mb-4">
-              <div className="flex items-center">
-                <img src={SznmIcon} className="w-12 mr-4" alt="sozonome" />
-                <div>
-                  <h2 className="text-2xl font-bold">sozonome</h2>
-                  <p className="text-sm">
-                    My personal dev site and projects showcase.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </LinkButton>
-          <LinkButton href="https://cherocaptures.com">
-            <div className="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg mb-4">
-              <div className="flex items-center">
-                <img
-                  src={CheroCapturesIcon}
-                  className="w-12 mr-4 rounded-full"
-                  alt="sozonome"
-                />
-                <div>
-                  <h2 className="text-2xl font-bold">CheroCaptures</h2>
-                  <p className="text-sm">
-                    Photography and Videography services for family / couple
-                    sessions / events.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </LinkButton>
-        </div>
-      </section>
+      <Heading size="xl" fontWeight="bold">
+        Some Stuffs I'm Working On
+      </Heading>
+      <Box marginY={4}>
+        <Link href="https://sznm.dev" isExternal rel="noopener noreferrer">
+          <Flex
+            backgroundColor="gray.800"
+            _hover={{ backgroundColor: "gray.700" }}
+            padding={4}
+            borderRadius={8}
+            marginBottom={4}
+            alignItems="center"
+          >
+            <Box width={12} marginRight={4}>
+              <img src={SznmIcon} alt="sozonome" />
+            </Box>
+
+            <Box>
+              <Heading size="lg" fontWeight="bold">
+                sozonome
+              </Heading>
+              <Text fontSize="sm">
+                My personal dev site and projects showcase.
+              </Text>
+            </Box>
+          </Flex>
+        </Link>
+
+        <Link
+          href="https://cherocaptures.com"
+          isExternal
+          rel="noopener noreferrer"
+        >
+          <Flex
+            backgroundColor="gray.800"
+            _hover={{ backgroundColor: "gray.700" }}
+            padding={4}
+            borderRadius={8}
+            marginBottom={4}
+            alignItems="center"
+          >
+            <Box width={12} marginRight={4}>
+              <img
+                src={CheroCapturesIcon}
+                style={{ borderRadius: "50%" }}
+                alt="sozonome"
+              />
+            </Box>
+
+            <Box>
+              <Heading size="lg" fontWeight="bold">
+                CheroCaptures
+              </Heading>
+              <Text fontSize="sm">
+                Photography and Videography services for family / couple
+                sessions / events.
+              </Text>
+            </Box>
+          </Flex>
+        </Link>
+      </Box>
     </Layout>
   );
 };

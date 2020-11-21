@@ -1,39 +1,50 @@
 import React from "react";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, Link as ChakraLink } from "@chakra-ui/react";
 import { Link } from "gatsby";
 
 import MyIcon from "../../images/coconate.png";
 
 const Head = () => {
   return (
-    <Flex className="w-full flex text-gray-600 h-24 items-center px-6">
-      <Box className="w-1/4 sm:w-1/2 font-bold hover:text-white">
-        <Link className="flex" to="/">
-          <img
-            className="h-12 w-12 mr-2"
-            src={MyIcon}
-            alt="agustinusnathaniel"
-          />
-          <Text className="py-3 hidden sm:flex">Agustinus Nathaniel</Text>
+    <Flex
+      width="100%"
+      color="gray.600"
+      height={24}
+      alignItems="center"
+      paddingX={6}
+    >
+      <Box width={["25%", "50%"]} fontWeight="bold" _hover={{ color: "white" }}>
+        <Link to="/">
+          <Flex>
+            <Box height={12} width={12} marginRight={2}>
+              <img src={MyIcon} alt="agustinusnathaniel" />
+            </Box>
+            <Text paddingY={3} display={["none", "flex"]}>
+              Agustinus Nathaniel
+            </Text>
+          </Flex>
         </Link>
       </Box>
-      <Box className="flex w-1/2 justify-center sm:justify-end">
-        <Link className="hover:text-white" to="/blog">
-          Blog
+      <Flex width="50%" justifyContent={["center", "flex-end"]}>
+        <Link to="/blog">
+          <Text _hover={{ color: "white" }}>Blog</Text>
         </Link>
-        <Link className="pl-3 hover:text-white" to="/about">
-          About
+        <Link to="/about">
+          <Text paddingLeft={3} _hover={{ color: "white" }}>
+            About
+          </Text>
         </Link>
-        {/* <Link className="pl-3 hover:text-white" to="/contact">Contact</Link> */}
-        <a
+        <ChakraLink
           href={
             "mailto:hello@agustinusnathaniel.com?subject=Let%27s%20Work%20Together&cc=agustinusnathaniel228@gmail.com"
           }
-          className="pl-3 hover:text-white"
+          paddingLeft={3}
+          _hover={{ color: "white" }}
+          isExternal
         >
           Contact
-        </a>
-      </Box>
+        </ChakraLink>
+      </Flex>
     </Flex>
   );
 };

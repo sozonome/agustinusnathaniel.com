@@ -1,4 +1,5 @@
 import React from "react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { Link } from "gatsby";
 
 import Layout from "../components/Layout";
@@ -6,42 +7,61 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <Layout>
-      <section id="intro" className="items-center">
-        <div className="">
-          <div id="title" className="">
-            <h1 className="text-3xl sm:text-4xl font-bold">
+      <Box as="section" alignItems="center" id="intro">
+        <Box>
+          <Box id="title">
+            <Heading
+              fontSize={["3xl", "4xl"]}
+              marginBottom={2}
+              fontWeight="bold"
+            >
               Hi!{" "}
-              <span role="img" aria-label="hand-waving">
+              <Text as="span" role="img" aria-label="hand-waving">
                 👋
-              </span>
-            </h1>
-            <h1 className="text-3xl sm:text-4xl font-bold">
-              I'm <span className="text-orange-700">Nathan</span>
-            </h1>
-          </div>
-          <div className="mt-4 text-sm sm:text-lg">
-            <p>Tech and design enthusiast.</p>
-            <div className="flex mb-12">
-              <div className="mt-4 text-lg mr-2">
-                <Link
-                  to="/about"
-                  className="py-2 px-4 bg-orange-600 rounded hover:bg-green-600"
-                >
-                  About Me
+              </Text>
+            </Heading>
+            <Heading fontSize={["3xl", "4xl"]} fontWeight="bold">
+              I'm{" "}
+              <Text as="span" color="orange.700">
+                Nathan
+              </Text>
+            </Heading>
+            <Text marginY={4}>Tech and design enthusiast.</Text>
+          </Box>
+
+          <Box fontSize={["sm", "lg"]}>
+            <Flex marginBottom={12}>
+              <Box marginTop={4} fontSize="lg" marginRight={2}>
+                <Link to="/about">
+                  <Text
+                    paddingY={2}
+                    paddingX={4}
+                    backgroundColor="orange.600"
+                    borderRadius={4}
+                    _hover={{ backgroundColor: "green.600" }}
+                  >
+                    About Me
+                  </Text>
                 </Link>
-              </div>
-              <div className="mt-4 text-lg">
-                <Link
-                  to="/blog"
-                  className="py-2 px-4 bg-blue-600 rounded hover:bg-green-600"
-                >
-                  Blog
+              </Box>
+
+              <Box marginTop={4} fontSize="lg">
+                <Link to="/blog">
+                  <Text
+                    paddingY={2}
+                    paddingX={4}
+                    backgroundColor="blue.600"
+                    borderRadius={4}
+                    _hover={{ backgroundColor: "green.600" }}
+                  >
+                    Blog
+                  </Text>
                 </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+              </Box>
+            </Flex>
+          </Box>
+        </Box>
+      </Box>
     </Layout>
   );
 };

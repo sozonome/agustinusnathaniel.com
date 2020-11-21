@@ -1,30 +1,5 @@
-// .mainwrapper {
-//   max-width: 800px;
-//   min-height: 100vh;
-
-//   transition: background 0.3s ease-out;
-//   transition-delay: 0.25s;
-// }
-
-body {
-  background: black;
-}
-
 html {
   scroll-behavior: smooth;
-  // body,
-  // button {
-  //   font-family: "Recursive", sans-serif;
-  //   h1,
-  //   h2,
-  //   h3,
-  //   h4,
-  //   h5,
-  //   h6,
-  //   b {
-  //     font-family: "Open Sans", sans-serif;
-  //   }
-  // }
 }
 
 #site-content {
@@ -52,24 +27,6 @@ html.is-animating .fadeTrans {
 #site-head {
   transition: height 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition-delay: 1s;
-}
-
-a,
-.postListSingle {
-  transition: 0.4s ease;
-}
-
-a:hover,
-.postListSingle:hover {
-  transition: 0.2s ease;
-}
-
-.mainHeight {
-  height: 80vh;
-}
-
-.mainHeightMobile {
-  height: 70vh;
 }
 
 img {
