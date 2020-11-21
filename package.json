@@ -5,8 +5,6 @@
   "version": "3.2.1",
   "author": "sozonome",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/global.scss css/global.scss",
-    "css-watch": "npm run css-build -- --watch",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "prettify": "prettier --write src",
@@ -15,7 +13,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "release": "standard-version",
     "push-changelog": "git push --follow-tags origin master",
-    "update-interactive": "npm-check --update",
     "update-content": "git submodule update --remote content"
   },
   "dependencies": {
@@ -29,7 +26,7 @@
     "eslint-plugin-react-hooks": "^4.0.8",
     "fontsource-recursive": "^2.2.6",
     "framer-motion": "^2.9.4",
-    "gatsby": "^2.13.31",
+    "gatsby": "^2.27.0",
     "gatsby-plugin-canonical-urls": "^2.2.1",
     "gatsby-plugin-feed": "^2.4.1",
     "gatsby-plugin-manifest": "^2.2.4",
@@ -38,23 +35,22 @@
     "gatsby-plugin-sharp": "^2.5.4",
     "gatsby-plugin-typescript": "^2.7.0",
     "gatsby-remark-images": "^3.2.2",
-    "gatsby-source-dev": "^0.1.4",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.7.1",
     "node-sass": "^4.12.0",
     "react": "^17.0.1",
-    "react-dom": "^16.8.6",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-share": "^4.1.0",
     "typeface-open-sans": "^0.0.75",
-    "typescript": "^3.5.3"
+    "typescript": "^3.9.0"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "@types/react": "^16.9.56",
+    "@types/react": "^17.0.0",
     "prettier": "2.0.5",
     "standard-version": "^8.0.2"
   },
