@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { Link } from "gatsby";
 
 import Layout from "../components/Layout";
@@ -33,29 +33,25 @@ const IndexPage = () => {
             <Flex marginBottom={12}>
               <Box marginTop={4} fontSize="lg" marginRight={2}>
                 <Link to="/about">
-                  <Text
-                    paddingY={2}
-                    paddingX={4}
+                  <Button
                     backgroundColor="orange.600"
                     borderRadius={4}
                     _hover={{ backgroundColor: "green.600" }}
                   >
                     About Me
-                  </Text>
+                  </Button>
                 </Link>
               </Box>
 
               <Box marginTop={4} fontSize="lg">
                 <Link to="/blog">
-                  <Text
-                    paddingY={2}
-                    paddingX={4}
+                  <Button
                     backgroundColor="blue.600"
                     borderRadius={4}
                     _hover={{ backgroundColor: "green.600" }}
                   >
                     Blog
-                  </Text>
+                  </Button>
                 </Link>
               </Box>
             </Flex>

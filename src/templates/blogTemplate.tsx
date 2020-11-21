@@ -35,7 +35,7 @@ export default function blogTemplate({ data }: any) {
       <Box className="post">
         <Box className="postContainer">
           <Box as="section" marginBottom={8} id="post-head">
-            <Heading fontWeight="bold" size="2xl" marginBottom={2}>
+            <Heading fontWeight="bold" size="xl" marginBottom={2}>
               {frontmatter.title}
             </Heading>
             <Flex alignItems="center" height={4} marginBottom={2}>

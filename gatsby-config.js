@@ -34,12 +34,6 @@ module.exports = {
     },
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
-      },
-    },
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
@@ -168,13 +162,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false,
-        develop: false,
-        tailwind: true,
-      },
-    },
   ],
 };
