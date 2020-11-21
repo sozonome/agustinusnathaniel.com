@@ -2,7 +2,7 @@
   "name": "agustinusnathaniel.com",
   "private": true,
   "description": "Agustinus Nathaniel's Personal Site Project",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "author": "sozonome",
   "scripts": {
     "build": "gatsby build",
