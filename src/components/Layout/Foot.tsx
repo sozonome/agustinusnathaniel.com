@@ -31,7 +31,7 @@ const Foot = () => {
 
   const socialLinks: SocialLinkButtonProps[] = [
     {
-      link: "https://instagram.com" + social.instagram,
+      link: "https://instagram.com/" + social.instagram,
       icon: ["fab", "instagram"],
     },
     {
@@ -39,15 +39,15 @@ const Foot = () => {
       icon: ["fab", "youtube"],
     },
     {
-      link: "https://twitter.com" + social.twitter,
+      link: "https://twitter.com/" + social.twitter,
       icon: ["fab", "twitter"],
     },
     {
-      link: "https://linkedin.com" + social.linkedin,
+      link: "https://linkedin.com/" + social.linkedin,
       icon: ["fab", "linkedin"],
     },
     {
-      link: "https://github.com" + social.github,
+      link: "https://github.com/" + social.github,
       icon: ["fab", "github"],
     },
   ];
