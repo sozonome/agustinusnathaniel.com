@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, useColorMode } from "@chakra-ui/react";
 
 import "typeface-open-sans";
 import "fontsource-recursive";
@@ -13,8 +13,14 @@ type LayoutProps = {
 };
 
 const Layout = ({ children }: LayoutProps) => {
+  const { colorMode } = useColorMode();
+
   return (
-    <Box backgroundColor="black" color="gray.400">
+    <Box
+      backgroundColor={colorMode === "light" ? "gray.100" : "black"}
+      color={colorMode === "light" ? "gray.600" : "gray.400"}
+      transition="0.5s ease-out"
+    >
       <SEO />
       <Flex
         margin="0 auto"

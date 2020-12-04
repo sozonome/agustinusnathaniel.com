@@ -1,5 +1,11 @@
 import React from "react";
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Text,
+} from "@chakra-ui/react";
 import { Link } from "gatsby";
 
 import Layout from "../components/Layout";
@@ -29,7 +35,7 @@ const IndexPage = () => {
             <Text marginY={4}>Tech and design enthusiast.</Text>
           </Box>
 
-          <Box fontSize={["sm", "lg"]}>
+          <Box fontSize={["sm", "lg"]} color="white">
             <Flex marginBottom={12}>
               <Box marginTop={4} fontSize="lg" marginRight={2}>
                 <Link to="/about">

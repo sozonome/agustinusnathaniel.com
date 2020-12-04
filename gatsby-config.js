@@ -34,7 +34,12 @@ module.exports = {
     },
   },
   plugins: [
-    `@chakra-ui/gatsby-plugin`,
+    {
+      resolve: `@chakra-ui/gatsby-plugin`,
+      options: {
+        isUsingColorMode: true,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     {

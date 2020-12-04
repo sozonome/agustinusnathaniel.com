@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Box, Flex, Text, Link as ChakraLink } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Text,
+  Link as ChakraLink,
+  useColorMode,
+} from "@chakra-ui/react";
 import { library, config, IconProp } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,6 +18,7 @@ library.add(fab);
 
 const Foot = () => {
   const { social } = useSiteMetadata();
+  const { colorMode } = useColorMode();
 
   type SocialLinkButtonProps = {
     link: string;
@@ -22,7 +29,7 @@ const Foot = () => {
     <ChakraLink
       width={8}
       href={link}
-      _hover={{ color: "white" }}
+      _hover={{ color: colorMode === "light" ? "orange.300" : "white" }}
       marginLeft={2}
     >
       <FontAwesomeIcon icon={icon} />
