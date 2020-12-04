@@ -1,10 +1,21 @@
 import React from "react";
-import { Box, Flex, Image, Text, Link as ChakraLink } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Text,
+  Link as ChakraLink,
+  useColorMode,
+} from "@chakra-ui/react";
 import { Link } from "gatsby";
 
 import MyIcon from "../../images/coconate.png";
+import ThemeToggle from "./ThemeToggle";
 
 const Head = () => {
+  const { colorMode } = useColorMode();
+
+  const hoverColor = colorMode === "light" ? "orange.300" : "white";
+
   return (
     <Flex
       width="100%"
@@ -13,7 +24,11 @@ const Head = () => {
       alignItems="center"
       paddingX={6}
     >
-      <Box width={["25%", "50%"]} fontWeight="bold" _hover={{ color: "white" }}>
+      <Box
+        width={["25%", "50%"]}
+        fontWeight="bold"
+        _hover={{ color: hoverColor }}
+      >
         <Link to="/">
           <Flex>
             <Box height={12} width={12} marginRight={2}>
@@ -25,12 +40,13 @@ const Head = () => {
           </Flex>
         </Link>
       </Box>
+
       <Flex width="50%" justifyContent={["center", "flex-end"]}>
         <Link to="/blog">
-          <Text _hover={{ color: "white" }}>Blog</Text>
+          <Text _hover={{ color: hoverColor }}>Blog</Text>
         </Link>
         <Link to="/about">
-          <Text paddingLeft={3} _hover={{ color: "white" }}>
+          <Text paddingLeft={3} _hover={{ color: hoverColor }}>
             About
           </Text>
         </Link>
@@ -39,12 +55,16 @@ const Head = () => {
             "mailto:hello@agustinusnathaniel.com?subject=Let%27s%20Work%20Together&cc=agustinusnathaniel228@gmail.com"
           }
           paddingLeft={3}
-          _hover={{ color: "white" }}
+          _hover={{ color: hoverColor }}
           isExternal
         >
           Contact
         </ChakraLink>
       </Flex>
+
+      <Box marginLeft="auto">
+        <ThemeToggle />
+      </Box>
     </Flex>
   );
 };
