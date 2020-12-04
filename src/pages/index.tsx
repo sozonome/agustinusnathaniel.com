@@ -5,15 +5,12 @@ import {
   Flex,
   Heading,
   Text,
-  useColorMode,
 } from "@chakra-ui/react";
 import { Link } from "gatsby";
 
 import Layout from "../components/Layout";
 
 const IndexPage = () => {
-  const { colorMode } = useColorMode();
-
   return (
     <Layout>
       <Box as="section" alignItems="center" id="intro">
