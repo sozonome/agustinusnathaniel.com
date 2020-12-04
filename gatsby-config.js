@@ -168,4 +168,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
+  flags: {
+    FAST_REFRESH: true,
+  },
 };
