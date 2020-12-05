@@ -17,13 +17,7 @@ const Head = () => {
   const hoverColor = colorMode === "light" ? "orange.300" : "white";
 
   return (
-    <Flex
-      width="100%"
-      color="gray.600"
-      height={24}
-      alignItems="center"
-      paddingX={6}
-    >
+    <Flex width="100%" height={24} alignItems="center" paddingX={6}>
       <Box
         width={["25%", "50%"]}
         fontWeight="bold"

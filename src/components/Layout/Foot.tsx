@@ -60,7 +60,7 @@ const Foot = () => {
   ];
 
   return (
-    <Box width="100%" alignSelf="flex-end" color="gray.600">
+    <Box width="100%" alignSelf="flex-end">
       <Box
         display={["inherit", "flex"]}
         alignItems="center"
