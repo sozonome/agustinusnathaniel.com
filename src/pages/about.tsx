@@ -68,7 +68,7 @@ const About = () => {
             </Heading>
             <Box marginBottom={4} fontSize="md">
               <Link
-                href="https://sozonome.github.io/bookmarks"
+                href="https://base.sznm.dev/bookmarks/categories"
                 color="teal.500"
                 _hover={{ color: "teal.200", textDecoration: "underline" }}
                 fontWeight="semibold"
