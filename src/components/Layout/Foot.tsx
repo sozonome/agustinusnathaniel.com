@@ -50,7 +50,7 @@ const Foot = () => {
       icon: ["fab", "twitter"],
     },
     {
-      link: "https://linkedin.com/" + social.linkedin,
+      link: "https://linkedin.com/in/" + social.linkedin,
       icon: ["fab", "linkedin"],
     },
     {
