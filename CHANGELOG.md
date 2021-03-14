@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/sozonome/agustinusnathaniel.com/compare/v3.3.0...v3.4.0) (2021-03-14)
+
+
+### Features
+
+* :sparkles: add mobile navigation, improve mobile layout ([c7fcb34](https://github.com/sozonome/agustinusnathaniel.com/commit/c7fcb347cfc5717cc7fbe978e4c27eb2118f208f))
+* add color mode toggle ([#3](https://github.com/sozonome/agustinusnathaniel.com/issues/3)) ([2d76954](https://github.com/sozonome/agustinusnathaniel.com/commit/2d769541245754a2912e7eeeb390908c2dd7818f))
+
 ## [3.3.0](https://github.com/sozonome/agustinusnathaniel.com/compare/v3.2.1...v3.3.0) (2020-11-21)
 
 
