@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Flex, useColorMode } from "@chakra-ui/react";
 
-import "fontsource-open-sans/latin.css";
-import "fontsource-recursive/latin.css";
+import "@fontsource/open-sans/latin.css";
+import "@fontsource/recursive/latin.css";
 
 import SEO from "./SEO";
 import Head from "./Head";

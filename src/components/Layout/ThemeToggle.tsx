@@ -7,12 +7,11 @@ const ThemeToggle = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box paddingLeft={4}>
+    <Box>
       <IconButton
         aria-label="toggle theme mode"
         icon={colorMode === "light" ? <BsMoon /> : <FiSun />}
         onClick={toggleColorMode}
-        backgroundColor={colorMode === "light" ? "gray.400" : "gray.900"}
       />
     </Box>
   );

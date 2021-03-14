@@ -1,7 +1,6 @@
 import { theme as ChakraTheme, extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
-  ...ChakraTheme,
   fonts: {
     ...ChakraTheme.fonts,
     heading: "Open Sans, serif",
@@ -22,6 +21,11 @@ const theme = extendTheme({
       },
       _hover: {
         transition: "0.2s ease",
+      },
+    },
+    Button: {
+      baseStyle: {
+        borderRadius: 24,
       },
     },
   },

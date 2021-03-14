@@ -1,9 +1,9 @@
 import React from "react";
 import {
+  Avatar,
   Box,
   Flex,
   Heading,
-  Image,
   Link,
   Text,
   useColorMode,
@@ -31,11 +31,11 @@ const StuffCard = ({ href, title, description, imgSrc }: StuffCardProps) => {
         marginBottom={4}
         alignItems="center"
       >
-        <Box width={12} marginRight={4}>
-          <Image src={imgSrc} alt={title} />
-        </Box>
+        <Flex justifyContent="center" flexBasis="15%" marginRight={4}>
+          <Avatar src={imgSrc} alt={title} />
+        </Flex>
 
-        <Box>
+        <Box flexBasis="85%">
           <Heading size="lg" fontWeight="bold">
             {title}
           </Heading>

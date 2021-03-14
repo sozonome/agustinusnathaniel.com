@@ -8,7 +8,7 @@ const siteConfig = {
       // General
       youtube: `AgustinusNathaniel`,
       instagram: `agustinusnathaniel`,
-      twitter: `agstnsnathaniel`,
+      twitter: `sozonome`,
       linkedin: `agustinusnathaniel`,
       pinterest: `agustinusnathaniel`,
       email: `hello@agustinusnathaniel.com`,
