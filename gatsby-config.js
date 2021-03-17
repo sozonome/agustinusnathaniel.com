@@ -6,6 +6,7 @@ module.exports = {
     description: siteMetadata.description,
     author: siteMetadata.author,
     siteUrl: siteMetadata.siteUrl, // Domain of your site. No trailing slash!
+    ogImage: siteMetadata.ogImage,
     social: {
       youtube: siteMetadata.social.youtube,
       linkedin: siteMetadata.social.linkedin,
@@ -168,7 +169,4 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
-  flags: {
-    FAST_REFRESH: true,
-  },
 };

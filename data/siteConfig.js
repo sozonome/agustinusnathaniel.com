@@ -4,6 +4,7 @@ const siteConfig = {
     description: `Tech and Design enthusiast.`,
     author: `sozonome`,
     siteUrl: `https://agustinusnathaniel.com`, // Domain of your site. No trailing slash!
+    ogImage: `https://og-image.sznm.dev/**agustinusnathaniel**.com.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&heights=250`,
     social: {
       // General
       youtube: `AgustinusNathaniel`,

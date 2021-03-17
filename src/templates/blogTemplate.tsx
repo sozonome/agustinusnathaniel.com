@@ -20,7 +20,7 @@ import Layout from "../components/Layout";
 const configQuery = require("../../data/siteConfig");
 
 export default function blogTemplate({ data }: any) {
-  const { markdownRemark } = data;
+  const { markdownRemark, site } = data;
   const { frontmatter, html } = markdownRemark;
   const { siteMetadata } = configQuery;
 
@@ -30,6 +30,31 @@ export default function blogTemplate({ data }: any) {
         <title>
           {frontmatter.title} | {siteMetadata.title}
         </title>
+
+        {/* <!-- Open Graph / Facebook --> */}
+        {/* https://developers.facebook.com/docs/sharing/webmasters/ */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://agustinusnathaniel.com" />
+        <meta property="og:title" content={frontmatter.title} />
+        <meta property="og:description" content={frontmatter.title} />
+        <meta
+          property="og:image"
+          content={`https://og-image.sznm.dev/${frontmatter.title}.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&heights=250`}
+        />
+
+        {/* <!-- Twitter --> */}
+        {/* https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:site"
+          content={`@${site.siteMetadata.social.twitter}`}
+        />
+        <meta property="twitter:title" content={frontmatter.title} />
+        <meta property="twitter:description" content={frontmatter.title} />
+        <meta
+          property="twitter:image"
+          content={`https://og-image.sznm.dev/${frontmatter.title}.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&heights=250`}
+        />
       </Helmet>
 
       <Box className="post">
@@ -121,6 +146,16 @@ export const pageQuery = graphql`
         slug
         title
         path
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        description
+        ogImage
+        social {
+          twitter
+        }
       }
     }
   }

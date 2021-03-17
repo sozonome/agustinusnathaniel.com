@@ -95,8 +95,8 @@ const Foot = () => {
           justifyContent={["inherit", "flex-end"]}
         >
           <Flex alignItems="center" justifyContent="center">
-            {socialLinks.map((socialLink) => (
-              <SocialLinkButton {...socialLink} />
+            {socialLinks.map((socialLink, index) => (
+              <SocialLinkButton {...socialLink} key={index} />
             ))}
           </Flex>
         </Box>
