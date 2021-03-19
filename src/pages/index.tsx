@@ -21,7 +21,15 @@ const IndexPage = () => {
             </Text>
           </Heading>
 
-          <Text marginY={4}>Tech and design enthusiast.</Text>
+          <Text
+            marginY={4}
+            fontSize="xs"
+            textTransform="uppercase"
+            fontFamily="Open Sans"
+            letterSpacing={3}
+          >
+            Tech and design enthusiast
+          </Text>
         </Box>
 
         <Box fontSize={["sm", "lg"]} color="white">
