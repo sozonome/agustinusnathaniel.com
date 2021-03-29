@@ -38,3 +38,6 @@ ___
   (two seperate blogs - personal and dev in one site)
 - ~~RSS Feed Features~~
 </details>
+
+## References
+- https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/
