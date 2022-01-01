@@ -18,10 +18,16 @@ const config = {
 		vite: {
 			plugins: [
 				UnoCss({
+					theme: {
+						fontFamily: {
+							sans: 'Outfit'
+						}
+					},
 					extractors: [extractorSvelte],
 					shortcuts: [
 						{
-							layout: 'max-w-1000px mx-auto p-4'
+							btn: 'cursor-pointer no-underline border-none w-full p-4 text-sm rounded-2xl font-sans fw-medium',
+							layout: 'max-w-600px mx-auto p-4'
 						}
 					],
 					presets: [

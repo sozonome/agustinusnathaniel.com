@@ -3,31 +3,16 @@
 </script>
 
 <script lang="ts">
-	import type {
-		PropertyValueDate,
-		PropertyValueRichText,
-		PropertyValueTitle
-	} from '@notion-stuff/v4-types';
 	import type { HomeProps } from '$lib/routes/home/types';
-	import { dateFormatLong } from '$lib/utils/formatDate';
+	import BlogPostList from '$lib/components/blog/list.svelte';
 
 	export let blogPosts: HomeProps['blogPosts'];
-
-	const convertedBlogPosts = blogPosts.map((post) => {
-		const title = (post.properties.title as PropertyValueTitle).title[0].plain_text;
-		const slug = (post.properties.slug as PropertyValueRichText).rich_text[0].plain_text;
-		const publishedDate = dateFormatLong(
-			(post.properties.published_at as PropertyValueDate).date?.start
-		);
-
-		return {
-			title,
-			slug,
-			publishedDate
-		};
-	});
 </script>
 
-{#each convertedBlogPosts as blogPost}
-	<h2>{blogPost.title}</h2>
-{/each}
+<h2 text="lg gray-500" mb-6>Recent Posts</h2>
+
+<BlogPostList entries={blogPosts} />
+
+<div mt-8>
+	<a href="/blog" btn bg-orange-200>See All Posts</a>
+</div>

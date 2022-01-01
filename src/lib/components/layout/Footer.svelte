@@ -1,4 +1,4 @@
-<footer layout pb-8>
+<footer layout pb-8 text="sm sm:base">
 	{new Date().getFullYear()} |
 	<a
 		href="https://sznm.dev"

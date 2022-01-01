@@ -4,7 +4,7 @@
 	import Header from './Header.svelte';
 </script>
 
-<div bg-zinc-900 text-gray-300 min-h-100vh>
+<div font-sans bg-zinc-900 text-gray-300 min-h-100vh>
 	<DefaultMetaTags />
 	<Header />
 

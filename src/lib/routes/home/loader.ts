@@ -1,13 +1,12 @@
 import type { Load, LoadOutput } from '@sveltejs/kit';
 
-import { sortBlogPosts } from '$lib/services/notion/utils/sortBlogPosts';
 import type { HomeProps } from './types';
-import type { NotionDatabaseEntries } from '$lib/services/notion/types';
+import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
 
 export const load: Load<unknown, LoadOutput<HomeProps>> = async ({ fetch }) => {
-	const maxRecent = 3;
-	const recentBlogPosts = sortBlogPosts(
-		(await fetch('/blogs').then(async (res) => await res.json())) as NotionDatabaseEntries
+	const maxRecent = 2;
+	const recentBlogPosts = (
+		(await fetch('/posts').then(async (res) => await res.json())) as BlogPostEntries
 	).slice(0, maxRecent);
 
 	return {
