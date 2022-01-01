@@ -10,7 +10,6 @@
 	import Layout from '$lib/components/layout/index.svelte';
 
 	export let path = '';
-	console.log('ho', { path });
 </script>
 
 <Layout {path}>
