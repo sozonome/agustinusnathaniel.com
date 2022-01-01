@@ -26,3 +26,19 @@
 ---
 
 - [Shortcuts](https://github.com/antfu/unocss#shortcuts)
+
+## Blog
+
+Notion
+- https://developers.notion.com/docs
+- https://github.com/souvikinator/notion-to-md
+  - https://github.com/souvikinator/notion-to-md#api
+
+- https://github.com/pablo-abc/svelte-markdown
+
+
+## Misc
+
+- Environment Variables
+  - https://kit.svelte.dev/faq#env-vars
+  - https://vitejs.dev/guide/env-and-mode.html#env-files

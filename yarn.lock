@@ -284,7 +284,14 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@notionhq/client@^0.4.11":
+"@notion-stuff/v4-types@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@notion-stuff/v4-types/-/v4-types-5.1.0.tgz#9bf06adf3d9f1907415e7b5fe61feb3d628e1eb9"
+  integrity sha512-RIIdwSE6EnmiDkYWhL9zHMndC5mXAlgrRx5fHz8sny4ZBlqZBPr3itlxspbBWIynA44QR9YA/E+EtWmdAApYCQ==
+  dependencies:
+    "@notionhq/client" "~0.4.6"
+
+"@notionhq/client@^0.4.11", "@notionhq/client@~0.4.6":
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/@notionhq/client/-/client-0.4.11.tgz#030d2397a7d38b3dfda2444cb8c3067bb6b7c842"
   integrity sha512-+zT+qBHx8V6Fj3Tj9a4KKfYE4tWhrS/7A5OWRinEjsL5J0GKskQ5EnnLEejptg0COh6BgJShVQLPJXsr0NovLQ==
