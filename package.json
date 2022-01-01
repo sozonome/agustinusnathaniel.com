@@ -1,6 +1,6 @@
 {
 	"name": "agustinusnathaniel.com",
-	"version": "5.0.0-alpha",
+	"version": "5.0.0-alpha.0",
 	"author": "sozonome",
 	"scripts": {
 		"dev": "svelte-kit dev",
@@ -12,6 +12,7 @@
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
 		"release": "standard-version",
+		"pre-release": "yarn release -- --prerelease",
 		"up": "yarn upgrade-interactive",
 		"up-latest": "yarn up --latest",
 		"up-next": "yarn up --next",
