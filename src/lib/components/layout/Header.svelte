@@ -1,7 +1,5 @@
-<header layout p="4">
+<header layout py="2" z="10" sticky top="0" backdrop-blur-6px bg-zinc="900/80">
 	<a href="/" no-underline>
-		<h1 text="xl sm:2xl orange-600">sveltekit-uno</h1>
+		<h1 text="lg sm:xl gray-500">A. Nathaniel</h1>
 	</a>
-
-	<p italic text="sm">SvelteKit template with unocss setup</p>
 </header>

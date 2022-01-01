@@ -3,14 +3,14 @@
 </script>
 
 <MetaTags
-	title="sveltekit-uno"
-	description="Svelte Kit starter template with unocss setup"
-	canonical="https://sveltekit-uno.sznm.dev"
+	title="Hi! | Agustinus Nathaniel"
+	description="Agustinus Nathaniel's personal site"
+	canonical="https://agustinusnathaniel.com"
 	openGraph={{
-		url: 'https://sveltekit-uno.sznm.dev',
-		title: 'Svelte Kit + unocss',
-		description: 'Svelte Kit starter template with unocss setup',
-		site_name: 'sveltekit-uno'
+		url: 'https://agustinusnathaniel.com',
+		title: 'Agustinus Nathaniel',
+		description: "Agustinus Nathaniel's personal site",
+		site_name: 'agustinusnathaniel'
 	}}
 	twitter={{
 		handle: '@sozonome',

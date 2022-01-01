@@ -4,9 +4,13 @@
 	import Header from './Header.svelte';
 </script>
 
-<DefaultMetaTags />
-<Header />
-<main layout px="4" py="8">
-	<slot />
-</main>
-<Footer />
+<div bg-zinc-900 text-gray-300 min-h-100vh>
+	<DefaultMetaTags />
+	<Header />
+
+	<main layout py="8">
+		<slot />
+	</main>
+
+	<Footer />
+</div>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import 'uno.css';
+	import '@unocss/reset/normalize.css'
 	import '@fontsource/outfit/latin.css';
 	import '$lib/styles/app.css';
 

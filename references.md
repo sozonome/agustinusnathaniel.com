@@ -11,6 +11,7 @@
 - [Vite config](https://github.com/antfu/unocss/blob/main/test/fixtures/sveltekit/svelte.config.js)
   - [antfu.me's unocss config](https://github.com/antfu/antfu.me/blob/main/vite.config.ts)
 - [preset-icons](https://github.com/antfu/unocss/tree/main/packages/preset-icons#readme)
+- [style reset](https://github.com/antfu/unocss#style-resetting)
 
 ### Icons
 

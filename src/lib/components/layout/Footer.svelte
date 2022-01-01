@@ -1,12 +1,13 @@
-<footer layout p="4">
+<footer layout pb-8>
 	{new Date().getFullYear()} |
 	<a
 		href="https://sznm.dev"
 		no-underline
-		fw="medium hover:semibold"
+		fw-medium
 		hover:underline
 		target="_blank"
 		rel="noopener noreferrer"
+		text-orange
 	>
 		sznm.dev
 	</a>
