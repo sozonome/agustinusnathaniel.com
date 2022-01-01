@@ -3,7 +3,7 @@
 
 	export let entry: BlogPostEntry;
 
-	const { title, publishedDate, twemoji } = entry;
+	const { title, publishedDate } = entry;
 </script>
 
 <div
