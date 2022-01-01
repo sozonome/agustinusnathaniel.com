@@ -6,7 +6,7 @@
 		fw-medium
 		hover:underline
 		target="_blank"
-		rel="noopener noreferrer"
+		rel="external noopener noreferrer"
 		text-orange
 	>
 		sznm.dev
