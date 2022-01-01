@@ -17,8 +17,6 @@
 	ease-out
 	hover:ease-in
 >
-	<div class={`i-twemoji-${twemoji} text-6xl`} />
-
 	<div mb-4>
 		<h3 text="xl sm:2xl" mb-2>{title}</h3>
 		<p text="sm zinc-400" m-0>{publishedDate}</p>

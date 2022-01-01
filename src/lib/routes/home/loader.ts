@@ -1,6 +1,7 @@
 import type { Load, LoadOutput } from '@sveltejs/kit';
 
 import type { HomeProps } from './types';
+
 import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
 
 export const load: Load<unknown, LoadOutput<HomeProps>> = async ({ fetch }) => {

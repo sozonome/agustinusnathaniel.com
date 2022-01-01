@@ -3,8 +3,8 @@
 </script>
 
 <script lang="ts">
-	import type { HomeProps } from '$lib/routes/home/types';
 	import BlogPostList from '$lib/components/blog/list.svelte';
+	import type { HomeProps } from '$lib/routes/home/types';
 
 	export let blogPosts: HomeProps['blogPosts'];
 </script>

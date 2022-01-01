@@ -3,8 +3,8 @@
 </script>
 
 <script lang="ts">
-	import type { BlogPostListProps } from '$lib/routes/blog/types';
 	import BlogPostList from '$lib/components/blog/list.svelte';
+	import type { BlogPostListProps } from '$lib/routes/blog/types';
 
 	export let blogPosts: BlogPostListProps['blogPosts'];
 </script>

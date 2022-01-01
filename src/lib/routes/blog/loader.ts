@@ -1,6 +1,7 @@
 import type { Load, LoadOutput } from '@sveltejs/kit';
 
 import type { BlogPostListProps } from './types';
+
 import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
 
 export const load: Load<unknown, LoadOutput<BlogPostListProps>> = async ({ fetch }) => {
@@ -10,7 +11,7 @@ export const load: Load<unknown, LoadOutput<BlogPostListProps>> = async ({ fetch
 
 	return {
 		props: {
-			blogPosts: blogPosts
+			blogPosts
 		}
 	};
 };

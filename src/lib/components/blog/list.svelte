@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
 	import BlogEntry from './entry.svelte';
+
+	import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
 
 	export let entries: BlogPostEntries;
 </script>
