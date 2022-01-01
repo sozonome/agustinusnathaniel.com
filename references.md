@@ -30,12 +30,13 @@
 ## Blog
 
 Notion
+
 - https://developers.notion.com/docs
 - https://github.com/souvikinator/notion-to-md
+
   - https://github.com/souvikinator/notion-to-md#api
 
 - https://github.com/pablo-abc/svelte-markdown
-
 
 ## Misc
 

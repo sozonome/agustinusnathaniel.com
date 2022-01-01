@@ -1,10 +1,9 @@
 import type { PostResult, PropertyValueDate } from '@notion-stuff/v4-types';
-import type { QueryDatabaseResponse } from '@notionhq/client/build/src/api-endpoints';
 
-export const sortEntriesByDate = (
-	entries: QueryDatabaseResponse['results']
-): QueryDatabaseResponse['results'] => {
-	return entries.sort((a, b) => {
+import type { NotionDatabaseEntries } from '$lib/services/notion/types';
+
+export const sortBlogPosts = (blogPosts: NotionDatabaseEntries): NotionDatabaseEntries => {
+	return blogPosts.sort((a, b) => {
 		const aPublishedDate = new Date(
 			((a as PostResult).properties.published_at as PropertyValueDate).date?.start ?? ''
 		);
