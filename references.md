@@ -32,12 +32,13 @@
 
 Notion
 
-- https://developers.notion.com/docs
-- https://github.com/souvikinator/notion-to-md
+- Notion API: https://developers.notion.com/docs
+- Notion-to-md: https://github.com/souvikinator/notion-to-md
 
   - https://github.com/souvikinator/notion-to-md#api
 
-- https://github.com/pablo-abc/svelte-markdown
+- Markdown Renderer: https://github.com/pablo-abc/svelte-markdown
+  - renderer: https://github.com/pablo-abc/svelte-markdown/tree/main/src/renderers
 
 ## Misc
 

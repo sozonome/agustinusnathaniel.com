@@ -1,10 +1,10 @@
-import type { Load, LoadOutput } from '@sveltejs/kit';
+import type { Load, LoadInput, LoadOutput } from '@sveltejs/kit';
 
 import type { HomeProps } from './types';
 
 import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
 
-export const load: Load<unknown, LoadOutput<HomeProps>> = async ({ fetch }) => {
+export const load: Load<LoadInput, LoadOutput<HomeProps>> = async ({ fetch }) => {
 	const maxRecent = 2;
 	const recentBlogPosts = (
 		(await fetch('/posts').then(async (res) => await res.json())) as BlogPostEntries
@@ -13,6 +13,7 @@ export const load: Load<unknown, LoadOutput<HomeProps>> = async ({ fetch }) => {
 	return {
 		props: {
 			blogPosts: recentBlogPosts
-		}
+		},
+		maxage: 60
 	};
 };

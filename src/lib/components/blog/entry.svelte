@@ -3,10 +3,11 @@
 
 	export let entry: BlogPostEntry;
 
-	const { title, publishedDate } = entry;
+	const { title, publishedDate, slug } = entry;
 </script>
 
-<div
+<a
+	href={`/blog/${slug}`}
 	flex
 	items-center
 	gap-6
@@ -21,4 +22,4 @@
 		<h3 text="xl sm:2xl" mb-2>{title}</h3>
 		<p text="sm zinc-400" m-0>{publishedDate}</p>
 	</div>
-</div>
+</a>

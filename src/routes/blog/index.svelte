@@ -1,10 +1,10 @@
 <script context="module" lang="ts">
-	export { load } from '$lib/routes/blog/loader';
+	export { load } from '$lib/routes/blog/list/loader';
 </script>
 
 <script lang="ts">
 	import BlogPostList from '$lib/components/blog/list.svelte';
-	import type { BlogPostListProps } from '$lib/routes/blog/types';
+	import type { BlogPostListProps } from '$lib/routes/blog/list/types';
 
 	export let blogPosts: BlogPostListProps['blogPosts'];
 </script>
