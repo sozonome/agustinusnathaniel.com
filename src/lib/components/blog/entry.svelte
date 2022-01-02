@@ -8,6 +8,8 @@
 
 <a
 	href={`/blog/${slug}`}
+	no-underline
+	sveltekit:prefetch
 	flex
 	items-center
 	gap-6
