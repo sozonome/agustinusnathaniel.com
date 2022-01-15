@@ -8,8 +8,8 @@
 	export let path = '';
 </script>
 
+<DefaultMetaTags />
 <div font-sans bg-zinc-900 text-gray-300 min-h-100vh>
-	<DefaultMetaTags />
 	<Header />
 
 	{#key path}

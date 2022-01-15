@@ -13,6 +13,11 @@ export const load: Load<LoadInput, LoadOutput<BlogPostListProps>> = async ({ fet
 		props: {
 			blogPosts
 		},
+		stuff: {
+			seo: {
+				title: 'Blog Post'
+			}
+		},
 		maxage: 60
 	};
 };

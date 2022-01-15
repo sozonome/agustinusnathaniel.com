@@ -11,6 +11,11 @@ export const load: Load<LoadInput, LoadOutput<BlogPostDetailProps>> = async ({ p
 		props: {
 			...blogPost
 		},
+		stuff: {
+			seo: {
+				title: `${blogPost.meta.title} | Agustinus Nathaniel`
+			}
+		},
 		maxage: 60
 	};
 };
