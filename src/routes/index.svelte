@@ -7,8 +7,11 @@
 	<Hero />
 
 	<div mt-8>
-		<Link href="/blog" class="btn p-2 bg-orange-800 hover:bg-orange-600 text-gray-400 bg-opacity-40"
-			>Thoughts</Link
+		<Link
+			href="/blog"
+			class="btn p-2 bg-orange-800 hover:bg-orange-600 text-gray-400 bg-opacity-40"
 		>
+			Thoughts
+		</Link>
 	</div>
 </div>

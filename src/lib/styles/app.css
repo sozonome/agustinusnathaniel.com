@@ -1,3 +1,10 @@
+*,
+:after,
+:before {
+	box-sizing: border-box;
+	border: 0 solid;
+}
+
 body {
 	margin: 0;
 }

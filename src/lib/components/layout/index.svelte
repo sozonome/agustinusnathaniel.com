@@ -18,6 +18,7 @@
 			out:blur={{ duration: 400 }}
 			layout
 			w-full
+			self-center
 			py="8"
 		>
 			<slot />

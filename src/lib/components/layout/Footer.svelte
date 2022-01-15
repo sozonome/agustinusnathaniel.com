@@ -4,8 +4,8 @@
 	let linkClass = 'text-3xl text-gray-500';
 </script>
 
-<footer layout pb-8 text="sm sm:base center" mb-8 self-end grid gap-2>
-	<section flex gap-2 justify="center">
+<footer layout w-full pb-8 text="sm sm:base" mb-8 self-end grid gap-2>
+	<section flex gap-2>
 		<Link class={linkClass} isExternal href="https://www.instagram.com/agustinusnathaniel">
 			<div class="i-fa-brands-instagram" />
 		</Link>
