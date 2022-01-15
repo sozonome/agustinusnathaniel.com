@@ -13,8 +13,9 @@
 	<script
 		async
 		defer
-		data-website-id="32790ac3-8787-4a0f-98fb-fd5923e3d311"
-		src="https://umami.sznm.dev/umami.js"></script>
+		data-website-id="19cccead-2387-42db-8790-74308b122205"
+		src="https://umami.sznm.dev/umami.js"
+		data-domains="agustinusnathaniel.com"></script>
 </svelte:head>
 
 <MetaTags
