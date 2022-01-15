@@ -1,10 +1,12 @@
 <script lang="ts">
-	import { MetaTags } from 'svelte-meta-tags';
+	import { MetaTags, MetaTagsProps } from 'svelte-meta-tags';
 	import { page } from '$app/stores';
 
-	const {
-		stuff: { seo }
-	} = $page;
+	let seo: MetaTagsProps | undefined;
+
+	page.subscribe((val) => {
+		seo = val.stuff.seo;
+	});
 </script>
 
 <svelte:head>
