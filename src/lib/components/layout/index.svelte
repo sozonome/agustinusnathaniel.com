@@ -9,7 +9,7 @@
 </script>
 
 <DefaultMetaTags />
-<div font-sans bg-zinc-900 text-gray-300 min-h-100vh>
+<div grid font-sans bg-zinc-900 text-gray-300 min-h-screen>
 	<Header />
 
 	{#key path}
@@ -17,6 +17,7 @@
 			in:blur={{ duration: 400, delay: 400, amount: 6 }}
 			out:blur={{ duration: 400 }}
 			layout
+			w-full
 			py="8"
 		>
 			<slot />

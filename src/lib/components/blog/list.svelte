@@ -4,8 +4,9 @@
 	import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
 
 	export let entries: BlogPostEntries;
+	export let entryClass: string | undefined;
 </script>
 
 {#each entries as entry}
-	<BlogEntry {entry} />
+	<BlogEntry {entry} class={entryClass} />
 {/each}

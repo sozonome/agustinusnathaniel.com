@@ -1,18 +1,14 @@
-<script context="module" lang="ts">
-	export { load } from '$lib/routes/home/loader';
-</script>
-
 <script lang="ts">
-	import BlogPostList from '$lib/components/blog/list.svelte';
-	import type { HomeProps } from '$lib/routes/home/types';
-
-	export let blogPosts: HomeProps['blogPosts'];
+	import Hero from '$lib/components/home/Hero.svelte';
+	import Link from '$lib/components/shared/Link.svelte';
 </script>
 
-<h2 text="lg gray-500" mb-6>Recent Posts</h2>
+<div class="grid">
+	<Hero />
 
-<BlogPostList entries={blogPosts} />
-
-<div mt-8>
-	<a href="/blog" btn bg-orange-200>See All Posts</a>
+	<div mt-8>
+		<Link href="/blog" class="btn p-2 bg-orange-800 hover:bg-orange-600 text-gray-400 bg-opacity-40"
+			>Thoughts</Link
+		>
+	</div>
 </div>

@@ -2,6 +2,8 @@
 	import type { BlogPostEntry } from '$lib/services/notion/blog/entries/types';
 
 	export let entry: BlogPostEntry;
+	let className: string | undefined;
+	export { className as class };
 
 	const { title, publishedDate, slug } = entry;
 </script>
@@ -19,6 +21,7 @@
 	duration-200
 	ease-out
 	hover:ease-in
+	class={className}
 >
 	<div mb-4>
 		<h3 text="xl sm:2xl" mb-2>{title}</h3>

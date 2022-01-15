@@ -244,6 +244,13 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
+"@iconify-json/fa-brands@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@iconify-json/fa-brands/-/fa-brands-1.0.3.tgz#f284d05fa91526d8d6f93e08b8cdd0068104faee"
+  integrity sha512-nrMSpsoLdRzfB+DNB5+gmyOp2DsSj3N9jZlP7qwG0JVdctWwEZZptWMvF0dkIEoOMCVl7pJ3X8oa3rQsiEqCRg==
+  dependencies:
+    "@iconify/types" "^1.0.10"
+
 "@iconify-json/twemoji@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@iconify-json/twemoji/-/twemoji-1.0.2.tgz#7589388acbb95ca0a2dc08483d59e896e16e8c14"
@@ -901,6 +908,11 @@ cliui@^7.0.2:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
     wrap-ansi "^7.0.0"
+
+clsx@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
+  integrity sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
 
 color-convert@^1.9.0:
   version "1.9.3"
