@@ -6,16 +6,31 @@
 
 <footer layout w-full pb-8 text="sm sm:base" mb-8 self-end grid gap-2>
 	<section flex gap-2>
-		<Link class={linkClass} isExternal href="https://www.instagram.com/agustinusnathaniel">
+		<Link
+			class={linkClass}
+			isExternal
+			label="instagram"
+			href="https://www.instagram.com/agustinusnathaniel"
+		>
 			<div class="i-fa-brands-instagram" />
 		</Link>
-		<Link class={linkClass} isExternal href="https://twitter.com/sozonome">
+		<Link class={linkClass} isExternal label="twitter" href="https://twitter.com/sozonome">
 			<div class="i-fa-brands-twitter" />
 		</Link>
-		<Link class={linkClass} isExternal href="https://youtube.com/agustinusnathaniel">
+		<Link
+			class={linkClass}
+			isExternal
+			label="youtube"
+			href="https://youtube.com/agustinusnathaniel"
+		>
 			<div class="i-fa-brands-youtube" />
 		</Link>
-		<Link class={linkClass} isExternal href="https://linkedin.com/in/agustinusnathaniel">
+		<Link
+			class={linkClass}
+			isExternal
+			label="linkedin"
+			href="https://linkedin.com/in/agustinusnathaniel"
+		>
 			<div class="i-fa-brands-linkedin" />
 		</Link>
 	</section>

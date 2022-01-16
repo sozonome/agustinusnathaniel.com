@@ -3,11 +3,11 @@
 </script>
 
 <section>
-	<h3 mb-0 class="flex items-center gap-2">
+	<h2 mb-0 class="flex items-center gap-2">
 		<div class="i-twemoji-waving-hand" />
 		Hello There
-	</h3>
-	<p mt-2 text="gray-500">Hope you are having a nice day!</p>
+	</h2>
+	<p mt-2 text="gray-400">Hope you are having a nice day!</p>
 </section>
 
 <section>

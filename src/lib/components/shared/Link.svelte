@@ -2,8 +2,9 @@
 	import clsx from 'clsx';
 
 	export let href = '';
+	export let label: string | undefined = undefined;
 	export let title: string | undefined = undefined;
-	export let isExternal: boolean | undefined;
+	export let isExternal = false;
 	let className: string | undefined;
 
 	export { className as class };
@@ -11,6 +12,7 @@
 
 <a
 	{href}
+	aria-label={label}
 	{title}
 	class={clsx('text-gray-400 hover:text-gray-100 no-underline hover:underline', className)}
 	target={isExternal ? '_blank' : undefined}
