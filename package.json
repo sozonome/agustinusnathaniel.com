@@ -34,7 +34,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.4.0",
 		"husky": "^7.0.0",
-		"lint-staged": "^12.3.1",
+		"lint-staged": "^12.3.2",
 		"prettier": "^2.4.1",
 		"prettier-plugin-svelte": "^2.6.0",
 		"standard-version": "^9.3.2",
@@ -47,11 +47,11 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/outfit": "^4.5.1",
+		"@fontsource/outfit": "^4.5.2",
 		"@notionhq/client": "^0.4.13",
 		"clsx": "^1.1.1",
-		"notion-to-md": "^2.2.1",
+		"notion-to-md": "^2.3.0",
 		"svelte-markdown": "^0.2.2",
-		"svelte-meta-tags": "^2.2.3"
+		"svelte-meta-tags": "^2.3.0"
 	}
 }
