@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { MetaTags, MetaTagsProps } from 'svelte-meta-tags';
 	import { page } from '$app/stores';
+	import { BASE_URL } from '$lib/constants/baseUrl';
+	import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';
 
 	let seo: MetaTagsProps | undefined;
 
@@ -21,12 +23,18 @@
 <MetaTags
 	title={seo?.title ?? 'Hi! | Agustinus Nathaniel'}
 	description={seo?.description ?? "Agustinus Nathaniel's personal site"}
-	canonical="https://agustinusnathaniel.com"
-	openGraph={seo?.openGraph ?? {
-		url: 'https://agustinusnathaniel.com',
+	canonical={BASE_URL}
+	openGraph={{
+		url: BASE_URL,
 		title: 'Agustinus Nathaniel',
 		description: "Agustinus Nathaniel's personal site",
-		site_name: 'agustinusnathaniel'
+		site_name: 'agustinusnathaniel',
+		images: [
+			{
+				url: buildOgImgUrl({ heading: 'Agustinus Nathaniel', text: BASE_URL })
+			}
+		],
+		...seo?.openGraph
 	}}
 	twitter={seo?.twitter ?? {
 		handle: '@sozonome',
