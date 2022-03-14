@@ -253,17 +253,17 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
-"@iconify-json/fa-brands@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@iconify-json/fa-brands/-/fa-brands-1.1.0.tgz#a7cda101e6b1c5d11d9ec29a477a67fcbb98dd15"
-  integrity sha512-J6mspSwczr9ws8xCM7NO4AnnJKGYO0VnDuh64AFegJV91TafHPTg6NGqvHLHTwJGRHeSBe3pb6VxikbEt0bw6A==
+"@iconify-json/fa-brands@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@iconify-json/fa-brands/-/fa-brands-1.1.1.tgz#a2c1a523df70386b9522edc92b8cb9f425fdd20b"
+  integrity sha512-0GSUO4ksU+I9gD/laa12bV0PhTaOKNc4MekBrcJ9C3qZ/nV87cXMgGw9bh/bJdO6YSp1lndUTi75dc+Pej690A==
   dependencies:
     "@iconify/types" "^1.0.12"
 
-"@iconify-json/twemoji@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@iconify-json/twemoji/-/twemoji-1.1.0.tgz#f61ae949101865dcbc958100f7bd388e7686d209"
-  integrity sha512-zccAj5eXDs19tDvykzKvt9abvcgnxCTc6jcpL/Oy3zrbp844P81BxjGJtrsKC2HNxZZK/9anH/Rbz1AZTiSTHw==
+"@iconify-json/twemoji@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@iconify-json/twemoji/-/twemoji-1.1.1.tgz#2bf36f413474413715b83a927753280c31145ede"
+  integrity sha512-deh0LtiBaNTd55IP0KfqAiapvn+/9ZmxXkRaHx4vhYM/RpyuUgQW5m2tVKp3YXjCsi8IlJgvFN1iL2wIXlex5Q==
   dependencies:
     "@iconify/types" "^1.0.12"
 
@@ -1473,10 +1473,10 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-prettier@^8.4.0:
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.4.0.tgz#8e6d17c7436649e98c4c2189868562921ef563de"
-  integrity sha512-CFotdUcMY18nGRo5KGsnNxpznzhkopOcOo0InID+sgQssPrzjvsyKZPvOgymTFeHrFuC3Tzdf2YndhXtULK9Iw==
+eslint-config-prettier@^8.5.0:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
+  integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
 eslint-plugin-svelte3@^3.4.1:
   version "3.4.1"
@@ -2167,10 +2167,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lint-staged@^12.3.4:
-  version "12.3.4"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-12.3.4.tgz#4b1ff8c394c3e6da436aaec5afd4db18b5dac360"
-  integrity sha512-yv/iK4WwZ7/v0GtVkNb3R82pdL9M+ScpIbJLJNyCXkJ1FGaXvRCOg/SeL59SZtPpqZhE7BD6kPKFLIDUhDx2/w==
+lint-staged@^12.3.5:
+  version "12.3.5"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-12.3.5.tgz#8048ce048c3cac12f57200a06344a54dc91c8fa9"
+  integrity sha512-oOH36RUs1It7b9U/C7Nl/a0sLfoIBcMB8ramiB3nuJ6brBqzsWiUAFSR5DQ3yyP/OR7XKMpijtgKl2DV1lQ3lA==
   dependencies:
     cli-truncate "^3.1.0"
     colorette "^2.0.16"
@@ -2466,10 +2466,10 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
-notion-to-md@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/notion-to-md/-/notion-to-md-2.3.1.tgz#9285fd762d45d9648b131416c526d6f30b5ed190"
-  integrity sha512-IH6Oe/u/gexEL5/XKvcWQHWyRWljtPi7+lki3CGx7OqzK2R5FsxxNORCofME03C9UyV++Y3Kj/yBh98WlyTwfg==
+notion-to-md@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/notion-to-md/-/notion-to-md-2.3.2.tgz#e048f01f4bbd7c6bb878a71a8bd59e20a3163b94"
+  integrity sha512-KKCueAqUvuqTl2y/c5uGzwjGG1a+7Yt6XMrk2jDf/M7v3i3U4YVBpEpWxHIvq8TdRSaLmXxpyoalovtymY2dBg==
 
 npm-run-path@^4.0.1:
   version "4.0.1"
@@ -2919,10 +2919,10 @@ sander@^0.5.0:
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-schema-dts@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-1.0.0.tgz#60e8a0f2cef5e644c44c843b03d35b37a4423c01"
-  integrity sha512-9t8gnY3RW2CbpuvA0pIpcaHFXkJTeNnWR4uaWI+PiYSfpuEeMw+2Q0Gac6YTnQb1B8TR6/+G71gQWuSE7dq6Zw==
+schema-dts@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-1.1.0.tgz#33227971076ef1daa33e56a3127a8aae030e81c9"
+  integrity sha512-vdmbs/5ycj4zyKpZIDqTcy+IZi4s7c38RVAYuDmRi7zgxUT8wRWPMLzg0jr7FjdVunYu9yZ00F3+XcZTTFcTOQ==
 
 "semver@2 || 3 || 4 || 5":
   version "5.7.1"
@@ -3219,12 +3219,12 @@ svelte-markdown@^0.2.2:
     "@types/marked" "^4.0.1"
     marked "^4.0.10"
 
-svelte-meta-tags@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/svelte-meta-tags/-/svelte-meta-tags-2.3.1.tgz#80647f5ff24de80508e31dfc1d54ebba7a91c09f"
-  integrity sha512-ad9P25GFQbldzyUQN82DsFH7yRPiwpKe3Pl3klZLBn6KJbH3wFmSlPX6k3kEmmbV51Ixhe6xQjtHGoiRwnzmIQ==
+svelte-meta-tags@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/svelte-meta-tags/-/svelte-meta-tags-2.4.0.tgz#7d4b213465d6c7334190f3205890af1adaeffba9"
+  integrity sha512-UIFsWwj57bzISfPldaGh2FOrb/vDWotL+B8aX9Lm/O98OtXgztxmoogdZZfuoVmB3K073YeAJ6aIF17RoFcnmQ==
   dependencies:
-    schema-dts "1.0.0"
+    schema-dts "1.1.0"
 
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.4:
   version "4.10.4"
@@ -3386,10 +3386,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@*, typescript@^4.4.3, typescript@^4.5.5:
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
-  integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
+typescript@*, typescript@^4.4.3, typescript@^4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.2.tgz#fe12d2727b708f4eef40f51598b3398baa9611d4"
+  integrity sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==
 
 uglify-js@^3.1.4:
   version "3.14.5"
