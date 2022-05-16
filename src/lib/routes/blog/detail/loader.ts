@@ -1,10 +1,11 @@
+import type { Load } from '@sveltejs/kit';
+
 import { BASE_URL } from '$lib/constants/baseUrl';
 import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';
-import type { Load, LoadInput, LoadOutput } from '@sveltejs/kit';
 
 import type { BlogPostDetailProps } from './types';
 
-export const load: Load<LoadInput, LoadOutput<BlogPostDetailProps>> = async ({ params, fetch }) => {
+export const load: Load<{ slug: string }, BlogPostDetailProps> = async ({ params, fetch }) => {
 	const blogPost = (await fetch(`/blog/data/${params.slug}`).then(async (res) =>
 		res.json()
 	)) as BlogPostDetailProps;
@@ -28,6 +29,8 @@ export const load: Load<LoadInput, LoadOutput<BlogPostDetailProps>> = async ({ p
 				}
 			}
 		},
-		maxage: 60
+		cache: {
+			maxage: 60
+		}
 	};
 };

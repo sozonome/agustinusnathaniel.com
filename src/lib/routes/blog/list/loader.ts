@@ -1,4 +1,4 @@
-import type { Load, LoadInput, LoadOutput } from '@sveltejs/kit';
+import type { Load } from '@sveltejs/kit';
 
 import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
 
@@ -6,7 +6,7 @@ import type { BlogPostListProps } from './types';
 import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';
 import { BASE_URL } from '$lib/constants/baseUrl';
 
-export const load: Load<LoadInput, LoadOutput<BlogPostListProps>> = async ({ fetch }) => {
+export const load: Load<Record<string, string>, BlogPostListProps> = async ({ fetch }) => {
 	const blogPosts = (await fetch('/posts').then(
 		async (res) => await res.json()
 	)) as BlogPostEntries;
@@ -23,6 +23,8 @@ export const load: Load<LoadInput, LoadOutput<BlogPostListProps>> = async ({ fet
 				}
 			}
 		},
-		maxage: 60
+		cache: {
+			maxage: 60
+		}
 	};
 };
