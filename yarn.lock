@@ -314,17 +314,17 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@notion-stuff/v4-types@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@notion-stuff/v4-types/-/v4-types-5.1.0.tgz#9bf06adf3d9f1907415e7b5fe61feb3d628e1eb9"
-  integrity sha512-RIIdwSE6EnmiDkYWhL9zHMndC5mXAlgrRx5fHz8sny4ZBlqZBPr3itlxspbBWIynA44QR9YA/E+EtWmdAApYCQ==
+"@notion-stuff/v4-types@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@notion-stuff/v4-types/-/v4-types-6.0.0.tgz#b0af7d0e07b2f0421ea1878e97448e39c3e6ae1e"
+  integrity sha512-7uYMG4IOrDkxcdouv1VrFlBuvJXnkpAdahZmVYSrps6Oq1geFoKeXj4oilDEc9mo6CdahKcEeEOT+k+hJQA9cw==
   dependencies:
-    "@notionhq/client" "~0.4.6"
+    "@notionhq/client" "~1.0.0"
 
-"@notionhq/client@^0.4.13", "@notionhq/client@~0.4.6":
-  version "0.4.13"
-  resolved "https://registry.yarnpkg.com/@notionhq/client/-/client-0.4.13.tgz#b29c2ecc8c25508119f9b2875c2dda6c12f1c889"
-  integrity sha512-tHC95h4JZYteHmIL49xdta0Yb9q0peXySqo9cqTQEVzpPwUdcPNgWQljMqfrSVKqlpGNX+DhXztY0LR6f3Iw6A==
+"@notionhq/client@^1.0.4", "@notionhq/client@~1.0.0":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@notionhq/client/-/client-1.0.4.tgz#405e9468576baf81019db4d791f4b52d091f4a57"
+  integrity sha512-m7zZ5l3RUktayf1lRBV1XMb8HSKsmWTv/LZPqP7UGC1NMzOlc+bbTOPNQ4CP/c1P4cP61VWLb/zBq7a3c0nMaw==
   dependencies:
     "@types/node-fetch" "^2.5.10"
     node-fetch "^2.6.1"
