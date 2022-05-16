@@ -1,3 +1,5 @@
-import type { PostResult } from '@notion-stuff/v4-types';
+import type { QueryDatabaseResponse } from '@notionhq/client/build/src/api-endpoints';
 
-export type NotionDatabaseEntries = Array<PostResult>;
+export type DatabaseEntry = Extract<QueryDatabaseResponse['results'][number], { url: string }>;
+
+export type NotionDatabaseEntries = Array<DatabaseEntry>;
