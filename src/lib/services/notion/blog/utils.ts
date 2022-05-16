@@ -8,7 +8,7 @@ export const sortBlogPosts = (blogPosts: NotionDatabaseEntries): NotionDatabaseE
 			((a as PostResult).properties.published_at as PropertyValueDate).date?.start ?? ''
 		);
 		const bPublishedDate = new Date(
-			((b as PostResult).properties.published_at as PropertyValueDate).date.start ?? ''
+			((b as PostResult).properties.published_at as PropertyValueDate).date?.start ?? ''
 		);
 
 		if (aPublishedDate > bPublishedDate) return -1;

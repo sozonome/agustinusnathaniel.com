@@ -12,17 +12,9 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
 		vite: {
 			plugins: [
 				UnoCss({
-					theme: {
-						fontFamily: {
-							sans: 'Outfit'
-						}
-					},
 					extractors: [extractorSvelte],
 					shortcuts: [
 						{
@@ -30,6 +22,11 @@ const config = {
 							layout: 'max-w-600px mx-auto p-4'
 						}
 					],
+					theme: {
+						fontFamily: {
+							sans: 'Outfit'
+						}
+					},
 					presets: [
 						presetAttributify(),
 						presetUno(),
