@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-vercel';
 import preprocess from 'svelte-preprocess';
 import UnoCss from 'unocss/vite';
 import { extractorSvelte } from '@unocss/core';
@@ -11,7 +11,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({ edge: true }),
 		vite: {
 			plugins: [
 				UnoCss({
