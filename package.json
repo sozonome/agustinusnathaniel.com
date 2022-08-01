@@ -28,12 +28,12 @@
 		"@sveltejs/kit": "^1.0.0-next.345",
 		"@types/lodash-es": "^4.17.6",
 		"@types/umami": "^0.1.0",
-		"@typescript-eslint/eslint-plugin": "^5.30.4",
-		"@typescript-eslint/parser": "^5.30.4",
-		"commitizen": "^4.2.4",
+		"@typescript-eslint/eslint-plugin": "^5.31.0",
+		"@typescript-eslint/parser": "^5.31.0",
+		"commitizen": "^4.2.5",
 		"commitlint": "^17.0.3",
 		"cross-env": "^7.0.3",
-		"eslint": "^8.19.0",
+		"eslint": "^8.20.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"husky": "^8.0.1",
@@ -52,9 +52,9 @@
 	"dependencies": {
 		"@fontsource/outfit": "^4.5.8",
 		"@notionhq/client": "^1.0.4",
-		"clsx": "^1.1.1",
+		"clsx": "^1.2.1",
 		"lodash-es": "^4.17.21",
-		"notion-to-md": "^2.5.0",
+		"notion-to-md": "^2.5.3",
 		"svelte-markdown": "^0.2.2",
 		"svelte-meta-tags": "^2.6.1"
 	}
