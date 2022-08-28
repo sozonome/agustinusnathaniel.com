@@ -28,16 +28,16 @@
 		"@sveltejs/kit": "1.0.0-next.445",
 		"@types/lodash-es": "^4.17.6",
 		"@types/umami": "^0.1.0",
-		"@typescript-eslint/eslint-plugin": "^5.31.0",
-		"@typescript-eslint/parser": "^5.31.0",
+		"@typescript-eslint/eslint-plugin": "^5.35.1",
+		"@typescript-eslint/parser": "^5.35.1",
 		"commitizen": "^4.2.5",
 		"commitlint": "^17.0.3",
 		"cross-env": "^7.0.3",
-		"eslint": "^8.20.0",
+		"eslint": "^8.23.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"husky": "^8.0.1",
-		"lint-staged": "^12.5.0",
+		"lint-staged": "^13.0.3",
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
 		"standard-version": "^9.5.0",
@@ -45,21 +45,18 @@
 		"svelte-check": "^2.8.1",
 		"svelte-preprocess": "^4.10.7",
 		"tslib": "^2.4.0",
-		"typescript": "^4.7.4",
+		"typescript": "^4.8.2",
 		"unocss": "0.45.13",
 		"vite": "3.0.9"
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/outfit": "^4.5.8",
+		"@fontsource/outfit": "^4.5.9",
 		"@notionhq/client": "^1.0.4",
 		"clsx": "^1.2.1",
 		"lodash-es": "^4.17.21",
-		"notion-to-md": "^2.5.3",
-		"svelte-markdown": "^0.2.2",
-		"svelte-meta-tags": "^2.6.1"
-	},
-	"resolutions": {
-		"@sveltejs/vite-plugin-svelte": "1.0.0-next.48"
+		"notion-to-md": "^2.5.5",
+		"svelte-markdown": "^0.2.3",
+		"svelte-meta-tags": "^2.6.2"
 	}
 }
