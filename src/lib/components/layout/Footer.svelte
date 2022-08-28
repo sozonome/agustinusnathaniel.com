@@ -4,8 +4,8 @@
 	let linkClass = 'text-3xl text-gray-500';
 </script>
 
-<footer layout w-full pb-8 text="sm sm:base" mb-8 self-end grid gap-2>
-	<section flex gap-2>
+<footer class="layout w-full pb-8 text-sm sm:text-base mb-8 self-end grid gap-2">
+	<section class="flex gap-2">
 		<Link
 			class={linkClass}
 			isExternal
@@ -39,12 +39,9 @@
 		{new Date().getFullYear()} |
 		<a
 			href="https://sznm.dev"
-			no-underline
-			fw-medium
-			hover:underline
+			class="no-underline fw-medium hover:underline text-orange"
 			target="_blank"
 			rel="external noopener noreferrer"
-			text-orange
 		>
 			sznm.dev
 		</a>

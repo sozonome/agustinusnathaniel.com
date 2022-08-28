@@ -4,4 +4,4 @@
 	export let text = '';
 </script>
 
-<img w-full rounded-xl src={href} {title} alt={text} />
+<img class="w-full rounded-xl" src={href} {title} alt={text} />

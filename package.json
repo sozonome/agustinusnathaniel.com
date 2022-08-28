@@ -3,12 +3,12 @@
 	"version": "5.0.0",
 	"author": "sozonome",
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"package": "svelte-kit package",
-		"preview": "svelte-kit preview",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"dev": "vite dev",
+		"build": "vite build",
+		"package": "vite package",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"release": "cross-env HUSKY=0 standard-version",
@@ -24,8 +24,8 @@
 		"@iconify-json/fa-brands": "^1.1.2",
 		"@iconify-json/twemoji": "^1.1.5",
 		"@notion-stuff/v4-types": "^6.0.0",
-		"@sveltejs/adapter-auto": "1.0.0-next.48",
-		"@sveltejs/kit": "^1.0.0-next.345",
+		"@sveltejs/adapter-auto": "1.0.0-next.67",
+		"@sveltejs/kit": "1.0.0-next.445",
 		"@types/lodash-es": "^4.17.6",
 		"@types/umami": "^0.1.0",
 		"@typescript-eslint/eslint-plugin": "^5.31.0",
@@ -42,11 +42,12 @@
 		"prettier-plugin-svelte": "^2.7.0",
 		"standard-version": "^9.5.0",
 		"svelte": "^3.49.0",
-		"svelte-check": "^2.8.0",
+		"svelte-check": "^2.8.1",
 		"svelte-preprocess": "^4.10.7",
 		"tslib": "^2.4.0",
 		"typescript": "^4.7.4",
-		"unocss": "^0.34.1"
+		"unocss": "0.45.13",
+		"vite": "3.0.9"
 	},
 	"type": "module",
 	"dependencies": {
@@ -57,5 +58,8 @@
 		"notion-to-md": "^2.5.3",
 		"svelte-markdown": "^0.2.2",
 		"svelte-meta-tags": "^2.6.1"
+	},
+	"resolutions": {
+		"@sveltejs/vite-plugin-svelte": "1.0.0-next.48"
 	}
 }
