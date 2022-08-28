@@ -410,20 +410,20 @@
     "@vercel/nft" "^0.19.0"
     esbuild "^0.14.29"
 
-"@sveltejs/kit@1.0.0-next.349":
-  version "1.0.0-next.349"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.349.tgz#297cf29d84e28d7f28b5842921de933c94747c82"
-  integrity sha512-rZePOuProwhOy0GA+nnby+7EJqxKpdPaV0h5AfT037454i7Ph5p5DTCynVVafJrsOS8idO3szERpoA6NfaJLiA==
+"@sveltejs/kit@1.0.0-next.355":
+  version "1.0.0-next.355"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.355.tgz#83d12d798a839edcdfc3b9b08b78448457aae2bd"
+  integrity sha512-4M+BZL/kKgw5tMRkAYcpg38hxMX80iz6H9+nv2v6VzvKhD4Pw6zatzMs2D6PCT2uBHnrKGrUCheBBcK8kZdWKg==
   dependencies:
-    "@sveltejs/vite-plugin-svelte" "^1.0.0-next.46"
+    "@sveltejs/vite-plugin-svelte" "^1.0.0-next.48"
     chokidar "^3.5.3"
     sade "^1.8.1"
     vite "^2.9.10"
 
-"@sveltejs/vite-plugin-svelte@1.0.0-next.46", "@sveltejs/vite-plugin-svelte@^1.0.0-next.46":
-  version "1.0.0-next.46"
-  resolved "https://registry.yarnpkg.com/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-1.0.0-next.46.tgz#5b6936a8629e5fcb954589d73a50b781fe04bd24"
-  integrity sha512-dumtaI5XusnDgXoQ3vxQAdoCaTWf8zKVezJdiTGjuaS/GSsmLIvtHUvMt0NlwEikPQ/hL53eIzMliRQ/j35w9w==
+"@sveltejs/vite-plugin-svelte@1.0.0-next.48", "@sveltejs/vite-plugin-svelte@^1.0.0-next.48":
+  version "1.0.0-next.48"
+  resolved "https://registry.yarnpkg.com/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-1.0.0-next.48.tgz#6ab566d56c842d45a988cf73c119d0038d4ce893"
+  integrity sha512-hjCEww6FKSuHVMe56vZLClUDuRqK4A/ZC5hPUIx/o2fQ7HmRydp4ztEopjMMnl/YYyEceGBKgY781I9PGEYvAw==
   dependencies:
     "@rollup/pluginutils" "^4.2.1"
     debug "^4.3.4"
