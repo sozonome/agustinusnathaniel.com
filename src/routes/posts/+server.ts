@@ -1,13 +1,13 @@
-import type { RequestHandler } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
 
 import { getBlogEntries } from '$lib/services/notion/blog/entries';
 import { defaultHeaders } from '$lib/constants/api';
 
-export const get: RequestHandler = async () => {
+export const GET: RequestHandler = async () => {
 	const blogEntries = await getBlogEntries();
+	console.log({ blogEntries });
 
-	return {
-		headers: defaultHeaders,
-		body: blogEntries
-	};
+	return new Response(JSON.stringify(blogEntries), {
+		headers: defaultHeaders
+	});
 };

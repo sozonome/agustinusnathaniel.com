@@ -7,7 +7,7 @@
 	let seo: MetaTagsProps | undefined;
 
 	page.subscribe((val) => {
-		seo = val.stuff.seo;
+		seo = val.data.seo;
 	});
 </script>
 

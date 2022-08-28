@@ -1,22 +1,17 @@
 import { defaultHeaders } from '$lib/constants/api';
 import { getBlogPostDetail } from '$lib/services/notion/blog/entry';
-import type { RequestHandler } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
 
-export const get: RequestHandler = async ({ params }) => {
+export const GET: RequestHandler = async ({ params }) => {
 	const { meta, content } = await getBlogPostDetail(params.slug);
 
 	if (!meta || !content) {
-		return {
-			headers: defaultHeaders,
-			body: {}
-		};
+		return new Response(JSON.stringify({}), {
+			headers: defaultHeaders
+		});
 	}
 
-	return {
-		headers: defaultHeaders,
-		body: {
-			meta,
-			content
-		}
-	};
+	return new Response(JSON.stringify({ meta, content }), {
+		headers: defaultHeaders
+	});
 };
