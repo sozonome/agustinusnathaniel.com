@@ -3,20 +3,20 @@
 </script>
 
 <section>
-	<h2 mb-0 class="flex items-center gap-2">
+	<h2 class="mb-0 flex items-center gap-2">
 		<div class="i-twemoji-waving-hand" />
 		Hello There
 	</h2>
-	<p mt-2 text="gray-400">Hope you are having a nice day!</p>
+	<p class="mt-2 text-gray-400">Hope you are having a nice day!</p>
 </section>
 
 <section>
-	<Link href="https://sznm.dev" isExternal>
-		<h3 mb-0>sznm.dev</h3>
-		<p mt-1 text-sm>Me as dev</p>
+	<Link href="https://sznm.dev" isExternal class="">
+		<h3 class="mb-0">sznm.dev</h3>
+		<p class="mt-1 text-sm">Me as dev</p>
 	</Link>
 
-	<Link href="https://olamonde.me/agustinusnathaniel" isExternal>
-		<h3 mb-0>links</h3>
+	<Link href="https://olamonde.me/agustinusnathaniel" isExternal class="">
+		<h3 class="mb-0">links</h3>
 	</Link>
 </section>

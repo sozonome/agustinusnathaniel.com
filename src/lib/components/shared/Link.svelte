@@ -14,13 +14,12 @@
 	{href}
 	aria-label={label}
 	{title}
-	class={clsx('text-gray-400 hover:text-gray-100 no-underline hover:underline', className)}
+	class={clsx(
+		'text-gray-400 hover:text-gray-100 no-underline hover:underline transition duration-200 ease-out hover:ease-in',
+		className
+	)}
 	target={isExternal ? '_blank' : undefined}
 	rel={isExternal ? 'noopener noreferrer' : undefined}
-	transition
-	duration-200
-	ease-out
-	hover:ease-in
 >
 	<slot />
 </a>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { MetaTags, MetaTagsProps } from 'svelte-meta-tags';
+	import { MetaTags, type MetaTagsProps } from 'svelte-meta-tags';
 	import { page } from '$app/stores';
 	import { BASE_URL } from '$lib/constants/baseUrl';
 	import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';

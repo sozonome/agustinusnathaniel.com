@@ -38,5 +38,5 @@
 	export let blogPosts: BlogPostListProps['blogPosts'];
 </script>
 
-<h2 text="lg gray-500" mb-6>Blog Posts</h2>
+<h2 class="text-lg text-gray-500 mb-6">Blog Posts</h2>
 <BlogPostList entries={blogPosts} />
