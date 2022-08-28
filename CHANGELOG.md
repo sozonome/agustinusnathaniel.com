@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/sozonome/agustinusnathaniel.com/compare/v5.0.0...v5.1.0) (2022-08-28)
+
+
+### Features
+
+* **meta:** add og-image ([#4](https://github.com/sozonome/agustinusnathaniel.com/issues/4)) ([bb58d85](https://github.com/sozonome/agustinusnathaniel.com/commit/bb58d85e9861c67d71a46aae21bb2e018c9ec921))
+
+
+### Bug Fixes
+
+* fix loader issue ([a69d572](https://github.com/sozonome/agustinusnathaniel.com/commit/a69d5726d80d0a13590181d39e6132c22e52d5c3))
+
+
+### Improvements
+
+* **api:** add cache-control ([#20](https://github.com/sozonome/agustinusnathaniel.com/issues/20)) ([f70f230](https://github.com/sozonome/agustinusnathaniel.com/commit/f70f2302ff3d4a7f8ce7eed1f893525d2e392410))
+* improve a11y ([f4b5516](https://github.com/sozonome/agustinusnathaniel.com/commit/f4b5516b9361d523ee30bfa2751b2a25d842d993))
+
 ## [5.0.0](https://github.com/sozonome/agustinusnathaniel.com-v5/compare/v5.0.0-alpha.0...v5.0.0) (2022-01-15)
 
 
