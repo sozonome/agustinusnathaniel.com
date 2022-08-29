@@ -19,8 +19,8 @@
 		"prepare": "husky install"
 	},
 	"devDependencies": {
-		"@commitlint/config-conventional": "^17.0.3",
-		"@commitlint/cz-commitlint": "^17.0.3",
+		"@commitlint/config-conventional": "^17.1.0",
+		"@commitlint/cz-commitlint": "^17.1.1",
 		"@iconify-json/fa-brands": "^1.1.2",
 		"@iconify-json/twemoji": "^1.1.5",
 		"@notion-stuff/v4-types": "^6.0.0",
@@ -31,7 +31,7 @@
 		"@typescript-eslint/eslint-plugin": "^5.35.1",
 		"@typescript-eslint/parser": "^5.35.1",
 		"commitizen": "^4.2.5",
-		"commitlint": "^17.0.3",
+		"commitlint": "^17.1.1",
 		"cross-env": "^7.0.3",
 		"eslint": "^8.23.0",
 		"eslint-config-prettier": "^8.5.0",
