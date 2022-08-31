@@ -21,13 +21,11 @@ export const getBlogEntries = async (): Promise<BlogPostEntries> => {
 		const publishedDate = dateFormatLong(
 			(post.properties.published_at as PropertyValueDate).date?.start
 		);
-		const twemoji = (post.properties.twemoji as PropertyValueRichText).rich_text[0].plain_text;
 
 		return {
 			title,
 			slug,
-			publishedDate,
-			twemoji
+			publishedDate
 		};
 	});
 
