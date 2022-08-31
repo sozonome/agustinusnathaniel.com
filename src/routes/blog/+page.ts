@@ -1,16 +1,14 @@
 import type { PageLoad } from './$types';
 
-import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
-
 import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';
 import { BASE_URL } from '$lib/constants/baseUrl';
+
+import type { BlogPostEntries } from '$lib/services/notion/blog/entries/types';
 
 export const load: PageLoad = async ({ fetch, setHeaders }) => {
 	const blogPosts = (await fetch('/posts').then(
 		async (res) => await res.json()
 	)) as BlogPostEntries;
-
-	console.log({ blogPosts });
 
 	setHeaders({
 		'cache-control': 'public, max-age=60'

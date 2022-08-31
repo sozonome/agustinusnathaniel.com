@@ -3,7 +3,9 @@ import type { PageLoad } from './$types';
 import { BASE_URL } from '$lib/constants/baseUrl';
 import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';
 
-import type { BlogPostDetailProps } from '$lib/routes/blog/detail/types';
+import type { BlogPostDetail } from '$lib/services/notion/blog/entry/types';
+
+export type BlogPostDetailProps = Required<BlogPostDetail>;
 
 export const load: PageLoad = async ({ params, fetch, setHeaders }) => {
 	const blogPost = (await fetch(`/blog/data/${params.slug}`).then(async (res) =>
