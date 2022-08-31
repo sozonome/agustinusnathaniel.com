@@ -1,5 +1,6 @@
 <script lang="ts">
 	import SvelteMarkdown, { type Renderers } from 'svelte-markdown';
+
 	import Blockquote from './renderers/Blockquote.svelte';
 	import Heading from './renderers/Heading.svelte';
 	import Hr from './renderers/Hr.svelte';

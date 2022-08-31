@@ -15,7 +15,7 @@ export const getBlogEntries = async (): Promise<BlogPostEntries> => {
 	const blogPosts = await getDatabase(BLOG_DATABASE_ID);
 	const sorted = sortBlogPosts(blogPosts);
 
-	const list = sorted.map((post) => {
+	return sorted.map((post) => {
 		const title = (post.properties.title as PropertyValueTitle).title[0].plain_text;
 		const slug = (post.properties.slug as PropertyValueRichText).rich_text[0].plain_text;
 		const publishedDate = dateFormatLong(
@@ -28,6 +28,4 @@ export const getBlogEntries = async (): Promise<BlogPostEntries> => {
 			publishedDate
 		};
 	});
-
-	return list;
 };

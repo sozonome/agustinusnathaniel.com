@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Heading from 'svelte-markdown/src/renderers/Heading.svelte';
+
 	import Link from './Link.svelte';
 
 	export let depth: number;

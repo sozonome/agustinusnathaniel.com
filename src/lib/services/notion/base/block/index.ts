@@ -9,7 +9,5 @@ export const getBlocks = async (blockId: string): Promise<MdBlock[]> => {
 		page_size: 50
 	});
 
-	const blocks = await n2m.blocksToMarkdown(results);
-
-	return blocks;
+	return await n2m.blocksToMarkdown(results);
 };

@@ -1,9 +1,8 @@
 import type { PageLoad } from './$types';
 
 import { BASE_URL } from '$lib/constants/baseUrl';
-import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';
-
 import type { BlogPostDetail } from '$lib/services/notion/blog/entry/types';
+import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';
 
 export type BlogPostDetailProps = Required<BlogPostDetail>;
 

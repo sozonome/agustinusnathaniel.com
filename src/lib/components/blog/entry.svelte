@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { BlogPostEntry } from '$lib/services/notion/blog/entries/types';
 	import clsx from 'clsx';
+
+	import type { BlogPostEntry } from '$lib/services/notion/blog/entries/types';
 
 	export let entry: BlogPostEntry;
 	let className: string | undefined;

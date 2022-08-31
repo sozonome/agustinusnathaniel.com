@@ -5,12 +5,12 @@ import type {
 	PropertyValueTitle
 } from '@notion-stuff/v4-types';
 
-import { BLOG_DATABASE_ID } from '$lib/services/notion/constants';
+import type { BlogPostDetail } from './types';
+
 import { getDatabase } from '$lib/services/notion/base/database';
 import { getPage, getPageMarkdown } from '$lib/services/notion/base/page';
+import { BLOG_DATABASE_ID } from '$lib/services/notion/constants';
 import { dateFormatLong } from '$lib/utils/formatDate';
-
-import type { BlogPostDetail } from './types';
 
 export const getBlogPostDetail = async (slug: string): Promise<BlogPostDetail> => {
 	const blogPosts = await getDatabase(BLOG_DATABASE_ID);
