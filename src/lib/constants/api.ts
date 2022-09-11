@@ -1,6 +1,4 @@
-import type { RequestHandlerOutput } from '@sveltejs/kit';
-
-export const defaultHeaders: RequestHandlerOutput['headers'] = {
+export const defaultHeaders: HeadersInit = {
 	'Content-Type': 'application/json',
 	'Cache-Control': 's-maxage=600, stale-while-revalidate=2678400'
 };
