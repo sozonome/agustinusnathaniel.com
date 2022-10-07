@@ -6,7 +6,7 @@
 	export let data: PageData;
 </script>
 
-<div mb-12>
+<div class="mb-12">
 	<h2 class="text-3xl">{data.meta.title}</h2>
 	<p>{data.meta.publishedDate}</p>
 </div>
