@@ -18,7 +18,8 @@
 		defer
 		data-website-id="19cccead-2387-42db-8790-74308b122205"
 		src="https://umami.sznm.dev/umami.js"
-		data-domains="agustinusnathaniel.com"></script>
+		data-domains="agustinusnathaniel.com"
+	></script>
 </svelte:head>
 
 <MetaTags
