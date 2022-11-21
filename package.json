@@ -29,25 +29,25 @@
 		"@sveltejs/kit": "1.0.0-next.544",
 		"@types/lodash-es": "^4.17.6",
 		"@types/umami": "^0.1.0",
-		"@typescript-eslint/eslint-plugin": "^5.42.1",
-		"@typescript-eslint/parser": "^5.42.1",
+		"@typescript-eslint/eslint-plugin": "^5.43.0",
+		"@typescript-eslint/parser": "^5.43.0",
 		"commitizen": "^4.2.5",
 		"commitlint": "^17.2.0",
 		"cross-env": "^7.0.3",
-		"eslint": "^8.27.0",
+		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-config-sznm": "^1.0.1",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"husky": "^8.0.2",
 		"lint-staged": "^13.0.3",
 		"prettier": "^2.7.1",
-		"prettier-plugin-svelte": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
 		"standard-version": "^9.5.0",
 		"svelte": "^3.53.1",
 		"svelte-check": "^2.9.2",
 		"svelte-preprocess": "^4.10.7",
 		"tslib": "^2.4.1",
-		"typescript": "^4.8.4",
+		"typescript": "^4.9.3",
 		"unocss": "0.46.5",
 		"vite": "3.2.3"
 	},
@@ -59,6 +59,6 @@
 		"lodash-es": "^4.17.21",
 		"notion-to-md": "^2.5.5",
 		"svelte-markdown": "^0.2.3",
-		"svelte-meta-tags": "^2.6.3"
+		"svelte-meta-tags": "^2.6.4"
 	}
 }
