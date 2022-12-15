@@ -3,12 +3,10 @@ import { extractorSvelte } from '@unocss/core';
 import presetIcons from '@unocss/preset-icons';
 import presetUno from '@unocss/preset-uno';
 import UnoCss from 'unocss/vite';
+import { defineConfig } from 'vite';
 
 /** @type {import('vite').UserConfig} */
-const config = {
-	server: {
-		fs: true
-	},
+const config = defineConfig({
 	plugins: [
 		sveltekit(),
 		UnoCss({
@@ -35,6 +33,6 @@ const config = {
 			]
 		})
 	]
-};
+});
 
 export default config;
