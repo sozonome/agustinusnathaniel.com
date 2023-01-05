@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.1.1](https://github.com/sozonome/agustinusnathaniel.com/compare/v5.1.0...v5.1.1) (2023-01-05)
+
+
+### Bug Fixes
+
+* revise class typo on header component ([885efed](https://github.com/sozonome/agustinusnathaniel.com/commit/885efedabb165c187165d09bc77e4ff6216a5358))
+
+
+### Improvements
+
+* adjust type ([0dd7dce](https://github.com/sozonome/agustinusnathaniel.com/commit/0dd7dce2cf57a8b27cd1357bb89af7684a5a43e9))
+* remove route types files ([98b71d3](https://github.com/sozonome/agustinusnathaniel.com/commit/98b71d37b0f0c3735590afa157d2f59e6166ca38))
+* **services:** remove twemoji notion attribute ([09ab669](https://github.com/sozonome/agustinusnathaniel.com/commit/09ab66930d0da714aadeaafc447a91a7fcc2d434))
+* use class ([1771c20](https://github.com/sozonome/agustinusnathaniel.com/commit/1771c2090c3b7b6ff36b0a79d1d550282206c590))
+
 ## [5.1.0](https://github.com/sozonome/agustinusnathaniel.com/compare/v5.0.0...v5.1.0) (2022-08-28)
 
 
