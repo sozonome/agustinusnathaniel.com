@@ -1,0 +1,13 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"pipeline": {
+		"build": {
+			"outputs": [".svelte-kit/**", ".vercel/**"],
+			"env": ["VITE_NOTION_TOKEN", "VITE_BLOG_DATABASE_ID"]
+		},
+		"lint": {
+			"outputs": [],
+			"inputs": [".eslintrc.*", "src/**"]
+		}
+	}
+}
