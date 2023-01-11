@@ -5,12 +5,14 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"build:turbo": "npx turbo build",
 		"package": "vite package",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"lint:fix": "prettier --check --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore .",
+		"lint:turbo": "npx turbo lint",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"release": "cross-env HUSKY=0 standard-version",
 		"pre-release": "yarn release -- --prerelease",
@@ -47,6 +49,7 @@
 		"svelte-check": "^2.10.2",
 		"svelte-preprocess": "^5.0.0",
 		"tslib": "^2.4.1",
+		"turbo": "^1.7.0",
 		"typescript": "^4.9.4",
 		"unocss": "0.47.6",
 		"vite": "4.0.1"
