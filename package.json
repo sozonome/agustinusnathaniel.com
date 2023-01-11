@@ -1,6 +1,6 @@
 {
 	"name": "agustinusnathaniel.com",
-	"version": "5.1.2",
+	"version": "5.1.3",
 	"author": "sozonome",
 	"scripts": {
 		"dev": "vite dev",
