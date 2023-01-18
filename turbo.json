@@ -2,7 +2,7 @@
 	"$schema": "https://turbo.build/schema.json",
 	"pipeline": {
 		"build": {
-			"outputs": [".svelte-kit/**", ".vercel/**"],
+			"outputs": [".svelte-kit/**", ".vercel/**", "public/**"],
 			"env": ["VITE_NOTION_TOKEN", "VITE_BLOG_DATABASE_ID"]
 		},
 		"lint": {
