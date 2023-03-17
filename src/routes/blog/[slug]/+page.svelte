@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-
 	import MdRenderer from '$lib/components/markdown/MdRenderer.svelte';
+
+	import type { PageData } from './$types';
 
 	export let data: PageData;
 </script>

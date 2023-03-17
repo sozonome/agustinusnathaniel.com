@@ -3,9 +3,9 @@
 	import '@unocss/reset/normalize.css';
 	import '@fontsource/outfit/latin.css';
 	import '$lib/styles/app.css';
-	import type { LayoutData } from './$types';
-
 	import Layout from '$lib/components/layout/index.svelte';
+
+	import type { LayoutData } from './$types';
 
 	export let data: LayoutData;
 </script>

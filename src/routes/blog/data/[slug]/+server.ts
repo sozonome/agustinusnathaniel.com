@@ -1,7 +1,7 @@
-import type { RequestHandler } from './$types';
-
 import { defaultHeaders } from '$lib/constants/api';
 import { getBlogPostDetail } from '$lib/services/notion/blog/entry';
+
+import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = async ({ params }) => {
 	const { meta, content } = await getBlogPostDetail(params.slug);
