@@ -5,8 +5,8 @@ dependencies:
     specifier: ^4.5.11
     version: 4.5.11
   '@notionhq/client':
-    specifier: ^1.0.4
-    version: 1.0.4
+    specifier: ^2.2.4
+    version: 2.2.4
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
@@ -887,6 +887,17 @@ packages:
       node-fetch: 2.6.9
     transitivePeerDependencies:
       - encoding
+    dev: true
+
+  /@notionhq/client@2.2.4:
+    resolution: {integrity: sha512-cr5yW6mIJX1cBDThClklNUY5KfQO0iW3rL/CEpx5gU+7Bv458VqeT9YfM9KIbhuGw0D2a8/+qv0UpveDM6rsOw==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@types/node-fetch': 2.6.3
+      node-fetch: 2.6.9
+    transitivePeerDependencies:
+      - encoding
+    dev: false
 
   /@pkgr/utils@2.3.1:
     resolution: {integrity: sha512-wfzX8kc1PMyUILA+1Z/EqoE4UCXGy0iRGMhPwdfae1+f0OXlLqCk+By+aMzgJBzR9AzS4CDizioG6Ss1gvAFJw==}

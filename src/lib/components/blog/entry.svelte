@@ -16,7 +16,7 @@
 		'no-underline flex items-center gap-6 cursor-pointer text-gray-400 hover:text-gray-100 transition duration-200 ease-out hover:ease-in',
 		className
 	)}
-	data-sveltekit-prefetch
+	data-sveltekit-preload-data
 >
 	<div class="mb-4">
 		<h3 class="text-xl sm:text-2xl mb-2">{title}</h3>

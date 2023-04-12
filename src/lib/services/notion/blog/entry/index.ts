@@ -1,13 +1,12 @@
-import type {
-	PostResult,
-	PropertyValueDate,
-	PropertyValueRichText,
-	PropertyValueTitle
-} from '@notion-stuff/v4-types';
-
 import { getDatabase } from '$lib/services/notion/base/database';
 import { getPage, getPageMarkdown } from '$lib/services/notion/base/page';
 import { BLOG_DATABASE_ID } from '$lib/services/notion/constants';
+import type {
+	DatabaseEntry,
+	PropertyValueDate,
+	PropertyValueRichText,
+	PropertyValueTitle
+} from '$lib/services/notion/types';
 import { dateFormatLong } from '$lib/utils/formatDate';
 
 import type { BlogPostDetail } from './types';
@@ -22,11 +21,10 @@ export const getBlogPostDetail = async (slug: string): Promise<BlogPostDetail> =
 		return {};
 	}
 
-	const pageData = await getPage(selectedPost.id);
-	const title = ((pageData as PostResult).properties.title as PropertyValueTitle).title[0]
-		.plain_text;
+	const pageData = (await getPage(selectedPost.id)) as DatabaseEntry;
+	const title = (pageData.properties.title as PropertyValueTitle).title[0].plain_text;
 	const publishedDate = dateFormatLong(
-		((pageData as PostResult).properties.published_at as PropertyValueDate).date?.start ?? ''
+		(pageData.properties.published_at as PropertyValueDate).date?.start ?? ''
 	);
 
 	const content = await getPageMarkdown(selectedPost.id);

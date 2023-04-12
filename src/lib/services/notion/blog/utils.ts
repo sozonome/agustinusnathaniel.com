@@ -1,6 +1,8 @@
-import type { PropertyValueDate } from '@notion-stuff/v4-types';
-
-import type { DatabaseEntry, NotionDatabaseEntries } from '$lib/services/notion/types';
+import type {
+	DatabaseEntry,
+	NotionDatabaseEntries,
+	PropertyValueDate
+} from '$lib/services/notion/types';
 
 export const sortBlogPosts = (blogPosts: NotionDatabaseEntries): NotionDatabaseEntries => {
 	return blogPosts.sort((a, b) => {

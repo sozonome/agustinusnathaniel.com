@@ -63,7 +63,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/outfit": "^4.5.11",
-		"@notionhq/client": "^1.0.4",
+		"@notionhq/client": "^2.2.4",
 		"clsx": "^1.2.1",
 		"lodash-es": "^4.17.21",
 		"notion-to-md": "^2.5.5",
