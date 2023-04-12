@@ -8,7 +8,13 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		typescript: {
+			config: (config) => ({
+				...config,
+				include: [...config.include, '../uno.config.ts']
+			})
+		}
 	}
 };
 

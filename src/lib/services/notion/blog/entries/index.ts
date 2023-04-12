@@ -1,12 +1,11 @@
+import { getDatabase } from '$lib/services/notion/base/database';
+import { sortBlogPosts } from '$lib/services/notion/blog/utils';
+import { BLOG_DATABASE_ID } from '$lib/services/notion/constants';
 import type {
 	PropertyValueDate,
 	PropertyValueRichText,
 	PropertyValueTitle
-} from '@notion-stuff/v4-types';
-
-import { getDatabase } from '$lib/services/notion/base/database';
-import { sortBlogPosts } from '$lib/services/notion/blog/utils';
-import { BLOG_DATABASE_ID } from '$lib/services/notion/constants';
+} from '$lib/services/notion/types';
 import { dateFormatLong } from '$lib/utils/formatDate';
 
 import type { BlogPostEntries } from './types';

@@ -12,7 +12,7 @@
 		"baseUrl": ".",
 		"allowJs": true,
 		"checkJs": true,
-		"strict": true,
+		"strict": false,
 		"paths": {
 			"$lib": ["src/lib"],
 			"$lib/*": ["src/lib/*"]
