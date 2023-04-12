@@ -19,5 +19,6 @@
 		},
 		"types": ["vite/client"]
 	},
+	"include": ["uno.config.ts"],
 	"extends": "./.svelte-kit/tsconfig.json"
 }
