@@ -2,6 +2,7 @@
 	import { MetaTags, type MetaTagsProps } from 'svelte-meta-tags';
 
 	import { BASE_URL } from '$lib/constants/baseUrl';
+	import { UMAMI_SRC } from '$lib/constants/env';
 	import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';
 
 	import { page } from '$app/stores';
@@ -18,7 +19,7 @@
 		async
 		defer
 		data-website-id="19cccead-2387-42db-8790-74308b122205"
-		src="https://umami.sznm.dev/umami.js"
+		src={UMAMI_SRC}
 		data-domains="agustinusnathaniel.com"
 	></script>
 </svelte:head>

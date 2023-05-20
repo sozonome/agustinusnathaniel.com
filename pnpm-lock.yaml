@@ -48,9 +48,6 @@ devDependencies:
   '@types/lodash-es':
     specifier: ^4.17.7
     version: 4.17.7
-  '@types/umami':
-    specifier: ^0.1.1
-    version: 0.1.1
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.58.0
     version: 5.58.0(@typescript-eslint/parser@5.58.0)(eslint@8.38.0)(typescript@4.9.5)
@@ -904,10 +901,6 @@ packages:
 
   /@types/semver@7.3.13:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
-    dev: true
-
-  /@types/umami@0.1.1:
-    resolution: {integrity: sha512-00BsPEKZ8ASEyJDFJ1WwnXSdYkJYgQ4fltX9TP/UHX3o3KdUfPocc0jy5wHR3tBXV4LdJldjkZUjmGe/T4zspQ==}
     dev: true
 
   /@typescript-eslint/eslint-plugin@5.58.0(@typescript-eslint/parser@5.58.0)(eslint@8.38.0)(typescript@4.9.5):

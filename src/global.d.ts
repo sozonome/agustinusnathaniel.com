@@ -4,4 +4,5 @@
 interface ImportMetaEnv {
 	readonly VITE_NOTION_TOKEN: string;
 	readonly VITE_BLOG_DATABASE_ID: string;
+	readonly VITE_UMAMI_SRC: string;
 }
