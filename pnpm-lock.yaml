@@ -55,17 +55,17 @@ devDependencies:
     specifier: ^5.58.0
     version: 5.58.0(eslint@8.38.0)(typescript@4.9.5)
   '@unocss/extractor-svelte':
-    specifier: ^0.51.4
-    version: 0.51.4
+    specifier: ^0.52.0
+    version: 0.52.0
   '@unocss/preset-icons':
-    specifier: ^0.51.4
-    version: 0.51.4
+    specifier: ^0.52.0
+    version: 0.52.0
   '@unocss/preset-uno':
-    specifier: ^0.51.4
-    version: 0.51.4
+    specifier: ^0.52.0
+    version: 0.52.0
   '@unocss/reset':
-    specifier: ^0.51.4
-    version: 0.51.4
+    specifier: ^0.52.0
+    version: 0.52.0
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0
@@ -1075,14 +1075,24 @@ packages:
     resolution: {integrity: sha512-glPBN989gJNNVzjulH6NlLAekBLuZbsFRIDqwZ1ZaoWY6teu8Z6uo3pqFCy+ibjxZSEha77BcnKfDzd2Hccsdw==}
     dev: true
 
+  /@unocss/core@0.52.0:
+    resolution: {integrity: sha512-MGyG1LpiVtyrHmWmXiDRnf7j+JaJua14K058FGBAhNSLaG37dG6xIfwPuVDBOqEI8EgICmNTJs1T/ImQJYWxtw==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants@0.51.4:
     resolution: {integrity: sha512-WfRsMEYthIkZjdTaTpzquTMtsb+GCp18tHM3CjlR9fsM7BGDF1rmMwcqWDzQc+wtiW+mzQFybL3chBgNdPloYA==}
     dependencies:
       '@unocss/core': 0.51.4
     dev: true
 
-  /@unocss/extractor-svelte@0.51.4:
-    resolution: {integrity: sha512-XZiAiCToRVqo/l9iajNfalwXAQ78p9nJPdw0mYX9mUtJYl8kBLvn+YYLFzlR2eT89kZYmSCxBS/MGQ8RhrNakg==}
+  /@unocss/extractor-arbitrary-variants@0.52.0:
+    resolution: {integrity: sha512-wJ7a9NWVywHwjWMeB8wN9PHl0fhwOcvAgmhDkyY7A9wXSazaecSMLbKrcnQe7q5bOFGvn5jyxYkk78XZqLWgyg==}
+    dependencies:
+      '@unocss/core': 0.52.0
+    dev: true
+
+  /@unocss/extractor-svelte@0.52.0:
+    resolution: {integrity: sha512-pI/hje7LrzRcnKFhtgENhCN5tKLAr3vXE7h1YRDPMCTBtwyDSGdnUB35CcmM9NmYFCZYAk6fvk9fMbeR1G3xmg==}
     dev: true
 
   /@unocss/inspector@0.51.4:
@@ -1122,11 +1132,28 @@ packages:
       - supports-color
     dev: true
 
+  /@unocss/preset-icons@0.52.0:
+    resolution: {integrity: sha512-GSDQIBXkK6rfJHT3SvbJExLoAddj93fC5DHS4eE3a6fne/NdQhFvbkhAZ5iPr4UZmMoJQOyAkkhuWD3PMSBjqw==}
+    dependencies:
+      '@iconify/utils': 2.1.5
+      '@unocss/core': 0.52.0
+      ofetch: 1.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@unocss/preset-mini@0.51.4:
     resolution: {integrity: sha512-Ft/RQF+8KLooMTP/Qnl6qvxI/Gubi1ROsTTQLlgy3/cGxvoC2uBM4VpJFnTurJAX73IX9WJeA0IQSLfF+fXtIw==}
     dependencies:
       '@unocss/core': 0.51.4
       '@unocss/extractor-arbitrary-variants': 0.51.4
+    dev: true
+
+  /@unocss/preset-mini@0.52.0:
+    resolution: {integrity: sha512-P4mQimuZ+yLba2FN3+hKA7anBvjypmEgNof/LdPhTydv138zlhDVly7KlYADISt7QPNIVaGD3U34HLKtgyfBmQ==}
+    dependencies:
+      '@unocss/core': 0.52.0
+      '@unocss/extractor-arbitrary-variants': 0.52.0
     dev: true
 
   /@unocss/preset-tagify@0.51.4:
@@ -1150,6 +1177,14 @@ packages:
       '@unocss/preset-wind': 0.51.4
     dev: true
 
+  /@unocss/preset-uno@0.52.0:
+    resolution: {integrity: sha512-0pZH0gUJ4hug6B0xV03VNi74GjW49UlnSjwK3xBL6la7WzrgQ+E/mD6CVKxB9Qa0Sfc9qZg8IvVuI97/msdkOA==}
+    dependencies:
+      '@unocss/core': 0.52.0
+      '@unocss/preset-mini': 0.52.0
+      '@unocss/preset-wind': 0.52.0
+    dev: true
+
   /@unocss/preset-web-fonts@0.51.4:
     resolution: {integrity: sha512-zoCExszBv12f8tw4YNV36q8NV15HR7AMpw5xEfAWX5Yak6Vmi5WIosJA1FPz+pyI93xxrPkWoPK5GdziAgtShg==}
     dependencies:
@@ -1164,8 +1199,19 @@ packages:
       '@unocss/preset-mini': 0.51.4
     dev: true
 
+  /@unocss/preset-wind@0.52.0:
+    resolution: {integrity: sha512-y+x+MnXYwcKvPepjK9rbCwp3yiOiXv9XOO5T9YAHdzwrpfAOTjXOAhmW3XAFz2sODoy2xliLYQXsxthyzpf/7w==}
+    dependencies:
+      '@unocss/core': 0.52.0
+      '@unocss/preset-mini': 0.52.0
+    dev: true
+
   /@unocss/reset@0.51.4:
     resolution: {integrity: sha512-3FnajZSOrQ4qSbpkY1IGRIFYw8I9E98SBXvjMnHqSl8k4YPbBP29W3YrgSVBMOnPNRL67hRcTaMF3nmbnBuWtQ==}
+    dev: true
+
+  /@unocss/reset@0.52.0:
+    resolution: {integrity: sha512-hRdgzpxWkDriRneLCv8cRNWBVNJ9FQVLY6jLk7C3MMaab0FH9JufdNwRw/yiqtEEhnnT2GF8IfN3HY69T01tNw==}
     dev: true
 
   /@unocss/scope@0.51.4:
