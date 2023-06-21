@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.1.4](https://github.com/sozonome/agustinusnathaniel.com/compare/v5.1.3...v5.1.4) (2023-06-21)
+
+
+### Improvements
+
+* adjust links url ([50f054c](https://github.com/sozonome/agustinusnathaniel.com/commit/50f054c9f3a8d239527ede8b71d59f70a1fcfb8f))
+* adjust tracking ([40583d0](https://github.com/sozonome/agustinusnathaniel.com/commit/40583d05666d640149433058929efbb72195ee4c))
+
 ### [5.1.3](https://github.com/sozonome/agustinusnathaniel.com/compare/v5.1.2...v5.1.3) (2023-01-11)
 
 ### [5.1.2](https://github.com/sozonome/agustinusnathaniel.com/compare/v5.1.1...v5.1.2) (2023-01-05)

@@ -1,6 +1,6 @@
 {
 	"name": "agustinusnathaniel.com",
-	"version": "5.1.3",
+	"version": "5.1.4",
 	"author": "sozonome",
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
