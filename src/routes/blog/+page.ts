@@ -4,6 +4,12 @@ import { buildOgImgUrl } from '$lib/utils/buildOgImgUrl';
 
 import type { PageLoad } from './$types';
 
+export const config = {
+	isr: {
+		expiration: 60
+	}
+};
+
 export const load: PageLoad = async ({ fetch, setHeaders }) => {
 	const blogPosts = (await fetch('/posts').then(
 		async (res) => await res.json()
