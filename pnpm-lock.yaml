@@ -55,11 +55,11 @@ devDependencies:
     specifier: ^5.58.0
     version: 5.58.0(eslint@8.38.0)(typescript@4.9.5)
   '@unocss/extractor-svelte':
-    specifier: ^0.52.0
-    version: 0.52.0
+    specifier: ^0.53.0
+    version: 0.53.0
   '@unocss/reset':
-    specifier: ^0.52.0
-    version: 0.52.0
+    specifier: ^0.53.0
+    version: 0.53.0
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0
@@ -1303,8 +1303,8 @@ packages:
       '@unocss/core': 0.51.4
     dev: true
 
-  /@unocss/extractor-svelte@0.52.0:
-    resolution: {integrity: sha512-pI/hje7LrzRcnKFhtgENhCN5tKLAr3vXE7h1YRDPMCTBtwyDSGdnUB35CcmM9NmYFCZYAk6fvk9fMbeR1G3xmg==}
+  /@unocss/extractor-svelte@0.53.0:
+    resolution: {integrity: sha512-S+8xMCXBYTNWqIPXCDvdAbEAiTTcRaSRQeJwVF2Kb3iE2fYh2Y0zVJm1JgexOS/KMBJjXbVy9Ae5bYboUQCJZA==}
     dev: true
 
   /@unocss/inspector@0.51.4:
@@ -1390,8 +1390,8 @@ packages:
     resolution: {integrity: sha512-3FnajZSOrQ4qSbpkY1IGRIFYw8I9E98SBXvjMnHqSl8k4YPbBP29W3YrgSVBMOnPNRL67hRcTaMF3nmbnBuWtQ==}
     dev: true
 
-  /@unocss/reset@0.52.0:
-    resolution: {integrity: sha512-hRdgzpxWkDriRneLCv8cRNWBVNJ9FQVLY6jLk7C3MMaab0FH9JufdNwRw/yiqtEEhnnT2GF8IfN3HY69T01tNw==}
+  /@unocss/reset@0.53.0:
+    resolution: {integrity: sha512-4XJkEtVxUGYp+WX2aRTrZLNp6MEwulBvhhpkAjwfkS+wVdo9lMma0O93TCqJaFeYx7lU8W92APB4n918rz9scA==}
     dev: true
 
   /@unocss/scope@0.51.4:
