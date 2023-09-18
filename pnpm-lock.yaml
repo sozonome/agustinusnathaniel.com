@@ -17,8 +17,8 @@ dependencies:
     specifier: ^2.5.5
     version: 2.5.5
   svelte-markdown:
-    specifier: ^0.2.3
-    version: 0.2.3(svelte@3.58.0)
+    specifier: ^0.4.0
+    version: 0.4.0(svelte@3.58.0)
   svelte-meta-tags:
     specifier: ^2.7.0
     version: 2.7.0(svelte@3.58.0)(typescript@4.9.5)
@@ -55,11 +55,11 @@ devDependencies:
     specifier: ^5.58.0
     version: 5.58.0(eslint@8.38.0)(typescript@4.9.5)
   '@unocss/extractor-svelte':
-    specifier: ^0.53.0
-    version: 0.53.0
+    specifier: ^0.55.0
+    version: 0.55.0
   '@unocss/reset':
-    specifier: ^0.53.0
-    version: 0.53.0
+    specifier: ^0.55.0
+    version: 0.55.0
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0
@@ -1092,8 +1092,8 @@ packages:
     resolution: {integrity: sha512-km+Vyn3BYm5ytMO13k9KTp27O75rbQ0NFw+U//g+PX7VZyjCioXaRFisqSIJRECljcTv73G3i6BpglNGHgUQ5A==}
     dev: true
 
-  /@types/marked@4.0.8:
-    resolution: {integrity: sha512-HVNzMT5QlWCOdeuBsgXP8EZzKUf0+AXzN+sLmjvaB3ZlLqO+e4u0uXrdw9ub69wBKFs+c6/pA4r9sy6cCDvImw==}
+  /@types/marked@5.0.1:
+    resolution: {integrity: sha512-Y3pAUzHKh605fN6fvASsz5FDSWbZcs/65Q6xYRmnIP9ZIYz27T4IOmXfH9gWJV1dpi7f1e7z7nBGUTx/a0ptpA==}
     dev: false
 
   /@types/minimist@1.2.2:
@@ -1303,8 +1303,8 @@ packages:
       '@unocss/core': 0.51.4
     dev: true
 
-  /@unocss/extractor-svelte@0.53.0:
-    resolution: {integrity: sha512-S+8xMCXBYTNWqIPXCDvdAbEAiTTcRaSRQeJwVF2Kb3iE2fYh2Y0zVJm1JgexOS/KMBJjXbVy9Ae5bYboUQCJZA==}
+  /@unocss/extractor-svelte@0.55.0:
+    resolution: {integrity: sha512-99BKvKco4/saQvSuz3OC26duQ8d+Hm3lbghvtM96iwWMPR08LQP0t4r0+QGLUeWfZXAkbnbiDZtq/UVAXhPBEg==}
     dev: true
 
   /@unocss/inspector@0.51.4:
@@ -1390,8 +1390,8 @@ packages:
     resolution: {integrity: sha512-3FnajZSOrQ4qSbpkY1IGRIFYw8I9E98SBXvjMnHqSl8k4YPbBP29W3YrgSVBMOnPNRL67hRcTaMF3nmbnBuWtQ==}
     dev: true
 
-  /@unocss/reset@0.53.0:
-    resolution: {integrity: sha512-4XJkEtVxUGYp+WX2aRTrZLNp6MEwulBvhhpkAjwfkS+wVdo9lMma0O93TCqJaFeYx7lU8W92APB4n918rz9scA==}
+  /@unocss/reset@0.55.0:
+    resolution: {integrity: sha512-TzpcOCIr16IbFxQ4vrSfEV+A8k0N4mJkhl7J3SZfAxBpNDBKAWDB6VBW9iEQY5aBYDLN3wRx1LskgEoubqBCPQ==}
     dev: true
 
   /@unocss/scope@0.51.4:
@@ -4266,9 +4266,9 @@ packages:
       repeat-string: 1.6.1
     dev: false
 
-  /marked@4.3.0:
-    resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
-    engines: {node: '>= 12'}
+  /marked@5.1.2:
+    resolution: {integrity: sha512-ahRPGXJpjMjwSOlBoTMZAK7ATXkli5qCPxZ21TG44rx1KEo44bii4ekgTDQPNRQ4Kh7JMb9Ub1PVk1NxRSsorg==}
+    engines: {node: '>= 16'}
     hasBin: true
     dev: false
 
@@ -5519,13 +5519,13 @@ packages:
       svelte: 3.58.0
     dev: true
 
-  /svelte-markdown@0.2.3(svelte@3.58.0):
-    resolution: {integrity: sha512-2h680NzTXnAD0CXhxe3GeHl6W+ayG4iKQRl+BIDRw+R0mUE0OiNxP1Vt8Rn+aWevB/LBiBIPCAwvL+0BkG057A==}
+  /svelte-markdown@0.4.0(svelte@3.58.0):
+    resolution: {integrity: sha512-d8xYJoPhhiLn/tFrO54V5p22q2+I7It8w3CpTv+O+h99LlgehxK9XwdISVBl2aNcLbLX128Nz/vu7GScWhVZjw==}
     peerDependencies:
-      svelte: ^3.0.0
+      svelte: ^4.0.0
     dependencies:
-      '@types/marked': 4.0.8
-      marked: 4.3.0
+      '@types/marked': 5.0.1
+      marked: 5.1.2
       svelte: 3.58.0
     dev: false
 
