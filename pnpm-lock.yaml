@@ -12,16 +12,16 @@ dependencies:
     specifier: ^2.2.4
     version: 2.2.4
   clsx:
-    specifier: ^1.2.1
+    specifier: 1.2.1
     version: 1.2.1
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21
   notion-to-md:
-    specifier: ^2.5.5
+    specifier: 2.5.5
     version: 2.5.5
   svelte-markdown:
-    specifier: ^0.4.0
+    specifier: 0.4.0
     version: 0.4.0(svelte@4.2.8)
   svelte-meta-tags:
     specifier: ^3.1.0
