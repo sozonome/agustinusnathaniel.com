@@ -32,7 +32,7 @@
 		url: BASE_URL,
 		title: 'Agustinus Nathaniel',
 		description: "Agustinus Nathaniel's personal site",
-		site_name: 'agustinusnathaniel',
+		siteName: 'agustinusnathaniel',
 		images: [
 			{
 				url: buildOgImgUrl({ heading: 'Agustinus Nathaniel', text: BASE_URL })

@@ -63,7 +63,7 @@
 		"lodash-es": "^4.17.21",
 		"notion-to-md": "^2.5.5",
 		"svelte-markdown": "^0.4.0",
-		"svelte-meta-tags": "^2.7.0"
+		"svelte-meta-tags": "^3.1.0"
 	},
 	"engines": {
 		"node": ">=16.8.x",
