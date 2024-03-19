@@ -20,7 +20,7 @@
 		"up-interactive": "pnpm up -i",
 		"up-latest": "pnpm up-interactive -L",
 		"push-release": "git push --follow-tags origin main",
-		"prepare": "husky install"
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^19.1.0",
