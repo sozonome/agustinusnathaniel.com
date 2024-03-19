@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Heading from 'svelte-markdown/src/renderers/Heading.svelte';
-
+	import BaseHeading from './BaseHeading.svelte';
 	import Link from './Link.svelte';
 
 	export let depth: number;
@@ -18,7 +17,7 @@
 </script>
 
 <Link href={`#${id}`}>
-	<Heading {depth} {raw} {text}>
+	<BaseHeading {id} {depth} {raw}>
 		<slot />
-	</Heading>
+	</BaseHeading>
 </Link>

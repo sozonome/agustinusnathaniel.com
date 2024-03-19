@@ -20,6 +20,7 @@ export const load: PageLoad = async ({ params, fetch, setHeaders }) => {
 	setHeaders({
 		'cache-control': 'public, max-age=60'
 	});
+
 	return {
 		...blogPost,
 		seo: {

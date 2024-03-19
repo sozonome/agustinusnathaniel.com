@@ -9,14 +9,9 @@
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
-		"baseUrl": ".",
 		"allowJs": true,
 		"checkJs": true,
 		"strict": false,
-		"paths": {
-			"$lib": ["src/lib"],
-			"$lib/*": ["src/lib/*"]
-		},
 		"types": ["vite/client"]
 	},
 	"extends": "./.svelte-kit/tsconfig.json"

@@ -8,7 +8,7 @@ const getPageBlocks = async (pageId: string): Promise<MdBlock[]> => n2m.pageToMa
 
 export const getPageMarkdown = async (pageId: string): Promise<string> => {
 	const pageMdBlocks = await getPageBlocks(pageId);
-	return n2m.toMarkdownString(pageMdBlocks);
+	return n2m.toMarkdownString(pageMdBlocks).parent;
 };
 
 export const getPage = async (pageId: string): Promise<GetPageResponse> =>
