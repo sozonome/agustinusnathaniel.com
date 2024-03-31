@@ -16,7 +16,7 @@
 		<p class="mt-1 text-sm">Me as dev</p>
 	</Link>
 
-	<Link href="https://wus.sh/agustinusnathaniel" isExternal class="">
+	<Link href="https://wussh.sznm.dev/agustinusnathaniel" isExternal class="">
 		<h3 class="mb-0">links</h3>
 	</Link>
 </section>
