@@ -41,7 +41,7 @@
 		...seo?.openGraph
 	}}
 	twitter={seo?.twitter ?? {
-		handle: '@sozonome',
+		creator: '@sozonome',
 		site: 'https://sznm.dev',
 		cardType: 'summary_large_image'
 	}}

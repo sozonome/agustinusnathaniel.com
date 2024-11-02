@@ -4,23 +4,19 @@
 	import DefaultMetaTags from './DefaultMetaTags.svelte';
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
-
-	export let path = '';
 </script>
 
 <DefaultMetaTags />
 <div class="grid font-sans bg-zinc-900 text-gray-300 min-h-screen">
 	<Header />
 
-	{#key path}
-		<main
-			in:blur={{ duration: 400, delay: 400, amount: 6 }}
-			out:blur={{ duration: 400 }}
-			class="layout w-full self-center py-8"
-		>
-			<slot />
-		</main>
-	{/key}
+	<main
+		in:blur={{ duration: 400, delay: 400, amount: 6 }}
+		out:blur={{ duration: 400 }}
+		class="layout w-full self-center py-8"
+	>
+		<slot />
+	</main>
 
 	<Footer />
 </div>

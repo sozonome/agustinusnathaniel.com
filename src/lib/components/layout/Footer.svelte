@@ -12,10 +12,10 @@
 			label="instagram"
 			href="https://www.instagram.com/agustinusnathaniel"
 		>
-			<div class="i-fa-brands-instagram" />
+			<div class="i-fa-brands-instagram"></div>
 		</Link>
 		<Link class={linkClass} isExternal label="twitter" href="https://twitter.com/sozonome">
-			<div class="i-fa-brands-twitter" />
+			<div class="i-fa-brands-twitter"></div>
 		</Link>
 		<Link
 			class={linkClass}
@@ -23,7 +23,7 @@
 			label="youtube"
 			href="https://youtube.com/agustinusnathaniel"
 		>
-			<div class="i-fa-brands-youtube" />
+			<div class="i-fa-brands-youtube"></div>
 		</Link>
 		<Link
 			class={linkClass}
@@ -31,7 +31,7 @@
 			label="linkedin"
 			href="https://linkedin.com/in/agustinusnathaniel"
 		>
-			<div class="i-fa-brands-linkedin" />
+			<div class="i-fa-brands-linkedin"></div>
 		</Link>
 	</section>
 
